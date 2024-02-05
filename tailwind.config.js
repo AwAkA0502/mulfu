@@ -15,8 +15,11 @@ module.exports = {
       'header4/Bold': ['24px', '36px'],
       'font26': '26px',
       'Large/Reguler': ['20px', '24.2px'],
+      'Large/Bold': ['20px', '30px'],
       'Base/Bold': ['16px', '24px'],
+      'Base/Medium': ['16px', '24px'],
       'Base/Regular': ['16px', '19.4px'],
+      'Small/Small': ['14px', '16.9px'],
       'HeaderFitur': ['26px', '31px'],
     },
     extend: {
