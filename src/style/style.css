@@ -16,7 +16,7 @@
   /* 2 */
   border-style: solid;
   /* 2 */
-  border-color: currentColor;
+  border-color: #e5e7eb;
   /* 2 */
 }
 
@@ -588,6 +588,10 @@ video {
   margin-right: 0.75rem;
 }
 
+.mt-0 {
+  margin-top: 0px;
+}
+
 .mt-10 {
   margin-top: 2.5rem;
 }
@@ -652,6 +656,10 @@ video {
   height: 598px;
 }
 
+.h-\[700px\] {
+  height: 700px;
+}
+
 .w-\[150px\] {
   width: 150px;
 }
@@ -668,12 +676,20 @@ video {
   width: 674px;
 }
 
+.w-\[700px\] {
+  width: 700px;
+}
+
 .w-\[928px\] {
   width: 928px;
 }
 
 .w-\[989px\] {
   width: 989px;
+}
+
+.w-\[359px\] {
+  width: 359px;
 }
 
 .grid-cols-2 {
@@ -724,6 +740,10 @@ video {
   gap: 5px;
 }
 
+.gap-12 {
+  gap: 3rem;
+}
+
 .gap-x-2 {
   -moz-column-gap: 0.5rem;
        column-gap: 0.5rem;
@@ -737,14 +757,14 @@ video {
   border-radius: 20px;
 }
 
-.rounded-t-\[20px\] {
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-}
-
 .rounded-b-\[20px\] {
   border-bottom-right-radius: 20px;
   border-bottom-left-radius: 20px;
+}
+
+.rounded-t-\[20px\] {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
 
 .border {
@@ -794,6 +814,11 @@ video {
   background-color: rgb(126 87 163 / var(--tw-bg-opacity));
 }
 
+.bg-red-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(220 38 38 / var(--tw-bg-opacity));
+}
+
 .p-6 {
   padding: 1.5rem;
 }
@@ -825,6 +850,11 @@ video {
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
+}
+
+.px-\[120px\] {
+  padding-left: 120px;
+  padding-right: 120px;
 }
 
 .px-\[140px\] {
@@ -862,12 +892,26 @@ video {
   padding-bottom: 60px;
 }
 
+.py-\[40px\] {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
 .pl-120px {
   padding-left: 120px;
 }
 
 .pr-120px {
   padding-right: 120px;
+}
+
+.pr-4 {
+  padding-right: 1rem;
 }
 
 .pr-8 {
@@ -888,6 +932,11 @@ video {
 
 .font-poppins {
   font-family: poppins, cursive;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 }
 
 .text-Base\/Bold {
@@ -944,6 +993,11 @@ video {
   line-height: 36px;
 }
 
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -954,6 +1008,10 @@ video {
 
 .font-semibold {
   font-weight: 600;
+}
+
+.font-extrabold {
+  font-weight: 800;
 }
 
 .text-purpleScale0 {
