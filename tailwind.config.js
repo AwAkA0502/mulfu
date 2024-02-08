@@ -14,6 +14,7 @@ module.exports = {
       },
       fontSize: {
         'header1/Desktop': ['48px', '72px'],
+        'header3/Desktop': ['32px', '48px'],
         'header4/Bold': ['24px', '36px'],
         'font26': '26px',
         'Large/Reguler': ['20px', '24.2px'],
