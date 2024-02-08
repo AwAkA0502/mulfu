@@ -7,6 +7,7 @@ module.exports = {
         'textTitleColor': '#703D80',
         'purpleScale60': '#5A3E74',
         'purpleScale50': '#7E57A3',
+        'purpleScale80': '#24192E',
         'purpleScale90': '#120C17',
         'purpleScale0': '#FFFFFF',
         'borderColor': '#24192E',
