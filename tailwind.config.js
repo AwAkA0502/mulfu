@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ['./src/*.html'],
+  content: ['./src/**/*.html'],
   theme: {
     extend: {
       colors: {
@@ -24,6 +25,7 @@ module.exports = {
         'Base/Bold': ['16px', '24px'],
         'Base/Medium': ['16px', '24px'],
         'Base/Regular': ['16px', '19.4px'],
+        'Small/Regular': ['12px', '14.5px'],
         'Small/Small': ['14px', '16.9px'],
         'HeaderFitur': ['26px', '31px'],
       },
