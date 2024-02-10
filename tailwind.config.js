@@ -12,7 +12,7 @@ module.exports = {
         'purpleScale90': '#120C17',
         'purpleScale0': '#FFFFFF',
         'borderColor': '#24192E',
-        'hoverColor': '#d9d9d9',
+        'hoverColor': '#5A3E74',
       },
       fontSize: {
         'header1/Desktop': ['48px', '72px'],
