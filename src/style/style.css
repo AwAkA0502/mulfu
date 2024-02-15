@@ -548,6 +548,11 @@ video {
   position: absolute;
 }
 
+.mx-120px {
+  margin-left: 120px;
+  margin-right: 120px;
+}
+
 .mx-\[54px\] {
   margin-left: 54px;
   margin-right: 54px;
@@ -573,13 +578,12 @@ video {
   margin-bottom: 2rem;
 }
 
-.mx-120px {
-  margin-left: 120px;
-  margin-right: 120px;
-}
-
 .mb-2 {
   margin-bottom: 0.5rem;
+}
+
+.mb-20 {
+  margin-bottom: 5rem;
 }
 
 .mb-3 {
@@ -592,6 +596,10 @@ video {
 
 .mb-8 {
   margin-bottom: 2rem;
+}
+
+.mb-\[60px\] {
+  margin-bottom: 60px;
 }
 
 .ml-10 {
@@ -622,6 +630,10 @@ video {
   margin-right: 0.75rem;
 }
 
+.mr-4 {
+  margin-right: 1rem;
+}
+
 .mr-8 {
   margin-right: 2rem;
 }
@@ -646,6 +658,10 @@ video {
   margin-top: 2.5rem;
 }
 
+.mt-120px {
+  margin-top: 120px;
+}
+
 .mt-2 {
   margin-top: 0.5rem;
 }
@@ -658,24 +674,12 @@ video {
   margin-top: 1rem;
 }
 
+.mt-6 {
+  margin-top: 1.5rem;
+}
+
 .mt-8 {
   margin-top: 2rem;
-}
-
-.mb-20 {
-  margin-bottom: 5rem;
-}
-
-.mt-120px {
-  margin-top: 120px;
-}
-
-.mb-\[60px\] {
-  margin-bottom: 60px;
-}
-
-.mr-4 {
-  margin-right: 1rem;
 }
 
 .flex {
@@ -684,6 +688,10 @@ video {
 
 .grid {
   display: grid;
+}
+
+.hidden {
+  display: none;
 }
 
 .size-10 {
@@ -801,6 +809,10 @@ video {
   width: 359px;
 }
 
+.w-\[411px\] {
+  width: 411px;
+}
+
 .w-\[428px\] {
   width: 428px;
 }
@@ -829,6 +841,10 @@ video {
   width: 700px;
 }
 
+.w-\[894px\] {
+  width: 894px;
+}
+
 .w-\[928px\] {
   width: 928px;
 }
@@ -849,12 +865,13 @@ video {
   width: 100vw;
 }
 
-.w-\[894px\] {
-  width: 894px;
-}
-
 .flex-grow {
   flex-grow: 1;
+}
+
+.-scale-x-100 {
+  --tw-scale-x: -1;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .grid-cols-2 {
@@ -873,8 +890,12 @@ video {
   grid-template-columns: repeat(5, minmax(0, 1fr));
 }
 
-.flex-row {
-  flex-direction: row;
+.grid-cols-1 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.grid-rows-1 {
+  grid-template-rows: repeat(1, minmax(0, 1fr));
 }
 
 .flex-col {
@@ -917,6 +938,10 @@ video {
   gap: 5px;
 }
 
+.gap-2 {
+  gap: 0.5rem;
+}
+
 .gap-x-2 {
   -moz-column-gap: 0.5rem;
        column-gap: 0.5rem;
@@ -924,6 +949,10 @@ video {
 
 .gap-y-4 {
   row-gap: 1rem;
+}
+
+.self-center {
+  align-self: center;
 }
 
 .overflow-hidden {
@@ -940,6 +969,10 @@ video {
   border-radius: 12px;
 }
 
+.rounded-\[17px\] {
+  border-radius: 17px;
+}
+
 .rounded-\[20px\] {
   border-radius: 20px;
 }
@@ -950,6 +983,10 @@ video {
 
 .rounded-xl {
   border-radius: 0.75rem;
+}
+
+.rounded-\[10px\] {
+  border-radius: 10px;
 }
 
 .rounded-b-\[20px\] {
@@ -964,10 +1001,6 @@ video {
 
 .border {
   border-width: 1px;
-}
-
-.border-2 {
-  border-width: 2px;
 }
 
 .border-b {
@@ -1012,6 +1045,21 @@ video {
   border-color: rgb(18 12 23 / var(--tw-border-opacity));
 }
 
+.bg-ButtonPurple {
+  --tw-bg-opacity: 1;
+  background-color: rgb(126 87 163 / var(--tw-bg-opacity));
+}
+
+.bg-ButtonRed {
+  --tw-bg-opacity: 1;
+  background-color: rgb(172 93 93 / var(--tw-bg-opacity));
+}
+
+.bg-grey\/60 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(142 142 142 / var(--tw-bg-opacity));
+}
+
 .bg-purpleScale0 {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
@@ -1030,6 +1078,20 @@ video {
 .bg-red-600 {
   --tw-bg-opacity: 1;
   background-color: rgb(220 38 38 / var(--tw-bg-opacity));
+}
+
+.bg-purpleScale60 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(90 62 116 / var(--tw-bg-opacity));
+}
+
+.bg-purpleScale90 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(18 12 23 / var(--tw-bg-opacity));
+}
+
+.p-4 {
+  padding: 1rem;
 }
 
 .p-6 {
@@ -1135,6 +1197,11 @@ video {
   padding-bottom: 40px;
 }
 
+.py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
 .pl-120px {
   padding-left: 120px;
 }
@@ -1167,10 +1234,6 @@ video {
   text-align: center;
 }
 
-.align-middle {
-  vertical-align: middle;
-}
-
 .font-poppins {
   font-family: poppins, cursive;
 }
@@ -1193,6 +1256,26 @@ video {
 .text-Base\/Regular {
   font-size: 16px;
   line-height: 19.4px;
+}
+
+.text-CashoutCard {
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.text-CashoutCardInfo {
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.text-CashoutCardPrice {
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.text-CashoutCardStatus {
+  font-size: 20px;
+  line-height: 24px;
 }
 
 .text-HeaderFitur {
@@ -1234,6 +1317,11 @@ video {
   line-height: 72px;
 }
 
+.text-header2\/Desktop {
+  font-size: 40px;
+  line-height: 60px;
+}
+
 .text-header3\/Desktop {
   font-size: 32px;
   line-height: 48px;
@@ -1261,6 +1349,16 @@ video {
   font-weight: 600;
 }
 
+.text-StatusFailed {
+  --tw-text-opacity: 1;
+  color: rgb(172 93 93 / var(--tw-text-opacity));
+}
+
+.text-StatusSuccess {
+  --tw-text-opacity: 1;
+  color: rgb(86 198 58 / var(--tw-text-opacity));
+}
+
 .text-purpleScale0 {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -1279,6 +1377,11 @@ video {
 .text-textTitleColor {
   --tw-text-opacity: 1;
   color: rgb(112 61 128 / var(--tw-text-opacity));
+}
+
+.text-StatusProcess {
+  --tw-text-opacity: 1;
+  color: rgb(212 196 52 / var(--tw-text-opacity));
 }
 
 .accent-purpleScale50 {
