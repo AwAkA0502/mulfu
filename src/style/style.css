@@ -890,12 +890,8 @@ video {
   grid-template-columns: repeat(5, minmax(0, 1fr));
 }
 
-.grid-cols-1 {
-  grid-template-columns: repeat(1, minmax(0, 1fr));
-}
-
-.grid-rows-1 {
-  grid-template-rows: repeat(1, minmax(0, 1fr));
+.flex-row {
+  flex-direction: row;
 }
 
 .flex-col {
@@ -922,8 +918,16 @@ video {
   justify-content: space-between;
 }
 
+.justify-around {
+  justify-content: space-around;
+}
+
 .gap-12 {
   gap: 3rem;
+}
+
+.gap-2 {
+  gap: 0.5rem;
 }
 
 .gap-4 {
@@ -936,10 +940,6 @@ video {
 
 .gap-\[5px\] {
   gap: 5px;
-}
-
-.gap-2 {
-  gap: 0.5rem;
 }
 
 .gap-x-2 {
@@ -965,6 +965,10 @@ video {
   white-space: nowrap;
 }
 
+.rounded-\[10px\] {
+  border-radius: 10px;
+}
+
 .rounded-\[12px\] {
   border-radius: 12px;
 }
@@ -983,10 +987,6 @@ video {
 
 .rounded-xl {
   border-radius: 0.75rem;
-}
-
-.rounded-\[10px\] {
-  border-radius: 10px;
 }
 
 .rounded-b-\[20px\] {
@@ -1070,6 +1070,11 @@ video {
   background-color: rgb(126 87 163 / var(--tw-bg-opacity));
 }
 
+.bg-purpleScale60 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(90 62 116 / var(--tw-bg-opacity));
+}
+
 .bg-purpleScale80 {
   --tw-bg-opacity: 1;
   background-color: rgb(36 25 46 / var(--tw-bg-opacity));
@@ -1078,16 +1083,6 @@ video {
 .bg-red-600 {
   --tw-bg-opacity: 1;
   background-color: rgb(220 38 38 / var(--tw-bg-opacity));
-}
-
-.bg-purpleScale60 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(90 62 116 / var(--tw-bg-opacity));
-}
-
-.bg-purpleScale90 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(18 12 23 / var(--tw-bg-opacity));
 }
 
 .p-4 {
@@ -1157,6 +1152,11 @@ video {
   padding-right: 164px;
 }
 
+.py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
 .py-10 {
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
@@ -1195,11 +1195,6 @@ video {
 .py-\[40px\] {
   padding-top: 40px;
   padding-bottom: 40px;
-}
-
-.py-1 {
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
 }
 
 .pl-120px {
@@ -1354,6 +1349,11 @@ video {
   color: rgb(172 93 93 / var(--tw-text-opacity));
 }
 
+.text-StatusProcess {
+  --tw-text-opacity: 1;
+  color: rgb(212 196 52 / var(--tw-text-opacity));
+}
+
 .text-StatusSuccess {
   --tw-text-opacity: 1;
   color: rgb(86 198 58 / var(--tw-text-opacity));
@@ -1379,11 +1379,6 @@ video {
   color: rgb(112 61 128 / var(--tw-text-opacity));
 }
 
-.text-StatusProcess {
-  --tw-text-opacity: 1;
-  color: rgb(212 196 52 / var(--tw-text-opacity));
-}
-
 .accent-purpleScale50 {
   accent-color: #7E57A3;
 }
@@ -1405,6 +1400,65 @@ video {
   background-color: rgb(90 62 116 / var(--tw-bg-opacity));
 }
 
+@media (min-width: 360px) {
+  .mobile\:ml-0 {
+    margin-left: 0px;
+  }
+
+  .mobile\:mt-10 {
+    margin-top: 2.5rem;
+  }
+
+  .mobile\:mb-5 {
+    margin-bottom: 1.25rem;
+  }
+
+  .mobile\:mt-\[60px\] {
+    margin-top: 60px;
+  }
+
+  .mobile\:mb-10 {
+    margin-bottom: 2.5rem;
+  }
+
+  .mobile\:flex {
+    display: flex;
+  }
+
+  .mobile\:hidden {
+    display: none;
+  }
+
+  .mobile\:h-\[320px\] {
+    height: 320px;
+  }
+
+  .mobile\:h-\[326px\] {
+    height: 326px;
+  }
+
+  .mobile\:w-\[320px\] {
+    width: 320px;
+  }
+
+  .mobile\:flex-row {
+    flex-direction: row;
+  }
+
+  .mobile\:flex-col {
+    flex-direction: column;
+  }
+
+  .mobile\:px-5 {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
+  .mobile\:text-center {
+    text-align: center;
+  }
+}
+
 @media (min-width: 640px) {
   .sm\:flex-col {
     flex-direction: column;
@@ -1414,5 +1468,49 @@ video {
 @media (min-width: 1280px) {
   .xl\:flex-row {
     flex-direction: row;
+  }
+}
+
+@media (min-width: 1440px) {
+  .desktop\:ml-20 {
+    margin-left: 5rem;
+  }
+
+  .desktop\:mt-0 {
+    margin-top: 0px;
+  }
+
+  .desktop\:block {
+    display: block;
+  }
+
+  .desktop\:flex {
+    display: flex;
+  }
+
+  .desktop\:h-\[598px\] {
+    height: 598px;
+  }
+
+  .desktop\:w-\[565px\] {
+    width: 565px;
+  }
+
+  .desktop\:flex-row {
+    flex-direction: row;
+  }
+
+  .desktop\:flex-col {
+    flex-direction: column;
+  }
+
+  .desktop\:px-120px {
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+
+  .desktop\:py-120px {
+    padding-top: 120px;
+    padding-bottom: 120px;
   }
 }

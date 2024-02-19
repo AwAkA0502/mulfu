@@ -10,12 +10,12 @@
 </head>
 <body>
     <nav class="mt-10">
-        <div class="flex justify-between pl-120px pr-120px">
+        <div class="flex justify-between desktop:px-120px mobile:px-5">
             <div class="flex items-center text-textTitleColor">
                 <img class="mr-3" src="../assets/Logo.svg">
                 <h3 class="text-3xl font-poppins font-bold text-font26">MULFUBOT</h3>
             </div>
-            <div class="flex items-center">
+            <div class="mobile:hidden desktop:flex items-center">
                 <ul class="flex items-center text-purpleScale50 font-header font-semibold text-Large/SemiBold">
                     <li class="pr-8">Home</li>
                     <li class="pr-8">Cara Kerja</li>
@@ -26,13 +26,13 @@
             </div>
         </div>
     </nav>
-    <section id="hero" class="shadow justify-start items-center flex px-120px py-120px xl:flex-row sm:flex-col">
-        <div id="header">
-            <h1 class="text-purpleScale50 text-header1/Desktop font-bold font-poppins mb-4">Cek plagiasi turnitin no repository 24 jam, di mulfu!</h1>
-            <p class="text-purpleScale90 text-Large/Reguler font-poppins mb-4">Menyediakan Layanan Unggul untuk Memastikan Keaslian dan Keorisinilan Konten Anda</p>
+    <section id="hero" class="shadow justify-start items-center flex desktop:px-120px mobile:px-5 mobile:mt-[60px] mobile:mb-10 desktop:py-120px desktop:flex-row mobile:flex-col">
+        <div id="header" class="desktop:block mobile:flex flex-col items-center">
+            <h1 class="text-purpleScale50 text-header1/Desktop font-bold font-poppins mb-4 mobile:text-center">Cek plagiasi turnitin no repository 24 jam, di mulfu!</h1>
+            <p class="text-purpleScale90 text-Large/Reguler font-poppins mb-4 mobile:text-center">Menyediakan Layanan Unggul untuk Memastikan Keaslian dan Keorisinilan Konten Anda</p>
             <button class="px-10 py-4 bg-purpleScale50 text-purpleScale0 text-Base/Bold font-bold rounded-[20px]">Coba Sekarang</button>
         </div>
-        <img src="../assets/File Upload 1.svg" alt="File Update" class="w-[565px] h-[598px] ml-20">
+        <img src="../assets/File Upload 1.svg" alt="File Update" class="desktop:w-[565px] desktop:h-[598px] mobile:w-[320px] mobile:h-[326px] desktop:ml-20 desktop:mt-0 mobile:ml-0 mobile:mt-10">
     </section>
     <section id="HowItWorks" class="px-120px py-60px">
         <center>

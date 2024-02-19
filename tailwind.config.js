@@ -4,6 +4,10 @@ module.exports = {
   content: ['./src/**/*.html'],
   theme: {
     extend: {
+      screens: {
+        'mobile': '360px',
+        'desktop': '1440px',
+      },
       colors: {
         'textTitleColor': '#703D80',
         'purpleScale60': '#5A3E74',
