@@ -610,10 +610,6 @@ video {
   margin-left: 0.5rem;
 }
 
-.ml-20 {
-  margin-left: 5rem;
-}
-
 .ml-3 {
   margin-left: 0.75rem;
 }
@@ -737,24 +733,12 @@ video {
   height: 117px;
 }
 
-.h-\[126px\] {
-  height: 126px;
-}
-
 .h-\[136px\] {
   height: 136px;
 }
 
 .h-\[160px\] {
   height: 160px;
-}
-
-.h-\[186px\] {
-  height: 186px;
-}
-
-.h-\[198px\] {
-  height: 198px;
 }
 
 .h-\[228px\] {
@@ -771,10 +755,6 @@ video {
 
 .h-\[54px\] {
   height: 54px;
-}
-
-.h-\[598px\] {
-  height: 598px;
 }
 
 .h-\[700px\] {
@@ -821,10 +801,6 @@ video {
   width: 545px;
 }
 
-.w-\[565px\] {
-  width: 565px;
-}
-
 .w-\[62px\] {
   width: 62px;
 }
@@ -833,20 +809,12 @@ video {
   width: 668px;
 }
 
-.w-\[674px\] {
-  width: 674px;
-}
-
 .w-\[700px\] {
   width: 700px;
 }
 
 .w-\[894px\] {
   width: 894px;
-}
-
-.w-\[928px\] {
-  width: 928px;
 }
 
 .w-\[989px\] {
@@ -869,6 +837,10 @@ video {
   flex-grow: 1;
 }
 
+.flex-grow-0 {
+  flex-grow: 0;
+}
+
 .-scale-x-100 {
   --tw-scale-x: -1;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -882,16 +854,8 @@ video {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
-.grid-cols-4 {
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-}
-
 .grid-cols-5 {
   grid-template-columns: repeat(5, minmax(0, 1fr));
-}
-
-.flex-row {
-  flex-direction: row;
 }
 
 .flex-col {
@@ -916,10 +880,6 @@ video {
 
 .justify-between {
   justify-content: space-between;
-}
-
-.justify-around {
-  justify-content: space-around;
 }
 
 .gap-12 {
@@ -1401,6 +1361,10 @@ video {
 }
 
 @media (min-width: 360px) {
+  .mobile\:mb-10 {
+    margin-bottom: 2.5rem;
+  }
+
   .mobile\:ml-0 {
     margin-left: 0px;
   }
@@ -1409,28 +1373,12 @@ video {
     margin-top: 2.5rem;
   }
 
-  .mobile\:mb-5 {
-    margin-bottom: 1.25rem;
-  }
-
   .mobile\:mt-\[60px\] {
     margin-top: 60px;
   }
 
-  .mobile\:mb-10 {
-    margin-bottom: 2.5rem;
-  }
-
-  .mobile\:flex {
-    display: flex;
-  }
-
   .mobile\:hidden {
     display: none;
-  }
-
-  .mobile\:h-\[320px\] {
-    height: 320px;
   }
 
   .mobile\:h-\[326px\] {
@@ -1441,12 +1389,20 @@ video {
     width: 320px;
   }
 
-  .mobile\:flex-row {
-    flex-direction: row;
+  .mobile\:grid-rows-3 {
+    grid-template-rows: repeat(3, minmax(0, 1fr));
+  }
+
+  .mobile\:grid-rows-4 {
+    grid-template-rows: repeat(4, minmax(0, 1fr));
   }
 
   .mobile\:flex-col {
     flex-direction: column;
+  }
+
+  .mobile\:items-center {
+    align-items: center;
   }
 
   .mobile\:px-5 {
@@ -1457,21 +1413,14 @@ video {
   .mobile\:text-center {
     text-align: center;
   }
-}
 
-@media (min-width: 640px) {
-  .sm\:flex-col {
-    flex-direction: column;
+  .mobile\:text-header1\/Mobile {
+    font-size: 40px;
+    line-height: 60px;
   }
 }
 
 @media (min-width: 1280px) {
-  .xl\:flex-row {
-    flex-direction: row;
-  }
-}
-
-@media (min-width: 1440px) {
   .desktop\:ml-20 {
     margin-left: 5rem;
   }
@@ -1480,12 +1429,20 @@ video {
     margin-top: 0px;
   }
 
-  .desktop\:block {
-    display: block;
+  .desktop\:mb-4 {
+    margin-bottom: 1rem;
   }
 
   .desktop\:flex {
     display: flex;
+  }
+
+  .desktop\:h-\[126px\] {
+    height: 126px;
+  }
+
+  .desktop\:h-\[198px\] {
+    height: 198px;
   }
 
   .desktop\:h-\[598px\] {
@@ -1496,12 +1453,28 @@ video {
     width: 565px;
   }
 
+  .desktop\:w-\[674px\] {
+    width: 674px;
+  }
+
+  .desktop\:w-\[928px\] {
+    width: 928px;
+  }
+
+  .desktop\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .desktop\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
   .desktop\:flex-row {
     flex-direction: row;
   }
 
-  .desktop\:flex-col {
-    flex-direction: column;
+  .desktop\:items-start {
+    align-items: flex-start;
   }
 
   .desktop\:px-120px {
@@ -1512,5 +1485,19 @@ video {
   .desktop\:py-120px {
     padding-top: 120px;
     padding-bottom: 120px;
+  }
+
+  .desktop\:py-5 {
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+  }
+
+  .desktop\:text-left {
+    text-align: left;
+  }
+
+  .desktop\:text-header1\/Desktop {
+    font-size: 48px;
+    line-height: 72px;
   }
 }

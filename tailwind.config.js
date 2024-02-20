@@ -6,7 +6,7 @@ module.exports = {
     extend: {
       screens: {
         'mobile': '360px',
-        'desktop': '1440px',
+        'desktop': '1280px',
       },
       colors: {
         'textTitleColor': '#703D80',
@@ -26,6 +26,7 @@ module.exports = {
       },
       fontSize: {
         'header1/Desktop': ['48px', '72px'],
+        'header1/Mobile': ['40px', '60px'],
         'header2/Desktop': ['40px', '60px'],
         'header3/Desktop': ['32px', '48px'],
         'header4/Bold': ['24px', '36px'],
