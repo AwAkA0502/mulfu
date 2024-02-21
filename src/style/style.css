@@ -872,10 +872,6 @@ video {
   gap: 5px;
 }
 
-.gap-1 {
-  gap: 0.25rem;
-}
-
 .gap-x-2 {
   -moz-column-gap: 0.5rem;
        column-gap: 0.5rem;
@@ -1237,11 +1233,6 @@ video {
   line-height: 60px;
 }
 
-.text-header3\/Desktop {
-  font-size: 32px;
-  line-height: 48px;
-}
-
 .text-header4\/Bold {
   font-size: 24px;
   line-height: 36px;
@@ -1330,6 +1321,10 @@ video {
     margin-bottom: 2.5rem;
   }
 
+  .mobile\:mb-6 {
+    margin-bottom: 1.5rem;
+  }
+
   .mobile\:ml-0 {
     margin-left: 0px;
   }
@@ -1338,16 +1333,12 @@ video {
     margin-top: 2.5rem;
   }
 
-  .mobile\:mt-\[60px\] {
-    margin-top: 60px;
-  }
-
   .mobile\:mt-6 {
     margin-top: 1.5rem;
   }
 
-  .mobile\:mb-6 {
-    margin-bottom: 1.5rem;
+  .mobile\:mt-\[60px\] {
+    margin-top: 60px;
   }
 
   .mobile\:flex {
@@ -1429,16 +1420,12 @@ video {
     margin-left: 5rem;
   }
 
-  .desktop\:mt-0 {
-    margin-top: 0px;
-  }
-
   .desktop\:mr-8 {
     margin-right: 2rem;
   }
 
-  .desktop\:mb-6 {
-    margin-bottom: 1.5rem;
+  .desktop\:mt-0 {
+    margin-top: 0px;
   }
 
   .desktop\:flex {
@@ -1463,6 +1450,10 @@ video {
 
   .desktop\:h-\[84px\] {
     height: 84px;
+  }
+
+  .desktop\:w-\[255px\] {
+    width: 255px;
   }
 
   .desktop\:w-\[359px\] {
@@ -1493,10 +1484,6 @@ video {
     width: 989px;
   }
 
-  .desktop\:w-\[255px\] {
-    width: 255px;
-  }
-
   .desktop\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -1517,10 +1504,6 @@ video {
     flex-direction: row;
   }
 
-  .desktop\:flex-col {
-    flex-direction: column;
-  }
-
   .desktop\:items-start {
     align-items: flex-start;
   }
@@ -1533,9 +1516,19 @@ video {
     justify-content: space-between;
   }
 
+  .desktop\:px-10 {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
   .desktop\:px-120px {
     padding-left: 120px;
     padding-right: 120px;
+  }
+
+  .desktop\:px-20 {
+    padding-left: 5rem;
+    padding-right: 5rem;
   }
 
   .desktop\:px-\[164px\] {
@@ -1556,16 +1549,6 @@ video {
   .desktop\:py-5 {
     padding-top: 1.25rem;
     padding-bottom: 1.25rem;
-  }
-
-  .desktop\:px-20 {
-    padding-left: 5rem;
-    padding-right: 5rem;
-  }
-
-  .desktop\:px-10 {
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
   }
 
   .desktop\:text-left {
