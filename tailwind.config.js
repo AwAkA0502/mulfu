@@ -29,6 +29,7 @@ module.exports = {
         'header1/Mobile': ['40px', '60px'],
         'header2/Desktop': ['40px', '60px'],
         'header3/Desktop': ['32px', '48px'],
+        'header3/Mobile': ['28px', '42px'],
         'header4/Bold': ['24px', '36px'],
         'font26': '26px',
         'Large/Reguler': ['20px', '24.2px'],
