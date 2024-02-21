@@ -578,6 +578,11 @@ video {
   margin-bottom: 2rem;
 }
 
+.my-\[60px\] {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
 .mb-2 {
   margin-bottom: 0.5rem;
 }
@@ -907,10 +912,6 @@ video {
        column-gap: 0.5rem;
 }
 
-.gap-y-4 {
-  row-gap: 1rem;
-}
-
 .self-center {
   align-self: center;
 }
@@ -1189,6 +1190,10 @@ video {
   text-align: center;
 }
 
+.align-middle {
+  vertical-align: middle;
+}
+
 .font-poppins {
   font-family: poppins, cursive;
 }
@@ -1361,6 +1366,11 @@ video {
 }
 
 @media (min-width: 360px) {
+  .mobile\:my-\[51px\] {
+    margin-top: 51px;
+    margin-bottom: 51px;
+  }
+
   .mobile\:mb-10 {
     margin-bottom: 2.5rem;
   }
@@ -1389,6 +1399,10 @@ video {
     width: 320px;
   }
 
+  .mobile\:grid-cols-1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+
   .mobile\:grid-rows-3 {
     grid-template-rows: repeat(3, minmax(0, 1fr));
   }
@@ -1399,6 +1413,10 @@ video {
 
   .mobile\:flex-col {
     flex-direction: column;
+  }
+
+  .mobile\:items-start {
+    align-items: flex-start;
   }
 
   .mobile\:items-center {
@@ -1418,19 +1436,25 @@ video {
     font-size: 40px;
     line-height: 60px;
   }
+
+  .mobile\:text-Large\/Reguler {
+    font-size: 20px;
+    line-height: 24.2px;
+  }
 }
 
 @media (min-width: 1280px) {
+  .desktop\:my-11 {
+    margin-top: 2.75rem;
+    margin-bottom: 2.75rem;
+  }
+
   .desktop\:ml-20 {
     margin-left: 5rem;
   }
 
   .desktop\:mt-0 {
     margin-top: 0px;
-  }
-
-  .desktop\:mb-4 {
-    margin-bottom: 1rem;
   }
 
   .desktop\:flex {
@@ -1449,6 +1473,10 @@ video {
     height: 598px;
   }
 
+  .desktop\:h-\[136px\] {
+    height: 136px;
+  }
+
   .desktop\:w-\[565px\] {
     width: 565px;
   }
@@ -1461,6 +1489,14 @@ video {
     width: 928px;
   }
 
+  .desktop\:w-\[668px\] {
+    width: 668px;
+  }
+
+  .desktop\:w-\[989px\] {
+    width: 989px;
+  }
+
   .desktop\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
@@ -1469,12 +1505,24 @@ video {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
+  .desktop\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .desktop\:grid-rows-1 {
+    grid-template-rows: repeat(1, minmax(0, 1fr));
+  }
+
   .desktop\:flex-row {
     flex-direction: row;
   }
 
   .desktop\:items-start {
     align-items: flex-start;
+  }
+
+  .desktop\:items-center {
+    align-items: center;
   }
 
   .desktop\:px-120px {
@@ -1499,5 +1547,10 @@ video {
   .desktop\:text-header1\/Desktop {
     font-size: 48px;
     line-height: 72px;
+  }
+
+  .desktop\:text-Small\/Small {
+    font-size: 14px;
+    line-height: 16.9px;
   }
 }
