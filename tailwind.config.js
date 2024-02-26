@@ -46,6 +46,7 @@ module.exports = {
         'CashoutCardPrice' : ["24px", "29px"],
         'CashoutCardInfo' : ["14px", "17px"],
         'CashoutCardButton' : ["12px", "15px"],
+        'CekPesananMobileHeader' : ["24px", "29px"],
       },
       spacing: {
         '120px': '120px',
