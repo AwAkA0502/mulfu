@@ -7,10 +7,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/scrolldownAnimation.css">
+    <link rel="stylesheet" href="style/menuAnimation.css">
 </head>
-<body class="flex flex-col items-center">
+<body class="flex flex-col items-center overflow-x-hidden">
     <nav class="mt-10 desktop:w-DesktopWidth mobile:w-MobileWidth">
-        <div class="flex justify-between">
+        <div class="flex justify-between items-center">
             <div class="flex items-center text-textTitleColor">
                 <img class="mr-3" src="../assets/Logo.svg">
                 <h3 class="text-3xl font-poppins font-bold text-font26">MULFUBOT</h3>
@@ -24,8 +25,16 @@
                     <li>Pertanyaan</li>
                 </ul>
             </div>
+            <div class="size-7 flex flex-col justify-around" onclick="openBar()">
+                <div class="h-[2px] bg-purpleScale50 rounded-[1px]"></div>
+                <div class="h-[2px] bg-purpleScale50 rounded-[1px]"></div>
+                <div class="h-[2px] bg-purpleScale50 rounded-[1px]"></div>
+            </div>
         </div>
     </nav>
+    <div id="menuBar" class="w-screen h-screen mr-[100px] bg-purpleScale80 absolute opacity-0">
+        <div onclick="closeBar()" class="size-8 bg-white"></div>
+    </div>
     <section id="hero" class="shadow justify-start items-center flex desktop:w-DesktopWidth mobile:w-MobileWidth mobile:mt-[60px] mobile:mb-10 desktop:py-120px desktop:flex-row mobile:flex-col">
         <div id="header" class="flex flex-col desktop:items-start mobile:items-center">
             <h1 class="text-purpleScale50 desktop:text-header1/Desktop mobile:text-header1/Mobile font-bold font-poppins mb-4 mobile:text-center desktop:text-left">Cek plagiasi turnitin no repository 24 jam, di mulfu!</h1>

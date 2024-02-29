@@ -1,6 +1,7 @@
 var qna1 = false;
 var qna2 = false;
 var qna3 = false;
+let menuBarNav = false;
 function extendContent(idName) {
     let element = document.getElementById(idName);
     if (idName == "QnA1"){
@@ -36,4 +37,17 @@ function extendContent(idName) {
             element.classList.remove("closed");
         }
     }
+}
+
+let elementBar = document.getElementById("menuBar");
+function openBar(){
+    elementBar.classList.add("menuOpened");
+    elementBar.classList.remove("menuClosed");
+    console.log("Bar open");
+}
+
+function closeBar() {
+    elementBar.classList.remove("menuOpened");
+    elementBar.classList.add("menuClosed");
+    console.log("Bar close");
 }
