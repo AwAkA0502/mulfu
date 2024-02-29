@@ -51,6 +51,8 @@ module.exports = {
       spacing: {
         '120px': '120px',
         '60px': '60px',
+        'DesktopWidth': '1200px',
+        'MobileWidth': '320px',
       },
       fontFamily: {
         'poppins': ['poppins', 'cursive'],

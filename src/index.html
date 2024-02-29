@@ -8,9 +8,9 @@
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/scrolldownAnimation.css">
 </head>
-<body>
-    <nav class="mt-10">
-        <div class="flex justify-between desktop:px-120px mobile:px-5">
+<body class="flex flex-col items-center">
+    <nav class="mt-10 desktop:w-DesktopWidth mobile:w-MobileWidth">
+        <div class="flex justify-between">
             <div class="flex items-center text-textTitleColor">
                 <img class="mr-3" src="../assets/Logo.svg">
                 <h3 class="text-3xl font-poppins font-bold text-font26">MULFUBOT</h3>
@@ -26,22 +26,26 @@
             </div>
         </div>
     </nav>
-    <section id="hero" class="shadow justify-start items-center flex desktop:px-120px mobile:px-5 mobile:mt-[60px] mobile:mb-10 desktop:py-120px desktop:flex-row mobile:flex-col">
+    <section id="hero" class="shadow justify-start items-center flex desktop:w-DesktopWidth mobile:w-MobileWidth mobile:mt-[60px] mobile:mb-10 desktop:py-120px desktop:flex-row mobile:flex-col">
         <div id="header" class="flex flex-col desktop:items-start mobile:items-center">
             <h1 class="text-purpleScale50 desktop:text-header1/Desktop mobile:text-header1/Mobile font-bold font-poppins mb-4 mobile:text-center desktop:text-left">Cek plagiasi turnitin no repository 24 jam, di mulfu!</h1>
             <p class="text-purpleScale90 text-Large/Reguler font-poppins mb-4 mobile:text-center desktop:text-left">Menyediakan Layanan Unggul untuk Memastikan Keaslian dan Keorisinilan Konten Anda</p>
             <button class="px-10 py-4 bg-purpleScale50 text-purpleScale0 text-Base/Bold font-bold rounded-[20px] flex-grow-0">Coba Sekarang</button>
         </div>
         <img src="../assets/File Upload 1.svg" alt="File Update" class="desktop:w-[565px] desktop:h-[598px] mobile:w-[320px] mobile:h-[326px] desktop:ml-20 desktop:mt-0 mobile:ml-0 mobile:mt-10">
+        <img src="../assets/Ellipse 4.svg" class="absolute -z-10 mt-[490px] ml-[330px] w-[46px] h-[40px] desktop:hidden mobile:block">
+        <img src="../assets/Ellipse 4.svg" class="absolute -z-10 mt-[540px] ml-[330px] w-[46px] h-[40px] desktop:hidden mobile:block">
+        <img src="../assets/Ellipse 4.svg" class="absolute -z-10 mt-[590px] ml-[330px] w-[46px] h-[40px] desktop:hidden mobile:block">
+        <img src="../assets/Ellipse 4.svg" class="absolute -z-10 mt-[640px] ml-[250px] w-[160px] h-[162px] desktop:hidden mobile:block">
     </section>
-    <section id="HowItWorks" class="desktop:px-120px mobile:px-5 py-60px">
+    <section id="HowItWorks" class="desktop:w-DesktopWidth mobile:w-MobileWidth py-60px">
         <center>
             <div id="header" class="text-center desktop:w-[674px] desktop:h-[126px]">
                 <h1 class="mb-4 text-purpleScale50 desktop:text-header1/Desktop mobile:text-header1/Mobile font-bold font-poppins">Bagaimana mulfu bekerja?</h1>
                 <p class="text-Base/Regular font-poppins">Dengan mengikuti langkah-langkah ini, Anda akan dapat mengunggah file dengan mudah ke Turnitin untuk diperiksa originalitasnya.</p>
             </div>
         </center>
-        <ul class="grid desktop:grid-cols-4 mobile:grid-rows-4 gap-4 my-8">
+        <ul class="grid desktop:grid-cols-4 desktop:grid-rows-1 mobile:grid-rows-4 mobile:grid-cols-1 gap-4 my-8">
             <li class="bg-purpleScale50 rounded-[20px] p-[20px] flex flex-col items-center">
                 <img src="../assets/file-upload.svg" alt="Upload" class="mb-4 size-10">
                 <p class="text-header4/Bold font-bold text-purpleScale0">Upload</p>
@@ -61,7 +65,7 @@
         </ul>
         <!-- gambar penggunaan -->
     </section>
-    <section id="features" class="desktop:px-120px mobile:px-5 py-60px">
+    <section id="features" class="desktop:w-DesktopWidth mobile:w-MobileWidth py-60px">
         <center>
             <div id="header" class="text-center desktop:w-[928px] desktop:h-[198px]">
                 <h1 class="mb-4 text-purpleScale50 desktop:text-header1/Desktop mobile:text-header1/Mobile font-bold font-poppins">Fitur luar biasa untuk membuat pekerjaan Anda lebih mudah</h1>
@@ -105,7 +109,7 @@
             </div>
         </div>
     </section>
-    <section id="WhatClientSay" class="desktop:px-120px mobile:px-5 py-60px">
+    <section id="WhatClientSay" class="desktop:w-DesktopWidth mobile:w-MobileWidth py-60px">
         <center>
             <div id="header" class="text-center desktop:w-[668px] desktop:h-[136px]">
                 <h1 class="mb-4 text-purpleScale50 desktop:text-header1/Desktop mobile:text-header1/Mobile font-bold font-poppins">Apa Kata Klien</h1>
@@ -203,7 +207,7 @@
             </div>
         </div>
     </section>
-    <section id="parafrase" class="desktop:px-120px mobile:px-5 py-60px">
+    <section id="parafrase" class="desktop:w-DesktopWidth mobile:w-MobileWidth py-60px">
         <center>
             <div id="header" class="text-center desktop:w-[989px] desktop:h-[136px]">
                 <h1 class="mb-4 text-purpleScale50 desktop:text-header1/Desktop mobile:text-header1/Mobile font-bold font-poppins">Maksimalkan Kreativitas Teks Anda!</h1>
@@ -233,7 +237,7 @@
             <button class="text-Base/Bold font-poppins text-purpleScale0 bg-purpleScale50 rounded-[20px] py-4 px-10 font-bold">Coba Sekarang</button>
         </div>
     </section>
-    <section id="question" class="py-60px desktop:px-[164px] mobile:px-5">
+    <section id="question" class="py-60px desktop:w-DesktopWidth mobile:w-MobileWidth">
         <center>
             <div id="header" class="text-center desktop:w-[989px] desktop:h-[136px]">
                 <h1 class="mb-4 text-purpleScale50 desktop:text-header1/Desktop mobile:text-header1/Mobile font-bold font-poppins">Pertanyaan yang Sering Diajukan</h1>
@@ -278,7 +282,7 @@
             <p class="text-center font-poppins text-Large/Reguler text-purpleScale90">masih belum menemukan jawaban yang kamu cari? Hubungi kami <span class="desktop:text-Small/Small mobile:text-Large/Reguler font-poppins text-purpleScale50">support server</span></p>
         </div>
     </section>
-    <section id="blog" class="py-60px desktop:px-[164px] mobile:px-5">
+    <section id="blog" class="py-60px desktop:w-DesktopWidth mobile:w-MobileWidth">
         <center>
             <div id="header" class="text-center desktop:w-[989px] desktop:h-[136px]">
                 <h1 class="mb-4 text-purpleScale50 desktop:text-header1/Desktop mobile:text-header1/Mobile font-bold font-poppins">Berita & Blog Terbaru</h1>
@@ -324,7 +328,7 @@
             </div>
         </div>
     </section>
-    <section id="faq" class="py-60px flex justify-center w-screen mobile:px-5">
+    <section id="faq" class="py-60px flex justify-center w-screen desktop:w-DesktopWidth mobile:w-MobileWidth">
         <div class="py-4 px-5 grid desktop:grid-cols-2 desktop:grid-rows-1 gap-8 w-auto border border-solid border-[#696565] rounded-[20px]">
             <div class="desktop:py-20 desktop:w-[428px] mobile:flex flex-col mobile:items-center desktop:items-start">
                 <h4 class="text-purpleScale50 font-poppins desktop:text-header3/Desktop mobile:text-header3/Mobile mobile:text-center desktop:text-left font-bold">Pakai Mulfu Sekarang</h4>
