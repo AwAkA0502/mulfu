@@ -9,14 +9,14 @@
         <link rel="stylesheet" href="../style/style.css">
     </head>
 </head>
-<body>
-    <nav class="mt-10">
-        <div class="flex justify-between desktop:px-120px mobile:px-5">
+<body class="flex flex-col items-center">
+    <nav class="mt-10 desktop:w-DesktopWidth mobile:w-MobileWidth">
+        <div class="flex justify-between items-center">
             <div class="flex items-center text-textTitleColor">
                 <img class="mr-3" src="../../assets/Logo.svg">
                 <h3 class="text-3xl font-poppins font-bold text-font26">MULFUBOT</h3>
             </div>
-            <div class="desktop:flex items-center mobile:hidden">
+            <div class="mobile:hidden desktop:flex items-center">
                 <ul class="flex items-center text-purpleScale50 font-header font-semibold text-Large/SemiBold">
                     <li class="pr-8">Home</li>
                     <li class="pr-8">Cara Kerja</li>
@@ -25,9 +25,14 @@
                     <li>Pertanyaan</li>
                 </ul>
             </div>
+            <div class="size-7 flex flex-col justify-around" onclick="openBar()">
+                <div class="h-[2px] bg-purpleScale50 rounded-[1px]"></div>
+                <div class="h-[2px] bg-purpleScale50 rounded-[1px]"></div>
+                <div class="h-[2px] bg-purpleScale50 rounded-[1px]"></div>
+            </div>
         </div>
     </nav>
-    <section id="content" class="desktop:px-120px mobile:px-5 desktop:py-120px mobile:pt-60px mobile:pb-10">
+    <section id="content" class="desktop:w-DesktopWidth mobile:w-MobileWidth desktop:py-120px mobile:pt-60px mobile:pb-10">
         <div class="flex justify-center desktop:flex-row mobile:flex-col">
             <img src="../../assets/Frame 36364.png" class="rounded-[20px] mobile:w-[320px] mobile:h-[75px]">
             <div class="desktop:mx-[54px] mobile:my-4 rounded-[12px] p-[20px] desktop:w-[545px] border border-solid border-borderColor shadow-[0_0_4px_4px_rgba(90,62,116,0.25)]">

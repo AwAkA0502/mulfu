@@ -1435,6 +1435,10 @@ video {
     margin-top: 60px;
   }
 
+  .mobile\:mt-0 {
+    margin-top: 0px;
+  }
+
   .mobile\:block {
     display: block;
   }
@@ -1592,6 +1596,10 @@ video {
 
   .desktop\:mt-120px {
     margin-top: 120px;
+  }
+
+  .desktop\:mt-8 {
+    margin-top: 2rem;
   }
 
   .desktop\:block {

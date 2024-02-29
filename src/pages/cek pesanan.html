@@ -7,14 +7,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../style/style.css">
 </head>
-<body>
-    <nav class="mt-10">
-        <div class="flex justify-between desktop:px-120px mobile:px-5">
+<body class="flex flex-col items-center">
+    <nav class="mt-10 desktop:w-DesktopWidth mobile:w-MobileWidth">
+        <div class="flex justify-between items-center">
             <div class="flex items-center text-textTitleColor">
                 <img class="mr-3" src="../../assets/Logo.svg">
                 <h3 class="text-3xl font-poppins font-bold text-font26">MULFUBOT</h3>
             </div>
-            <div class="desktop:flex items-center mobile:hidden">
+            <div class="mobile:hidden desktop:flex items-center">
                 <ul class="flex items-center text-purpleScale50 font-header font-semibold text-Large/SemiBold">
                     <li class="pr-8">Home</li>
                     <li class="pr-8">Cara Kerja</li>
@@ -23,9 +23,14 @@
                     <li>Pertanyaan</li>
                 </ul>
             </div>
+            <div class="size-7 flex flex-col justify-around" onclick="openBar()">
+                <div class="h-[2px] bg-purpleScale50 rounded-[1px]"></div>
+                <div class="h-[2px] bg-purpleScale50 rounded-[1px]"></div>
+                <div class="h-[2px] bg-purpleScale50 rounded-[1px]"></div>
+            </div>
         </div>
     </nav>
-    <section class="desktop:mt-120px mobile:mt-[60px] mb-20 desktop:mx-120px mobile:mx-5 flex flex-col items-center">
+    <section class="desktop:mt-120px mobile:mt-[60px] mb-20 desktop:w-DesktopWidth mobile:w-MobileWidth flex flex-col items-center">
         <img src="../../assets/Image cek pesanan.png" class="rounded-[20px] desktop:mb-[60px] mobile:mb-6">
         <div class="flex flex-col items-center mobile:w-full">
             <h1 class="mb-4 text-purpleScale50 desktop:text-header1/Desktop mobile:text-CekPesananMobileHeader font-bold font-poppins">Cari Orderan kamu disini</h1>

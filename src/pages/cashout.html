@@ -7,14 +7,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../style/style.css">
 </head>
-<body class="overflow-x-hidden">
-    <nav class="mt-10">
-        <div class="flex justify-between desktop:px-120px mobile:px-5">
+<body class="flex flex-col items-center overflow-x-hidden">
+    <nav class="mt-10 desktop:w-DesktopWidth mobile:w-MobileWidth">
+        <div class="flex justify-between items-center">
             <div class="flex items-center text-textTitleColor">
                 <img class="mr-3" src="../../assets/Logo.svg">
                 <h3 class="text-3xl font-poppins font-bold text-font26">MULFUBOT</h3>
             </div>
-            <div class="desktop:flex items-center mobile:hidden">
+            <div class="mobile:hidden desktop:flex items-center">
                 <ul class="flex items-center text-purpleScale50 font-header font-semibold text-Large/SemiBold">
                     <li class="pr-8">Home</li>
                     <li class="pr-8">Cara Kerja</li>
@@ -23,12 +23,17 @@
                     <li>Pertanyaan</li>
                 </ul>
             </div>
+            <div class="size-7 flex flex-col justify-around" onclick="openBar()">
+                <div class="h-[2px] bg-purpleScale50 rounded-[1px]"></div>
+                <div class="h-[2px] bg-purpleScale50 rounded-[1px]"></div>
+                <div class="h-[2px] bg-purpleScale50 rounded-[1px]"></div>
+            </div>
         </div>
     </nav>
-    <section class="desktop:mx-120px mobile:mx-5 desktop:mb-[60px] desktop:mt-120px mobile:mt-[60px] mobile:mb-10">
+    <section class="desktop:w-DesktopWidth mobile:w-MobileWidth desktop:mb-[60px] desktop:mt-120px mobile:mt-0 mobile:mb-10">
         <div class="desktop:px-20 flex flex-col">
             <h2 class="font-poppins text-header2/Desktop font-bold text-purpleScale50 self-center text-center">Daftar Transaksi</h2>
-            <div class="mt-8 pt-6 flex justify-between mobile:flex-col desktop:flex-row">
+            <div class="desktop:mt-8 mobile:mt-6 pt-6 flex justify-between mobile:flex-col desktop:flex-row">
                 <div class="flex w-[411px] justify-between mobile:flex-col desktop:flex-row">
                     <p class="text-Large/Reguler text-purpleScale90 font-poppins">Saldo: <span class="text-Large/Reguler text-purpleScale50 font-semibold">Rp1.000</span></p>
                     <p class="text-Large/Reguler text-purpleScale90 font-poppins">Total Mengundang : <span class="text-Large/Reguler text-purpleScale50 font-semibold">4</span></p>
