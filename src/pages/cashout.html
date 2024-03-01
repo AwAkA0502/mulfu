@@ -12,7 +12,7 @@
     <nav class="mt-10 desktop:w-DesktopWidth mobile:w-MobileWidth">
         <div class="flex justify-between items-center">
             <div class="flex items-center text-textTitleColor">
-                <img class="mr-3" src="../../assets/Logo.svg">
+                <img class="mr-3" src="../assets/Logo.svg">
                 <h3 class="text-3xl font-poppins font-bold text-font26">MULFUBOT</h3>
             </div>
             <div class="mobile:hidden desktop:flex items-center">
@@ -24,15 +24,35 @@
                     <li>Pertanyaan</li>
                 </ul>
             </div>
-            <div class="size-7 flex flex-col justify-around" onclick="openBar()">
+            <div class="size-7 mobile:flex flex-col justify-around desktop:hidden" onclick="openBar()">
                 <div class="h-[2px] bg-purpleScale50 rounded-[1px]"></div>
                 <div class="h-[2px] bg-purpleScale50 rounded-[1px]"></div>
                 <div class="h-[2px] bg-purpleScale50 rounded-[1px]"></div>
             </div>
         </div>
     </nav>
-    <div id="menuBar" class="w-screen h-screen mr-[100px] bg-purpleScale80 absolute opacity-0">
-        <div onclick="closeBar()" class="size-8 bg-white"></div>
+    <div id="menuBar" class="w-screen h-screen mr-[100px] bg-purpleScale10 absolute opacity-0 px-2 flex flex-col justify-between">
+        <div>
+            <div class="py-2 flex justify-between items-center">
+                <div class="flex items-center">
+                    <img src="../assets/Logo.svg" class="size-[54px] pr-3">
+                    <h4 class="text-header4/Bold font-poppins font-bold text-[#703D80]">MULFUBOT</h4>
+                </div>
+                <img src="../assets/tabler-icon-x.png" class="size-[28px]" onclick="closeBar()">
+            </div>
+            <div class="mt-10">
+                <div class="grid grid-rows-5 gap-y-7">
+                    <p class="text-Base/SemiBold font-poppins text-purpleScale50 font-bold">Home</p>
+                    <p class="text-Base/SemiBold font-poppins text-purpleScale50 font-bold">How It Works</p>
+                    <p class="text-Base/SemiBold font-poppins text-purpleScale50 font-bold">Parafrase</p>
+                    <p class="text-Base/SemiBold font-poppins text-purpleScale50 font-bold">Cashout</p>
+                    <p class="text-Base/SemiBold font-poppins text-purpleScale50 font-bold">Support</p>
+                </div>
+            </div>
+        </div>
+        <div class="p-2">
+            <button class="bg-[#7E57A3] rounded-[20px] w-full py-3 text-white font-bold font-poppins">Text</button>
+        </div>
     </div>
     <section class="desktop:w-DesktopWidth mobile:w-MobileWidth desktop:mb-[60px] desktop:mt-120px mobile:mt-0 mobile:mb-10">
         <div class="desktop:px-20 flex flex-col">

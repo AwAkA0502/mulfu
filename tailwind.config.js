@@ -10,8 +10,9 @@ module.exports = {
       },
       colors: {
         'textTitleColor': '#703D80',
-        'purpleScale60': '#5A3E74',
+        'purpleScale10': '#E6DFEC',
         'purpleScale50': '#7E57A3',
+        'purpleScale60': '#5A3E74',
         'purpleScale80': '#24192E',
         'purpleScale90': '#120C17',
         'purpleScale0': '#FFFFFF',
@@ -36,6 +37,7 @@ module.exports = {
         'Large/SemiBold': ['20px', '24.2px'],
         'Large/Bold': ['20px', '30px'],
         'Base/Bold': ['16px', '24px'],
+        'Base/SemiBold': ['16px', '19.4px'],
         'Base/Medium': ['16px', '24px'],
         'Base/Regular': ['16px', '19.4px'],
         'Small/Regular': ['12px', '14.5px'],
