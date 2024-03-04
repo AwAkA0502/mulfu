@@ -9,13 +9,13 @@
     <link rel="stylesheet" href="../style/menuAnimation.css">
 </head>
 <body class="flex flex-col items-center overflow-x-hidden">
-    <nav class="mt-10 desktop:w-DesktopWidth mobile:w-MobileWidth">
+    <nav class="mt-10 navbarMobile:max-w-[1200px] mobile:w-full mobile:px-5">
         <div class="flex justify-between items-center">
             <div class="flex items-center text-textTitleColor">
                 <img class="mr-3" src="../../assets/Logo.svg">
                 <h3 class="text-3xl font-poppins font-bold text-font26">MULFUBOT</h3>
             </div>
-            <div class="mobile:hidden desktop:flex items-center">
+            <div class="mobile:hidden navbarMobile:flex items-center">
                 <ul class="flex items-center text-purpleScale50 font-header font-semibold text-Large/SemiBold">
                     <li class="pr-8">Home</li>
                     <li class="pr-8">Cara Kerja</li>
@@ -24,7 +24,7 @@
                     <li>Pertanyaan</li>
                 </ul>
             </div>
-            <div class="size-7 mobile:flex flex-col justify-around desktop:hidden" onclick="openBar()">
+            <div class="size-7 mobile:flex flex-col justify-around navbarMobile:hidden" onclick="openBar()">
                 <div class="h-[2px] bg-purpleScale50 rounded-[1px]"></div>
                 <div class="h-[2px] bg-purpleScale50 rounded-[1px]"></div>
                 <div class="h-[2px] bg-purpleScale50 rounded-[1px]"></div>
@@ -54,7 +54,7 @@
             <button class="bg-[#7E57A3] rounded-[20px] w-full py-3 text-white font-bold font-poppins">Text</button>
         </div>
     </div>
-    <section class="desktop:w-DesktopWidth mobile:w-MobileWidth desktop:mb-[60px] desktop:mt-120px mobile:mt-0 mobile:mb-10">
+    <section class="desktop:w-DesktopWidth desktop:px-0 mobile:w-full mobile:px-5 desktop:mb-[60px] desktop:mt-120px mobile:mt-0 mobile:mb-10">
         <div class="desktop:px-20 flex flex-col">
             <h2 class="font-poppins text-header2/Desktop font-bold text-purpleScale50 self-center text-center">Daftar Transaksi</h2>
             <div class="desktop:mt-8 mobile:mt-6 pt-6 flex justify-between mobile:flex-col desktop:flex-row">
@@ -226,8 +226,8 @@
             </div>
         </div>
     </section>
-    <footer class="desktop:px-20 mobile:px-5 py-10 bg-purpleScale80">
-        <div class="flex desktop:flex-row mobile:flex-col">
+    <footer class="desktop:px-20 mobile:px-5 py-10 bg-purpleScale80 w-full">
+        <div class="flex desktop:flex-row mobile:flex-col justify-between">
             <div>
                 <img src="../../assets/Logo.svg" class="size-[84px]">
                 <p class="mt-4 font-poppins text-Base/Medium text-purpleScale0">Subsidiaries of Mulfubot, company registered in Indonesia.</p>

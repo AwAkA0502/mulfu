@@ -1348,7 +1348,7 @@ video {
   background-color: rgb(230 223 236 / var(--tw-bg-opacity));
 }
 
-@media (min-width: 360px) {
+@media (min-width: 10px) {
   .mobile\:my-4 {
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -1530,6 +1530,41 @@ video {
   }
 }
 
+@media (min-width: 900px) {
+  .navbarMobile\:flex {
+    display: flex;
+  }
+
+  .navbarMobile\:hidden {
+    display: none;
+  }
+
+  .navbarMobile\:w-DesktopWidth {
+    width: 1200px;
+  }
+
+  .navbarMobile\:w-full {
+    width: 100%;
+  }
+
+  .navbarMobile\:max-w-\[1440\] {
+    max-width: 1440;
+  }
+
+  .navbarMobile\:max-w-\[1440px\] {
+    max-width: 1440px;
+  }
+
+  .navbarMobile\:max-w-\[1200px\] {
+    max-width: 1200px;
+  }
+
+  .navbarMobile\:px-5 {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+}
+
 @media (min-width: 1280px) {
   .desktop\:mx-\[54px\] {
     margin-left: 54px;
@@ -1581,24 +1616,20 @@ video {
     margin-top: 2rem;
   }
 
-  .desktop\:mt-\[350px\] {
-    margin-top: 350px;
-  }
-
-  .desktop\:mt-\[640px\] {
-    margin-top: 640px;
+  .desktop\:mt-\[150px\] {
+    margin-top: 150px;
   }
 
   .desktop\:mt-\[250px\] {
     margin-top: 250px;
   }
 
-  .desktop\:mt-\[300px\] {
-    margin-top: 300px;
+  .desktop\:mt-\[350px\] {
+    margin-top: 350px;
   }
 
-  .desktop\:mt-\[150px\] {
-    margin-top: 150px;
+  .desktop\:mt-\[640px\] {
+    margin-top: 640px;
   }
 
   .desktop\:block {
@@ -1723,6 +1754,11 @@ video {
 
   .desktop\:justify-between {
     justify-content: space-between;
+  }
+
+  .desktop\:px-0 {
+    padding-left: 0px;
+    padding-right: 0px;
   }
 
   .desktop\:px-10 {
