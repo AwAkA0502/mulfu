@@ -11,13 +11,13 @@
     </head>
 </head>
 <body class="flex flex-col items-center">
-    <nav class="mt-10 desktop:w-DesktopWidth mobile:w-MobileWidth">
+    <nav class="mt-10 navbarMobile:max-w-[1200px] mobile:w-full mobile:px-5">
         <div class="flex justify-between items-center">
             <div class="flex items-center text-textTitleColor">
                 <img class="mr-3" src="../../assets/Logo.svg">
                 <h3 class="text-3xl font-poppins font-bold text-font26">MULFUBOT</h3>
             </div>
-            <div class="mobile:hidden desktop:flex items-center">
+            <div class="mobile:hidden navbarMobile:flex items-center">
                 <ul class="flex items-center text-purpleScale50 font-header font-semibold text-Large/SemiBold">
                     <li class="pr-8">Home</li>
                     <li class="pr-8">Cara Kerja</li>
@@ -26,7 +26,7 @@
                     <li>Pertanyaan</li>
                 </ul>
             </div>
-            <div class="size-7 mobile:flex flex-col justify-around desktop:hidden" onclick="openBar()">
+            <div class="size-7 mobile:flex flex-col justify-around navbarMobile:hidden" onclick="openBar()">
                 <div class="h-[2px] bg-purpleScale50 rounded-[1px]"></div>
                 <div class="h-[2px] bg-purpleScale50 rounded-[1px]"></div>
                 <div class="h-[2px] bg-purpleScale50 rounded-[1px]"></div>
@@ -56,28 +56,28 @@
             <button class="bg-[#7E57A3] rounded-[20px] w-full py-3 text-white font-bold font-poppins">Text</button>
         </div>
     </div>
-    <section id="content" class="desktop:w-DesktopWidth desktop:py-120px mobile:w-MobileWidth mobile:py-10">
+    <section id="content" class="w-full max-w-[1320px] navbarMobile:px-[120px] mobile:px-[20px] desktop:py-120px mobile:py-10">
         <div class="flex justify-center">
             <img src="../../assets/Frame 36364.png" class="rounded-[20px] mobile:hidden desktop:block">
-            <div class="desktop:mx-[54px] rounded-[12px] p-[20px] desktop:w-[545px] border border-solid border-borderColor shadow-[0_0_4px_4px_rgba(90,62,116,0.25)]">
+            <div class="desktop:mx-[54px] rounded-[12px] p-[20px] desktop:w-[545px] mobile:w-full border border-solid border-borderColor shadow-[0_0_4px_4px_rgba(90,62,116,0.25)]">
                 <div>
                     <p class="text-Small/Small font-poppins text-purpleScale90">File Original</p>
-                    <div class="flex mt-3 desktop:flex-row mobile:flex-col">
-                        <div>
+                    <div class="flex mt-3 desktop:flex-row mobile:flex-col items-center">
+                        <div class="w-full">
                             <img src="../../assets/file-upload.svg" class="absolute mt-3 ml-2 z-10 size-[17px]">
-                            <input type="text" name="original" placeholder="Parafrase.docx" class="border border-solid border-borderColor rounded-xl h-[41px] pl-[25px] flex-grow mobile:w-full">
+                            <input type="text" name="original" placeholder="Parafrase.docx" class="border border-solid border-borderColor rounded-xl h-[41px] pl-[25px] flex-grow w-full">
                         </div>
-                        <input type="button" value="Pilih File" class="desktop:w-[118px] h-[39px] rounded-[20px] bg-purpleScale50 text-purpleScale0 desktop:ml-4 mobile:mt-4 font-poppins font-semibold mobile:w-full">
+                        <input type="button" value="Pilih File" class="desktop:w-[118px] h-[39px] rounded-[20px] bg-purpleScale50 text-purpleScale0 desktop:ml-4 mobile:mt-4 desktop:mt-0 mobile:ml-0 font-poppins font-semibold mobile:w-full">
                     </div>
                 </div>
                 <div class="mt-3">
                     <p class="text-Small/Small font-poppins text-purpleScale90">Hasil Turnitin</p>
-                    <div class="flex mt-3 desktop:flex-row mobile:flex-col">
-                        <div>
+                    <div class="flex mt-3 desktop:flex-row mobile:flex-col items-center">
+                        <div class="w-full">
                             <img src="../../assets/file-upload.svg" class="absolute mt-3 ml-2 size-[17px]">
                             <input type="text" name="original" placeholder="Parafrase.pdf" class="border border-solid border-borderColor rounded-xl h-[41px] pl-[25px] flex-grow mobile:w-full">
                         </div>
-                        <input type="button" value="Pilih File" class="desktop:w-[118px] h-[39px] rounded-[20px] bg-purpleScale50 text-purpleScale0 desktop:ml-4 mobile:mt-4 font-poppins font-semibold mobile:w-full">
+                        <input type="button" value="Pilih File" class="desktop:w-[118px] h-[39px] rounded-[20px] bg-purpleScale50 text-purpleScale0 desktop:ml-4 mobile:mt-4 desktop:mt-0 mobile:ml-0 font-poppins font-semibold mobile:w-full">
                     </div>
                 </div>
                 <form action="" class="mt-3">

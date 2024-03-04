@@ -8,7 +8,7 @@ module.exports = {
         // 'mobile': '360px',
         'mobile': '10px',
         'navbarMobile': '900px',
-        'desktop': '1280px',
+        'desktop': '1220px',
       },
       colors: {
         'textTitleColor': '#703D80',

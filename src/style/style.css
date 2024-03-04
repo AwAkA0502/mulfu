@@ -840,6 +840,10 @@ video {
   width: 100vw;
 }
 
+.max-w-\[1320px\] {
+  max-width: 1320px;
+}
+
 .flex-grow {
   flex-grow: 1;
 }
@@ -1383,12 +1387,12 @@ video {
     margin-left: 330px;
   }
 
-  .mobile\:mt-0 {
-    margin-top: 0px;
-  }
-
   .mobile\:mt-10 {
     margin-top: 2.5rem;
+  }
+
+  .mobile\:mt-2 {
+    margin-top: 0.5rem;
   }
 
   .mobile\:mt-4 {
@@ -1397,6 +1401,10 @@ video {
 
   .mobile\:mt-6 {
     margin-top: 1.5rem;
+  }
+
+  .mobile\:mt-60px {
+    margin-top: 60px;
   }
 
   .mobile\:mt-\[490px\] {
@@ -1488,6 +1496,11 @@ video {
     padding-right: 1.25rem;
   }
 
+  .mobile\:px-\[20px\] {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
   .mobile\:py-10 {
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
@@ -1539,33 +1552,17 @@ video {
     display: none;
   }
 
-  .navbarMobile\:w-DesktopWidth {
-    width: 1200px;
-  }
-
-  .navbarMobile\:w-full {
-    width: 100%;
-  }
-
-  .navbarMobile\:max-w-\[1440\] {
-    max-width: 1440;
-  }
-
-  .navbarMobile\:max-w-\[1440px\] {
-    max-width: 1440px;
-  }
-
   .navbarMobile\:max-w-\[1200px\] {
     max-width: 1200px;
   }
 
-  .navbarMobile\:px-5 {
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
+  .navbarMobile\:px-\[120px\] {
+    padding-left: 120px;
+    padding-right: 120px;
   }
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1220px) {
   .desktop\:mx-\[54px\] {
     margin-left: 54px;
     margin-right: 54px;
@@ -1720,6 +1717,10 @@ video {
     width: 989px;
   }
 
+  .desktop\:max-w-DesktopWidth {
+    max-width: 1200px;
+  }
+
   .desktop\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -1754,11 +1755,6 @@ video {
 
   .desktop\:justify-between {
     justify-content: space-between;
-  }
-
-  .desktop\:px-0 {
-    padding-left: 0px;
-    padding-right: 0px;
   }
 
   .desktop\:px-10 {

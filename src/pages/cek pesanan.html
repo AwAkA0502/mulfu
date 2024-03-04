@@ -9,13 +9,13 @@
     <link rel="stylesheet" href="../style/menuAnimation.css">
 </head>
 <body class="flex flex-col items-center">
-    <nav class="mt-10 desktop:w-DesktopWidth mobile:w-MobileWidth">
+    <nav class="mt-10 navbarMobile:max-w-[1200px] mobile:w-full mobile:px-5">
         <div class="flex justify-between items-center">
             <div class="flex items-center text-textTitleColor">
                 <img class="mr-3" src="../../assets/Logo.svg">
                 <h3 class="text-3xl font-poppins font-bold text-font26">MULFUBOT</h3>
             </div>
-            <div class="mobile:hidden desktop:flex items-center">
+            <div class="mobile:hidden navbarMobile:flex items-center">
                 <ul class="flex items-center text-purpleScale50 font-header font-semibold text-Large/SemiBold">
                     <li class="pr-8">Home</li>
                     <li class="pr-8">Cara Kerja</li>
@@ -24,7 +24,7 @@
                     <li>Pertanyaan</li>
                 </ul>
             </div>
-            <div class="size-7 mobile:flex flex-col justify-around desktop:hidden" onclick="openBar()">
+            <div class="size-7 mobile:flex flex-col justify-around navbarMobile:hidden" onclick="openBar()">
                 <div class="h-[2px] bg-purpleScale50 rounded-[1px]"></div>
                 <div class="h-[2px] bg-purpleScale50 rounded-[1px]"></div>
                 <div class="h-[2px] bg-purpleScale50 rounded-[1px]"></div>
@@ -54,7 +54,7 @@
             <button class="bg-[#7E57A3] rounded-[20px] w-full py-3 text-white font-bold font-poppins">Text</button>
         </div>
     </div>
-    <section class="desktop:mt-120px mobile:mt-[60px] mb-20 desktop:w-DesktopWidth mobile:w-MobileWidth flex flex-col items-center">
+    <section class="desktop:mt-120px mobile:mt-[60px] mb-20 w-full max-w-[1320px] navbarMobile:px-[120px] mobile:px-[20px] flex flex-col items-center">
         <img src="../../assets/Image cek pesanan.png" class="rounded-[20px] desktop:mb-[60px] mobile:mb-6">
         <div class="flex flex-col items-center mobile:w-full">
             <h1 class="mb-4 text-purpleScale50 desktop:text-header1/Desktop mobile:text-CekPesananMobileHeader font-bold font-poppins">Cari Orderan kamu disini</h1>
