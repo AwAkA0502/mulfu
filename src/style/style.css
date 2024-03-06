@@ -1630,10 +1630,6 @@ video {
     display: block;
   }
 
-  .desktop\:flex {
-    display: flex;
-  }
-
   .desktop\:h-\[126px\] {
     height: 126px;
   }
@@ -1668,10 +1664,6 @@ video {
 
   .desktop\:w-\[255px\] {
     width: 255px;
-  }
-
-  .desktop\:w-\[359px\] {
-    width: 359px;
   }
 
   .desktop\:w-\[428px\] {
