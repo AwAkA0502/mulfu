@@ -748,6 +748,11 @@ video {
   height: 84px;
 }
 
+.size-full {
+  width: 100%;
+  height: 100%;
+}
+
 .h-\[110px\] {
   height: 110px;
 }
@@ -1158,6 +1163,10 @@ video {
   padding: 20px;
 }
 
+.p-3 {
+  padding: 0.75rem;
+}
+
 .px-10 {
   padding-left: 2.5rem;
   padding-right: 2.5rem;
@@ -1524,6 +1533,11 @@ video {
     justify-content: space-between;
   }
 
+  .mobile\:bg-purpleScale0 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  }
+
   .mobile\:px-5 {
     padding-left: 1.25rem;
     padding-right: 1.25rem;
@@ -1574,6 +1588,16 @@ video {
     font-size: 28px;
     line-height: 42px;
   }
+
+  .mobile\:text-purple-50 {
+    --tw-text-opacity: 1;
+    color: rgb(250 245 255 / var(--tw-text-opacity));
+  }
+
+  .mobile\:text-purpleScale50 {
+    --tw-text-opacity: 1;
+    color: rgb(126 87 163 / var(--tw-text-opacity));
+  }
 }
 
 @media (min-width: 1000px) {
@@ -1611,6 +1635,16 @@ video {
 
   .navbarMobile\:items-center {
     align-items: center;
+  }
+
+  .navbarMobile\:bg-white {
+    --tw-bg-opacity: 1;
+    background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  }
+
+  .navbarMobile\:bg-purpleScale0 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(255 255 255 / var(--tw-bg-opacity));
   }
 
   .navbarMobile\:px-120px {
@@ -1803,6 +1837,16 @@ video {
     justify-content: space-between;
   }
 
+  .desktop\:bg-purpleScale50 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(126 87 163 / var(--tw-bg-opacity));
+  }
+
+  .desktop\:bg-purpleScale0 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  }
+
   .desktop\:px-10 {
     padding-left: 2.5rem;
     padding-right: 2.5rem;
@@ -1845,5 +1889,10 @@ video {
   .desktop\:text-header3\/Desktop {
     font-size: 32px;
     line-height: 48px;
+  }
+
+  .desktop\:invert {
+    --tw-invert: invert(100%);
+    filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
   }
 }
