@@ -32,7 +32,7 @@
             </div>
         </div>
     </nav>
-    <div id="menuBar" class="w-screen h-screen mr-[100px] bg-purpleScale10 absolute opacity-0 px-2 flex flex-col justify-between">
+    <div id="menuBar" class="w-screen h-screen mr-[100px] bg-purpleScale10 absolute z-10 opacity-0 px-2 flex flex-col justify-between">
         <div>
             <div class="py-2 flex justify-between items-center">
                 <div class="flex items-center">
@@ -79,16 +79,16 @@
         </center>
         <ul class="grid desktop:grid-cols-4 desktop:grid-rows-1 navbarMobile:grid-cols-2 navbarMobile:grid-rows-2 mobile:grid-cols-1 mobile:grid-rows-4 gap-4 my-8">
             <li class="bg-purpleScale50 rounded-[20px] p-[20px] flex flex-col items-center">
-                <img src="../assets/file-upload.svg" alt="Upload" class="mb-4 size-10 invert" style="color: #7E57A3">
-                <p class="text-header4/Bold font-bold text-purpleScale0">Upload</p>
+                <img src="../assets/file-upload.svg" alt="Upload" class="mb-4 size-10 invert z-0" style="color: #7E57A3">
+                <p class="text-header4/Bold font-bold text-purpleScale0 text-center">Upload</p>
             </li>
             <li class="bg-purpleScale0 border-borderColor border border-solid rounded-[20px] p-[20px] flex flex-col items-center">
                 <img src="../assets/adjustments.svg" alt="Filter" class="mb-4 size-10">
-                <p class="text-header4/Bold font-bold text-purpleScale50">Filter</p>
+                <p class="text-header4/Bold font-bold text-purpleScale50 text-center">Filter</p>
             </li>
             <li class="bg-purpleScale0 border-borderColor border border-solid rounded-[20px] p-[20px] flex flex-col items-center">
                 <img src="../assets/credit-card-pay.svg" alt="Pembayaran" class="mb-4 size-10">
-                <p class="text-header4/Bold font-bold text-purpleScale50">Pembayaran</p>
+                <p class="text-header4/Bold font-bold text-purpleScale50 text-center">Pembayaran</p>
             </li>
             <li class="bg-purpleScale0 border-borderColor border border-solid rounded-[20px] p-[20px] flex flex-col items-center">
                 <img src="../assets/download.svg" alt="Download" class="mb-4 size-10">
@@ -106,8 +106,8 @@
                 <p class="text-Base/Regular font-poppins text-purpleScale90">Kami telah meningkatkan fitur untuk mempermudah proses pengunggahan file, memberikan pengguna pengalaman yang lebih lancar dan efisien</p>
             </div>
         </center>
-        <div class="mt-8 border border-solid border-purpleScale60 desktop:py-5 rounded-[20px] shadow-[0_0_4px_4px_rgba(90,62,116,0.25)]">
-            <div class="grid desktop:grid-cols-3 desktop:grid-rows-1 navbarMobile:grid-cols-2 navbarMobile:grid-rows-2 mobile:grid-rows-3 mobile:grid-cols-1 gap-x-2 mb-4">
+        <div class="mt-8 border border-solid border-purpleScale60 py-5 rounded-[20px] shadow-[0_0_4px_4px_rgba(90,62,116,0.25)]">
+            <div class="grid desktop:grid-cols-3 desktop:grid-rows-1 navbarMobile:grid-cols-2 navbarMobile:grid-rows-2 mobile:grid-rows-3 mobile:grid-cols-1 gap-x-2 gap-y-2 mb-4">
                 <div class="flex flex-col items-center justify-center px-2 flex-grow-0">
                     <img src="../assets/api-app.svg" alt="Upload" class="size-12">
                     <h3 class="text-HeaderFitur text-purpleScale50 font-medium font-poppins text-center my-4">Pengenalan Fitur</h3>
@@ -124,7 +124,7 @@
                     <p class="text-Base/Regular font-poppins text-center text-purpleScale90">informasi dan elemen-elemen kunci yang mendukung fungsi utama.</p>
                 </div>
             </div>
-            <div class="grid gap-x-2 desktop:grid-cols-3 desktop:grid-rows-1 navbarMobile:grid-cols-2 navbarMobile:grid-rows-2 mobile:grid-rows-3 mobile:grid-cols-1">
+            <div class="grid gap-x-2 gap-y-2 desktop:grid-cols-3 desktop:grid-rows-1 navbarMobile:grid-cols-2 navbarMobile:grid-rows-2 mobile:grid-rows-3 mobile:grid-cols-1">
                 <div class="flex flex-col items-center justify-center px-2">
                     <img src="../assets/brand-speedtest.svg" alt="Upload" class="size-12">
                     <h3 class="text-HeaderFitur text-purpleScale50 font-medium font-poppins text-center my-4">Kecepatan Dioptimalkan</h3>

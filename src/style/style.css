@@ -560,6 +560,10 @@ video {
   z-index: 20;
 }
 
+.z-0 {
+  z-index: 0;
+}
+
 .my-4 {
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -927,6 +931,10 @@ video {
   row-gap: 1.75rem;
 }
 
+.gap-y-2 {
+  row-gap: 0.5rem;
+}
+
 .self-center {
   align-self: center;
 }
@@ -1152,6 +1160,11 @@ video {
 .py-60px {
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+.py-5 {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
 }
 
 .pl-\[25px\] {
@@ -1507,7 +1520,7 @@ video {
   }
 }
 
-@media (min-width: 900px) {
+@media (min-width: 1000px) {
   .navbarMobile\:col-span-2 {
     grid-column: span 2 / span 2;
   }

@@ -7,7 +7,7 @@ module.exports = {
       screens: {
         // 'mobile': '360px',
         'mobile': '10px',
-        'navbarMobile': '900px',
+        'navbarMobile': '1000px',
         'desktop': '1220px',
       },
       colors: {
