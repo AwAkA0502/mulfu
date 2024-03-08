@@ -37,8 +37,8 @@ function extendContent(idName) {
 
 let elementBar = document.getElementById("menuBar");
 function openBar(){
-    elementBar.classList.add("menuOpened");
     elementBar.classList.remove("menuClosed");
+    elementBar.classList.add("menuOpened");
     console.log("Bar open");
 }
 
