@@ -1,6 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="overflow-x-hidden">
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
     <title>Cashout</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -9,12 +12,11 @@
     <link rel="stylesheet" href="../style/menuAnimation.css">
 </head>
 <body class="flex flex-col items-center overflow-x-hidden">
-    <nav class="mt-10 navbarMobile:max-w-[1200px] mobile:w-full mobile:px-5">
+    <nav class="mt-10 desktop:max-w-[1200px] mobile:w-full mobile:px-5">
         <div class="flex justify-between items-center">
-            <div class="flex items-center text-textTitleColor">
-                <img class="mr-3" src="../../assets/Logo.svg">
-                <h3 class="text-3xl font-poppins font-bold text-font26">MULFUBOT</h3>
-            </div>
+            <a class="flex items-center text-textTitleColor" href="index.html">
+                <img src="../../assets/Logo.png">
+            </a>
             <div class="mobile:hidden navbarMobile:flex items-center">
                 <ul class="flex items-center text-purpleScale50 font-header font-semibold text-Large/SemiBold">
                     <li class="pr-8">Home</li>
@@ -31,22 +33,21 @@
             </div>
         </div>
     </nav>
-    <div id="menuBar" class="w-screen h-screen mr-[100px] bg-purpleScale10 absolute z-10 opacity-0 px-2 flex flex-col justify-between">
+    <div id="menuBar" class="menuClosed w-screen h-screen mr-[100px] bg-purpleScale10 absolute z-10 opacity-0 px-2 flex flex-col justify-between">
         <div>
             <div class="py-2 flex justify-between items-center">
                 <div class="flex items-center">
-                    <img src="../../assets/Logo.svg" class="size-[54px] pr-3">
-                    <h4 class="text-header4/Bold font-poppins font-bold text-[#703D80]">MULFUBOT</h4>
+                    <img src="../../assets/Logo.png">
                 </div>
-                <img src="../../assets/tabler-icon-x.png" class="size-[28px]" onclick="closeBar()">
+                <img src="../../assets/tabler-icon-x.png" class="size-10" onclick="closeBar()">
             </div>
             <div class="mt-10">
                 <div class="grid grid-rows-5 gap-y-7">
-                    <p class="text-Base/SemiBold font-poppins text-purpleScale50 font-bold">Home</p>
-                    <p class="text-Base/SemiBold font-poppins text-purpleScale50 font-bold">How It Works</p>
-                    <p class="text-Base/SemiBold font-poppins text-purpleScale50 font-bold">Parafrase</p>
-                    <p class="text-Base/SemiBold font-poppins text-purpleScale50 font-bold">Cashout</p>
-                    <p class="text-Base/SemiBold font-poppins text-purpleScale50 font-bold">Support</p>
+                    <p class="text-Large/SemiBold font-poppins text-purpleScale50 font-bold">Home</p>
+                    <p class="text-Large/SemiBold font-poppins text-purpleScale50 font-bold">How It Works</p>
+                    <p class="text-Large/SemiBold font-poppins text-purpleScale50 font-bold">Parafrase</p>
+                    <p class="text-Large/SemiBold font-poppins text-purpleScale50 font-bold">Cashout</p>
+                    <p class="text-Large/SemiBold font-poppins text-purpleScale50 font-bold">Support</p>
                 </div>
             </div>
         </div>
@@ -229,7 +230,7 @@
     <footer class="desktop:px-20 mobile:px-5 py-10 bg-purpleScale80 w-full">
         <div class="flex desktop:flex-row mobile:flex-col justify-between">
             <div>
-                <img src="../../assets/Logo.svg" class="size-[84px]">
+                <img src="../../assets/Logo.png">
                 <p class="mt-4 font-poppins text-Base/Medium text-purpleScale0">Subsidiaries of Mulfubot, company registered in Indonesia.</p>
             </div>
             <div class="desktop:px-10 flex desktop:flex-row mobile:flex-col">
