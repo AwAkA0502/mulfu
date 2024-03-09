@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="style/scrolldownAnimation.css">
     <link rel="stylesheet" href="style/menuAnimation.css">
     <link rel="stylesheet" href="style/color.css">
+    <link rel="stylesheet" href="style/howitworks.css">
 </head>
 <body class="flex flex-col items-center overflow-x-hidden">
     <nav class="mt-10 desktop:max-w-[1200px] mobile:w-full mobile:px-5">
@@ -80,37 +81,40 @@
             </div>
         </center>
         <ul class="grid desktop:grid-cols-4 desktop:grid-rows-1 navbarMobile:grid-cols-2 navbarMobile:grid-rows-2 mobile:grid-cols-1 mobile:grid-rows-4 gap-4 my-8">
-            <li class="desktop:bg-purpleScale50 mobile:bg-purpleScale0 border-borderColor border-2 border-solid rounded-[20px] p-[20px] flex flex-col items-center mobile:shadow-[0_0_4px_4px_rgba(90,62,116,0.25)]">
-                <img src="../assets/file-upload.svg" alt="Upload" class="mb-4 size-10 desktop:invert z-0">
-                <p class="text-header4/Bold font-bold desktop:text-purpleScale0 mobile:text-purpleScale50 text-center">Upload</p>
+            <li onclick="HowItWorks(1)" id="HIW1" class="desktop:bg-purpleScale50 mobile:bg-purpleScale0 desktop:pointer-events-auto mobile:pointer-events-none border-borderColor border-2 border-solid rounded-[20px] p-[20px] flex flex-col items-center mobile:shadow-[0_0_4px_4px_rgba(90,62,116,0.25)] desktop:shadow-[0_0_4px_4px_rgba(90,62,116,0)]">
+                <img src="../assets/file-upload.svg" alt="Upload" class="iconSelect iconMobile mb-4 size-10 z-0 desktop:invert">
+                <p class="text-header4/Bold font-bold text-center mobile:text-purpleScale50 desktop:text-purpleScale0">Upload</p>
                 <div class="desktop:hidden mobile:block mt-4 p-3 border-2 border-solid border-purpleScale60 rounded-[20px] size-full">
-                    <img src="../assets/upload.png" class="size-full">
+                    <img src="../assets/File Upload.png" class="size-full">
                 </div>
             </li>
-            <li class="bg-purpleScale0 border-borderColor border-2 border-solid rounded-[20px] p-[20px] flex flex-col items-center mobile:shadow-[0_0_4px_4px_rgba(90,62,116,0.25)]">
-                <img src="../assets/adjustments.svg" alt="Filter" class="mb-4 size-10 iconColor">
+            <li onclick="HowItWorks(2)" id="HIW2" class="unselected border-borderColor desktop:pointer-events-auto mobile:pointer-events-none border-2 border-solid rounded-[20px] p-[20px] flex flex-col items-center mobile:shadow-[0_0_4px_4px_rgba(90,62,116,0.25)] desktop:shadow-[0_0_4px_4px_rgba(90,62,116,0)]">
+                <img src="../assets/adjustments.svg" alt="Filter" class="iconSelect mb-4 size-10 iconColor">
                 <p class="text-header4/Bold font-bold text-purpleScale50 text-center">Filter</p>
                 <div class="desktop:hidden mobile:block mt-4 p-3 border-2 border-solid border-purpleScale60 rounded-[20px] size-full">
                     <img src="../assets/filter.png" class="size-full">
                 </div>
             </li>
-            <li class="bg-purpleScale0 border-borderColor border-2 border-solid rounded-[20px] p-[20px] flex flex-col items-center mobile:shadow-[0_0_4px_4px_rgba(90,62,116,0.25)]">
-                <img src="../assets/credit-card-pay.svg" alt="Pembayaran" class="mb-4 size-10 iconColor">
+            <li onclick="HowItWorks(3)" id="HIW3" class="unselected border-borderColor desktop:pointer-events-auto mobile:pointer-events-none border-2 border-solid rounded-[20px] p-[20px] flex flex-col items-center mobile:shadow-[0_0_4px_4px_rgba(90,62,116,0.25)] desktop:shadow-[0_0_4px_4px_rgba(90,62,116,0)]">
+                <img src="../assets/credit-card-pay.svg" alt="Pembayaran" class="iconSelect mb-4 size-10 iconColor">
                 <p class="text-header4/Bold font-bold text-purpleScale50 text-center">Pembayaran</p>
                 <div class="desktop:hidden mobile:block mt-4 p-3 border-2 border-solid border-purpleScale60 rounded-[20px] size-full flex items-center">
                     <img src="../assets/pembayaran.png" class="w-full">
                 </div>
             </li>
-            <li class="bg-purpleScale0 border-borderColor border-2 border-solid rounded-[20px] p-[20px] flex flex-col items-center mobile:shadow-[0_0_4px_4px_rgba(90,62,116,0.25)]">
-                <img src="../assets/download.svg" alt="Download" class="mb-4 size-10 iconColor">
+            <li onclick="HowItWorks(4)" id="HIW4" class="unselected border-borderColor desktop:pointer-events-auto mobile:pointer-events-none border-2 border-solid rounded-[20px] p-[20px] flex flex-col items-center mobile:shadow-[0_0_4px_4px_rgba(90,62,116,0.25)] desktop:shadow-[0_0_4px_4px_rgba(90,62,116,0)]">
+                <img src="../assets/download.svg" alt="Download" class="iconSelect mb-4 size-10 iconColor">
                 <p class="text-header4/Bold font-bold text-purpleScale50">Download</p>
                 <div class="desktop:hidden mobile:block mt-4 p-3 border-2 border-solid border-purpleScale60 rounded-[20px] size-full">
                     <img src="../assets/download.png" class="size-full">
                 </div>
             </li>
         </ul>
-        <div>
-            <img src="../assets/bagaimana mulfu bekerja.png" alt="" class="w-full h-[498px] desktop:block mobile:hidden">
+        <div class="overflow-x-hidden">
+            <img id="HowItWorks1" src="../assets/File Upload.png" alt="Upload File" class="w-full h-[498px] desktop:block mobile:hidden">
+            <img id="HowItWorks2" src="../assets/filter.png" alt="Filter" class="w-full h-[498px] hidden">
+            <img id="HowItWorks3" src="../assets/pembayaran.png" alt="Pembayaran" class="w-full h-[498px] hidden">
+            <img id="HowItWorks4" src="../assets/download.png" alt="Download" class="w-full h-[498px] hidden">
         </div>
     </section>
     <section id="features" class="w-full max-w-[1440px] mobile:px-5 navbarMobile:px-120px py-60px">

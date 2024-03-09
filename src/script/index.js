@@ -47,3 +47,24 @@ function closeBar() {
     elementBar.classList.add("menuClosed");
     console.log("Bar close");
 }
+
+function HowItWorks(step) {
+    document.getElementById("HowItWorks1").classList.remove("desktop:block");
+    document.getElementById("HowItWorks1").classList.remove("mobile:hidden");
+    document.getElementById("HIW1").children[0].classList.remove("desktop:invert");
+    for (let i = 1; i <= 4; i++) {
+        if (i == step) continue;
+        let id = "HowItWorks"+i;
+        let id2 = "HIW"+i;
+        document.getElementById(id).classList.add("hidden");
+        document.getElementById(id).classList.remove("block");
+        document.getElementById(id2).classList.add("unselected");
+        document.getElementById(id2).classList.remove("selected");
+    }
+    let id = "HowItWorks"+step;
+    let id2 = "HIW"+step;
+    document.getElementById(id).classList.add("block");
+    document.getElementById(id).classList.remove("hidden");
+    document.getElementById(id2).classList.add("selected");
+    document.getElementById(id2).classList.remove("unselected");
+}
