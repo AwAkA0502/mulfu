@@ -1,0 +1,8 @@
+.iconColor{
+    filter: invert(24%) sepia(16%) saturate(1831%) hue-rotate(228deg) brightness(100%) contrast(85%);
+    /* filter: invert(24%) sepia(62%) saturate(473%) hue-rotate(228deg) brightness(93%) contrast(90%); */
+}
+
+.starColor{
+    filter: invert(49%) sepia(57%) saturate(658%) hue-rotate(224deg) brightness(90%) contrast(89%);
+}
