@@ -39,12 +39,14 @@ let elementBar = document.getElementById("menuBar");
 function openBar(){
     elementBar.classList.remove("menuClosed");
     elementBar.classList.add("menuOpened");
+    document.classList.add("overflow-hidden");
     console.log("Bar open");
 }
 
 function closeBar() {
     elementBar.classList.remove("menuOpened");
     elementBar.classList.add("menuClosed");
+    document.classList.remove("overflow-hidden");
     console.log("Bar close");
 }
 
