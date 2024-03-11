@@ -62,6 +62,7 @@ function HowItWorks(step) {
         document.getElementById(id).classList.remove("block");
         document.getElementById(id2).classList.add("unselected");
         document.getElementById(id2).classList.remove("selected");
+        document.getElementById(id2).classList.add("desktop:hover:bg-purpleScale10");
     }
     let id = "HowItWorks"+step;
     let id2 = "HIW"+step;
@@ -69,4 +70,5 @@ function HowItWorks(step) {
     document.getElementById(id).classList.remove("hidden");
     document.getElementById(id2).classList.add("selected");
     document.getElementById(id2).classList.remove("unselected");
+    document.getElementById(id2).classList.remove("desktop:hover:bg-purpleScale10");
 }
