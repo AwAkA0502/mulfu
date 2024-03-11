@@ -14,7 +14,7 @@
 <body class="flex flex-col items-center">
     <nav class="mt-10 desktop:max-w-[1200px] mobile:w-full mobile:px-5">
         <div class="flex justify-between items-center">
-            <a class="flex items-center text-textTitleColor" href="index.html">
+            <a class="flex items-center text-textTitleColor" href="../index.html">
                 <img src="../../assets/Logo.png">
             </a>
             <div class="mobile:hidden navbarMobile:flex items-center">
@@ -22,7 +22,7 @@
                     <li class="pr-8"><a href="../index.html">Home</a></li>
                     <li class="pr-8"><a href="../index.html#HowItWorks">Cara Kerja</a></li>
                     <li class="pr-8"><a href="upload parafrase.html">Parafrase</a></li>
-                    <li class="pr-8"><a href="cashout.html">Cari Pembelian</a></li>
+                    <li class="pr-8"><a href="cek pesanan.html">Cari Pembelian</a></li>
                     <li><a href="../index.html#question">Pertanyaan</a></li>
                 </ul>
             </div>
@@ -43,16 +43,18 @@
             </div>
             <div class="mt-10">
                 <div class="grid grid-rows-5 gap-y-7">
-                    <p class="text-Large/SemiBold font-poppins text-purpleScale50 font-bold">Home</p>
-                    <p class="text-Large/SemiBold font-poppins text-purpleScale50 font-bold">How It Works</p>
-                    <p class="text-Large/SemiBold font-poppins text-purpleScale50 font-bold">Parafrase</p>
-                    <p class="text-Large/SemiBold font-poppins text-purpleScale50 font-bold">Cashout</p>
-                    <p class="text-Large/SemiBold font-poppins text-purpleScale50 font-bold">Support</p>
+                    <p class="text-Large/SemiBold font-poppins text-purpleScale50 font-bold text-center"><a href="../index.html">Home</a></p>
+                    <p class="text-Large/SemiBold font-poppins text-purpleScale50 font-bold text-center"><a href="../index.html#HowItWorks" onclick="closeBar()">Cara Kerja</a></p>
+                    <p class="text-Large/SemiBold font-poppins text-purpleScale50 font-bold text-center"><a href="upload parafrase.html">Parafrase</a></p>
+                    <p class="text-Large/SemiBold font-poppins text-purpleScale50 font-bold text-center"><a href="cek pesanan.html">Cek Pembelian</a></p>
+                    <p class="text-Large/SemiBold font-poppins text-purpleScale50 font-bold text-center"><a href="../index.html#question" onclick="closeBar()">Pertanyaan</a></p>
                 </div>
             </div>
         </div>
-        <div class="p-2 border border-solid border-t-[#7e57a318] border-t-2">
-            <button class="bg-[#7E57A3] rounded-[20px] w-full py-3 text-white font-bold font-poppins">Coba Turnitin</button>
+        <div class="p-2 border border-solid border-t-[#7e57a318] border-t-2 mb-[15%]">
+            <a href="upload.html">
+                <button class="bg-[#7E57A3] rounded-[20px] w-full py-3 text-white font-bold font-poppins">Coba Turnitin</button>
+            </a>
         </div>
     </div>
     <section class="desktop:mt-120px mobile:mt-[60px] mb-20 w-full max-w-[1320px] navbarMobile:px-[120px] mobile:px-[20px] flex flex-col items-center">

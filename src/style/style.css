@@ -815,6 +815,26 @@ video {
   margin-top: 4500px;
 }
 
+.mb-10 {
+  margin-bottom: 2.5rem;
+}
+
+.mb-\[100px\] {
+  margin-bottom: 100px;
+}
+
+.mb-\[10\%\] {
+  margin-bottom: 10%;
+}
+
+.mb-\[12\%\] {
+  margin-bottom: 12%;
+}
+
+.mb-\[15\%\] {
+  margin-bottom: 15%;
+}
+
 .flex {
   display: flex;
 }
@@ -1088,6 +1108,10 @@ video {
 
 .overflow-x-hidden {
   overflow-x: hidden;
+}
+
+.overflow-y-hidden {
+  overflow-y: hidden;
 }
 
 .scroll-smooth {
