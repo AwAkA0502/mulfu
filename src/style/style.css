@@ -579,6 +579,11 @@ video {
   margin-bottom: 2rem;
 }
 
+.my-\[54px\] {
+  margin-top: 54px;
+  margin-bottom: 54px;
+}
+
 .mb-2 {
   margin-bottom: 0.5rem;
 }
@@ -947,6 +952,10 @@ video {
   height: 100vh;
 }
 
+.h-\[75px\] {
+  height: 75px;
+}
+
 .w-120px {
   width: 120px;
 }
@@ -1014,6 +1023,10 @@ video {
 
 .max-w-\[952px\] {
   max-width: 952px;
+}
+
+.max-w-\[756px\] {
+  max-width: 756px;
 }
 
 .flex-grow {
