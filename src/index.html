@@ -15,24 +15,26 @@
     <link rel="stylesheet" href="style/howitworks.css">
 </head>
 <body class="flex flex-col items-center overflow-x-hidden">
-    <nav class="mt-10 desktop:max-w-[1200px] mobile:w-full mobile:px-5">
-        <div class="flex justify-between items-center">
-            <a class="flex items-center text-textTitleColor" href="index.html">
-                <img src="../assets/Logo.png">
-            </a>
-            <div class="mobile:hidden navbarMobile:flex items-center">
-                <ul class="flex items-center text-purpleScale50 font-header font-semibold text-Large/SemiBold">
-                    <li class="pr-8"><a href="index.html">Home</a></li>
-                    <li class="pr-8"><a href="#HowItWorks">Cara Kerja</a></li>
-                    <li class="pr-8"><a href="pages/upload parafrase.html">Parafrase</a></li>
-                    <li class="pr-8"><a href="pages/cek pesanan.html">Cari Pembelian</a></li>
-                    <li><a href="#question">Pertanyaan</a></li>
-                </ul>
-            </div>
-            <div class="size-7 mobile:flex flex-col justify-around navbarMobile:hidden" onclick="openBar()">
-                <div class="h-[2px] bg-purpleScale50 rounded-[1px]"></div>
-                <div class="h-[2px] bg-purpleScale50 rounded-[1px]"></div>
-                <div class="h-[2px] bg-purpleScale50 rounded-[1px]"></div>
+    <nav class="backdrop-blur-xl desktop:pt-10 mobile:pt-0 w-full fixed bg-white z-50 flex justify-center opacity-80">
+        <div class="desktop:max-w-[1200px] mobile:w-full mobile:px-5">
+            <div class="flex justify-between items-center">
+                <a class="flex items-center text-textTitleColor" href="index.html">
+                    <img src="../assets/Logo.png">
+                </a>
+                <div class="mobile:hidden navbarMobile:flex items-center">
+                    <ul class="flex items-center text-purpleScale50 font-header font-semibold text-Large/SemiBold">
+                        <li class="pr-8"><a href="index.html">Home</a></li>
+                        <li class="pr-8"><a href="#HowItWorks">Cara Kerja</a></li>
+                        <li class="pr-8"><a href="pages/upload parafrase.html">Parafrase</a></li>
+                        <li class="pr-8"><a href="pages/cek pesanan.html">Cari Pembelian</a></li>
+                        <li><a href="#question">Pertanyaan</a></li>
+                    </ul>
+                </div>
+                <div class="size-7 mobile:flex flex-col justify-around navbarMobile:hidden" onclick="openBar()">
+                    <div class="h-[2px] bg-purpleScale50 rounded-[1px]"></div>
+                    <div class="h-[2px] bg-purpleScale50 rounded-[1px]"></div>
+                    <div class="h-[2px] bg-purpleScale50 rounded-[1px]"></div>
+                </div>
             </div>
         </div>
     </nav>
@@ -84,7 +86,7 @@
     <img src="../assets/Ellipse 12.png" class="absolute mr-[100vw] mt-[4500px] desktop:block mobile:hidden">
     <!-- <img src="../assets/Ellipse 8.png" class="absolute ml-[1440px] mt-[2600px]">
     <img src="../assets/Ellipse 8.png" class="absolute mr-[1440px] mt-[3900px]"> -->
-    <section id="HowItWorks" class="z-50 w-full max-w-[1112px] mobile:px-5 navbarMobile:mx-120px pt-60px">
+    <section id="HowItWorks" class="z-40 w-full max-w-[1112px] mobile:px-5 navbarMobile:mx-120px pt-60px">
         <center>
             <div id="header" class="text-center desktop:w-[674px] desktop:h-[126px]">
                 <h1 class="mb-4 text-purpleScale50 desktop:text-header1/Desktop mobile:text-header1/Mobile font-bold font-poppins">Bagaimana mulfu bekerja?</h1>
@@ -194,47 +196,47 @@
         <div class="mt-8 max-w-[1025px]">
             <div id="row1-review" class="grid gap-8 desktop:grid-cols-2 desktop:grid-rows-1 mb-8">
                 <div id="card1" class="py-4 px-3 border border-solid border-purpleScale60 rounded-[20px] shadow-[0_0_4px_4px_rgba(90,62,116,0.25)]">
-                    <div class="border-b border-[#24192E] border-solid mb-4 h-[110px] flex items-center">
+                    <div class="border-b border-[#24192E] border-solid mb-2 h-[110px] flex items-center">
                         <p class="text-Base/Regular text-purpleScale90 font-poppins">Sungguh puas dengan pelayanan mereka! Tim profesional, cepat tanggap, dan hasilnya melebihi ekspektasi saya.</p>
                     </div>
                     <div class="py-2 flex mobile:flex-col desktop:flex-row desktop:items-center navbarMobile:flex-row navbarMobile:items-center mobile:items-start justify-between">
-                        <p class="text-Base/Medium text-purpleScale90 font-poppins font-semibold mb-2">Alexandra Calista</p>
+                        <p class="text-Base/Medium text-purpleScale50 font-poppins font-semibold">Alexandra Calista</p>
                         <p class="text-Small/Small text-purpleScale90 font-poppins">Universitas Indonesia</p>
                     </div>
                 </div>
                 <div id="card2" class="py-4 px-3 border border-solid border-purpleScale60 rounded-[20px] shadow-[0_0_4px_4px_rgba(90,62,116,0.25)]">
-                    <div class="border-b border-[#24192E] border-solid mb-4 h-[110px] flex items-center">
+                    <div class="border-b border-[#24192E] border-solid mb-2 h-[110px] flex items-center">
                         <p class="text-Base/Regular text-purpleScale90 font-poppins">Saya sangat puas dengan pengalaman menggunakan Mulfubot.</p>
                     </div>
                     <div class="py-2 flex mobile:flex-col desktop:flex-row desktop:items-center navbarMobile:flex-row navbarMobile:items-center mobile:items-start justify-between">
-                        <p class="text-Base/Medium text-purpleScale90 font-poppins font-semibold mb-2">Alexandra Calista</p>
-                        <p class="text-Small/Small text-purpleScale90 font-poppins">Universitas Indonesia</p>
+                        <p class="text-Base/Medium text-purpleScale50 font-poppins font-semibold">Abdu Rasyad Shalihuddin</p>
+                        <p class="text-Small/Small text-purpleScale90 font-poppins">Universitas Islam Jakarta</p>
                     </div>
                 </div>
             </div>
             <div id="row2-review" class="grid gap-8 desktop:grid-cols-2 desktop:grid-rows-1">
                 <div id="card1" class="py-4 px-3 border border-solid border-purpleScale60 rounded-[20px] shadow-[0_0_4px_4px_rgba(90,62,116,0.25)]">
-                    <div class="border-b border-[#24192E] border-solid mb-4 h-[110px] flex items-center">
+                    <div class="border-b border-[#24192E] border-solid mb-2 h-[110px] flex items-center">
                         <p class="text-Base/Regular text-purpleScale90 font-poppins">Saya sangat terkesan dengan Mulfubot, benar-benar membantu saya mendapatkan informasi yang saya butuhkan dengan mudah</p>
                     </div>
                     <div class="py-2 flex mobile:flex-col desktop:flex-row desktop:items-center navbarMobile:flex-row navbarMobile:items-center mobile:items-start justify-between">
-                        <p class="text-Base/Medium text-purpleScale90 font-poppins font-semibold mb-2">Alexandra Calista</p>
-                        <p class="text-Small/Small text-purpleScale90 font-poppins">Universitas Indonesia</p>
+                        <p class="text-Base/Medium text-purpleScale50 font-poppins font-semibold">Lintang Herninda Warsito</p>
+                        <p class="text-Small/Small text-purpleScale90 font-poppins">Universitas Singaperbangsa Karawang</p>
                     </div>
                 </div>
                 <div id="card2" class="py-4 px-3 border border-solid border-purpleScale60 rounded-[20px] shadow-[0_0_4px_4px_rgba(90,62,116,0.25)]">
-                    <div class="border-b border-[#24192E] border-solid mb-4 h-[110px] flex items-center">
+                    <div class="border-b border-[#24192E] border-solid mb-2 h-[110px] flex items-center">
                         <p class="text-Base/Regular text-purpleScale90 font-poppins">Sistem otomatisasinya sangat membantu meningkatkan efisiensi pekerjaan sehari-hari. Terima kasih Mulfubot, telah memberikan solusi yang luar biasa!</p>
                     </div>
                     <div class="py-2 flex mobile:flex-col desktop:flex-row desktop:items-center navbarMobile:flex-row navbarMobile:items-center mobile:items-start justify-between">
-                        <p class="text-Base/Medium text-purpleScale90 font-poppins font-semibold mb-2">Alexandra Calista</p>
-                        <p class="text-Small/Small text-purpleScale90 font-poppins">Universitas Indonesia</p>
+                        <p class="text-Base/Medium text-purpleScale50 font-poppins font-semibold">Naila</p>
+                        <p class="text-Small/Small text-purpleScale90 font-poppins">Universitas Pakuan</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section id="parafrase" class="z-50 w-full max-w-[1440px] mobile:px-5 navbarMobile:px-120px py-60px">
+    <section id="parafrase" class="z-40 w-full max-w-[1440px] mobile:px-5 navbarMobile:px-120px py-60px">
         <center>
             <div id="header" class="text-center desktop:w-[989px] desktop:h-[136px]">
                 <h1 class="mb-4 text-purpleScale50 desktop:text-header1/Desktop mobile:text-header1/Mobile font-bold font-poppins">Maksimalkan Kreativitas Teks Anda!</h1>
@@ -266,7 +268,7 @@
             </a>
         </div>
     </section>
-    <section id="question" class="z-50 py-60px w-full max-w-[1440px] mobile:px-5 navbarMobile:px-120px">
+    <section id="question" class="z-40 py-60px w-full max-w-[1440px] mobile:px-5 navbarMobile:px-120px">
         <center>
             <div id="header" class="text-center desktop:w-[989px] desktop:h-[136px]">
                 <h1 class="mb-4 text-purpleScale50 desktop:text-header1/Desktop mobile:text-header1/Mobile font-bold font-poppins">Pertanyaan yang Sering Diajukan</h1>
@@ -319,23 +321,23 @@
             <p class="text-center font-poppins text-Large/Reguler text-purpleScale90">masih belum menemukan jawaban yang kamu cari? Hubungi kami <span class="text-Large/Reguler font-poppins text-purpleScale50">support server</span></p>
         </div>
     </section>
-    <section id="blog" class="z-50 py-60px w-full max-w-[1440px] mobile:px-5 navbarMobile:px-120px ">
+    <section id="blog" class="flex items-center flex-col z-40 py-60px w-full max-w-[1440px] mobile:px-5 navbarMobile:px-120px ">
         <center>
             <div id="header" class="text-center desktop:w-[989px] desktop:h-[136px]">
                 <h1 class="mb-4 text-purpleScale50 desktop:text-header1/Desktop mobile:text-header1/Mobile font-bold font-poppins">Berita & Blog Terbaru</h1>
                 <p class="text-Large/Reguler font-poppins text-purpleScale90">Cerita Sukses dari Mereka yang Telah Menggunakan Mulfubot.</p>
             </div>
         </center>
-        <div id="row-blog" class="grid desktop:grid-cols-3 desktop:grid-rows-1 mobile:grid-cols-1 mobile:grid-rows-3 gap-12">
+        <div id="row-blog" class="mobile:max-w-[600px] desktop:max-w-none mobile:mt-8 desktop:mt-0 grid desktop:grid-cols-3 desktop:grid-rows-1 mobile:grid-cols-1 mobile:grid-rows-3 gap-12">
             <div>
                 <div class="flex justify-center">
                     <img src="../assets/Image.png">
                     <!-- <p>Alexandra 25 Jan 2024</p> -->
                 </div>
-                <h4 class="my-4 text-header4/Bold font-poppins text-purpleScale50 font-bold mobile:text-center desktop:text-left">
+                <h4 class="my-4 text-Large/SemiBold font-poppins text-purpleScale50 font-bold mobile:text-center desktop:text-left">
                     9 Cara Sederhana untuk meningkatkan  desain Anda
                 </h4>
-                <p class="text-Large/Reguler text-purpleScale90 font-poppins mobile:text-center desktop:text-left">
+                <p class="text-Base/Regular text-purpleScale90 font-poppins mobile:text-center desktop:text-left">
                     Meningkatkan keterampilan desain Anda adalah proses berkelanjutan yang melibatkan latihan.
                 </p>
             </div>
@@ -344,10 +346,10 @@
                     <img src="../assets/Image.png" class="items-self-center">
                     <!-- <p>Alexandra 25 Jan 2024</p> -->
                 </div>
-                <h4 class="my-4 text-header4/Bold font-poppins text-purpleScale50 font-bold mobile:text-center desktop:text-left">
+                <h4 class="my-4 text-Large/SemiBold font-poppins text-purpleScale50 font-bold mobile:text-center desktop:text-left">
                     9 Cara Sederhana untuk meningkatkan  desain Anda
                 </h4>
-                <p class="text-Large/Reguler text-purpleScale90 font-poppins mobile:text-center desktop:text-left">
+                <p class="text-Base/Regular text-purpleScale90 font-poppins mobile:text-center desktop:text-left">
                     Meningkatkan keterampilan desain Anda adalah proses berkelanjutan yang melibatkan latihan.
                 </p>
             </div>
@@ -356,10 +358,10 @@
                     <img src="../assets/Image.png" class="items-self-center">
                     <!-- <p>Alexandra 25 Jan 2024</p> -->
                 </div>
-                <h4 class="my-4 text-header4/Bold font-poppins text-purpleScale50 font-bold mobile:text-center desktop:text-left">
+                <h4 class="my-4 text-Large/SemiBold font-poppins text-purpleScale50 font-bold mobile:text-center desktop:text-left">
                     9 Cara Sederhana untuk meningkatkan  desain Anda
                 </h4>
-                <p class="text-Large/Reguler text-purpleScale90 font-poppins mobile:text-center desktop:text-left">
+                <p class="text-Base/Regular text-purpleScale90 font-poppins mobile:text-center desktop:text-left">
                     Meningkatkan keterampilan desain Anda adalah proses berkelanjutan yang melibatkan latihan.
                 </p>
             </div>
