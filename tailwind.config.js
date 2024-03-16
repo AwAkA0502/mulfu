@@ -43,6 +43,7 @@ module.exports = {
         'Base/Medium': ['16px', '24px'],
         'Base/Regular': ['16px', '19.4px'],
         'Small/Regular': ['12px', '14.5px'],
+        'Small/Bold': ['12px', '14.6px'],
         'Small/Small': ['14px', '16.9px'],
         'HeaderFitur': ['26px', '31px'],
         'CashoutCardStatus': ["20px", "24px"],

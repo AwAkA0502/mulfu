@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../style/style.css">
     <link rel="stylesheet" href="../style/menuAnimation.css">
+    <link rel="stylesheet" href="../style/tooltip.css">
 </head>
 <body class="flex flex-col items-center overflow-x-hidden">
     <nav class="mt-10 desktop:max-w-[1200px] mobile:w-full mobile:px-5">
@@ -108,7 +109,10 @@
                     <div class="flex justify-between items-center">
                         <div class="flex">
                             <p class="font-poppins text-purpleScale90 text-CashoutCardStatus">Status: <span class="font-semibold text-StatusFailed">Failed</span></p>
-                            <img src="../../assets/failed.png" class="ml-2">
+                            <img id="failed-icon" src="../../assets/failed.png" class="ml-2">
+                            <div id="tooltip-failed" class="w-[153px] h-[23px] bg-purpleScale50 absolute rounded-[8px] border border-black hidden justify-center items-center ml-[168px] -translate-y-[20px] shadow-[0_2px_5px_2px_rgba(90,62,116,0.25)]">
+                                <p class="font-poppins text-Small/Bold font-bold text-purpleScale0">File Tidak ditemukan</p>
+                            </div>
                         </div>
                         <p class="font-poppins text-purpleScale90 text-CashoutCard">15 Jan · 21:44</p>
                     </div>
