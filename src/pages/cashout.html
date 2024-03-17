@@ -13,28 +13,30 @@
     <link rel="stylesheet" href="../style/tooltip.css">
 </head>
 <body class="flex flex-col items-center overflow-x-hidden">
-    <nav class="mt-10 desktop:max-w-[1200px] mobile:w-full mobile:px-5">
-        <div class="flex justify-between items-center">
-            <a class="flex items-center text-textTitleColor" href="../index.html">
-                <img src="../../assets/Logo.png">
-            </a>
-            <div class="mobile:hidden navbarMobile:flex items-center">
-                <ul class="flex items-center text-purpleScale50 font-header font-semibold text-Large/SemiBold">
-                    <li class="pr-8"><a href="../index.html">Home</a></li>
-                    <li class="pr-8"><a href="../index.html#HowItWorks">Cara Kerja</a></li>
-                    <li class="pr-8"><a href="upload parafrase.html">Parafrase</a></li>
-                    <li class="pr-8"><a href="cek pesanan.html">Cari Pembelian</a></li>
-                    <li><a href="../index.html#question">Pertanyaan</a></li>
-                </ul>
-            </div>
-            <div class="size-7 mobile:flex flex-col justify-around navbarMobile:hidden" onclick="openBar()">
-                <div class="h-[2px] bg-purpleScale50 rounded-[1px]"></div>
-                <div class="h-[2px] bg-purpleScale50 rounded-[1px]"></div>
-                <div class="h-[2px] bg-purpleScale50 rounded-[1px]"></div>
+    <nav class="backdrop-blur-sm desktop:pt-10 mobile:pt-2 w-full fixed duration-300 bg-white z-50 flex justify-center bg-opacity-80">
+        <div class="desktop:max-w-[1200px] mobile:w-full mobile:px-5">
+            <div class="flex justify-between items-center">
+                <a class="flex items-center text-textTitleColor" href="../index.html">
+                    <img src="../../assets/Logo.png">
+                </a>
+                <div class="mobile:hidden navbarMobile:flex items-center">
+                    <ul class="flex items-center text-purpleScale50 font-header font-semibold text-Large/SemiBold">
+                        <li class="pr-8"><a href="../index.html">Home</a></li>
+                        <li class="pr-8"><a href="../index.html#HowItWorks">Cara Kerja</a></li>
+                        <li class="pr-8"><a href="upload parafrase.html">Parafrase</a></li>
+                        <li class="pr-8"><a href="cek pesanan.html">Cari Pembelian</a></li>
+                        <li><a href="../index.html#question">Pertanyaan</a></li>
+                    </ul>
+                </div>
+                <div class="size-7 mobile:flex flex-col justify-around navbarMobile:hidden" onclick="openBar()">
+                    <div class="h-[2px] bg-purpleScale50 rounded-[1px]"></div>
+                    <div class="h-[2px] bg-purpleScale50 rounded-[1px]"></div>
+                    <div class="h-[2px] bg-purpleScale50 rounded-[1px]"></div>
+                </div>
             </div>
         </div>
     </nav>
-    <div id="menuBar" class="menuClosed w-screen h-screen mr-[100px] bg-purpleScale10 absolute z-10 opacity-0 px-2 flex flex-col justify-between">
+    <div id="menuBar" class="menuClosed w-screen h-screen mr-[100px] bg-purpleScale10 fixed z-[60] opacity-0 px-2 flex flex-col justify-between">
         <div>
             <div class="py-2 flex justify-between items-center">
                 <div class="flex items-center">
@@ -58,10 +60,10 @@
             </a>
         </div>
     </div>
-    <section class="w-full max-w-[1320px] navbarMobile:px-[120px] mobile:px-[20px] desktop:mb-[60px] desktop:mt-120px mobile:mt-60px mobile:mb-10">
+    <section class="w-full max-w-[1320px] navbarMobile:px-[120px] mobile:px-[20px] desktop:pb-[60px] desktop:pt-120px mobile:pt-60px mobile:pb-10 desktop:mt-DesktopNavHeight mobile:mt-MobileNavHeight">
         <div class="desktop:px-20 flex flex-col">
             <h2 class="font-poppins text-header2/Desktop font-bold text-purpleScale50 self-center text-center">Daftar Transaksi</h2>
-            <div class="desktop:mt-8 mobile:mt-6 pt-6 flex justify-between mobile:flex-col desktop:flex-row">
+            <div class="desktop:mt-8 mobile:mt-6 flex justify-between mobile:flex-col desktop:flex-row">
                 <div class="flex w-[411px] justify-between mobile:flex-col desktop:flex-row">
                     <p class="text-Large/Reguler text-purpleScale90 font-poppins">Saldo: <span class="text-Large/Reguler text-purpleScale50 font-semibold">Rp1.000</span></p>
                     <p class="text-Large/Reguler text-purpleScale90 font-poppins mobile:mt-2 desktop:mt-0">Total Mengundang : <span class="text-Large/Reguler text-purpleScale50 font-semibold">4</span></p>

@@ -58,6 +58,8 @@ module.exports = {
         '60px': '60px',
         'DesktopWidth': '1200px',
         'MobileWidth': '320px',
+        'DesktopNavHeight': '94px',
+        'MobileNavHeight': '62px',
       },
       fontFamily: {
         'poppins': ['poppins', 'cursive'],

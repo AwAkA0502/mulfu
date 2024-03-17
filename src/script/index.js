@@ -1,7 +1,7 @@
+//QnA animation
 var qna1 = false;
 var qna2 = false;
 var qna3 = false;
-let menuBarNav = false;
 
 function setClass(isOpen, element, elementAnswer) {
     if (isOpen) {
@@ -34,9 +34,15 @@ function extendContent(idName) {
         setClass(qna3, element, elementAnswer);
     }
 }
+//QnA end
 
+//mobile navigation menu
+let menuBarNav = false;
 let elementBar = document.getElementById("menuBar");
+let offsetY;
 function openBar(){
+    offsetY = window.pageYOffset;
+    elementBar.classList.add(`top-[${offsetY}]`);
     elementBar.classList.remove("menuClosed");
     elementBar.classList.add("menuOpened");
     document.documentElement.classList.remove("overflow-x-hidden");
@@ -45,13 +51,16 @@ function openBar(){
 }
 
 function closeBar() {
+    elementBar.classList.remove(`top-[${offsetY}]`);
     elementBar.classList.remove("menuOpened");
     elementBar.classList.add("menuClosed");
     document.documentElement.classList.remove("overflow-hidden");
     document.documentElement.classList.add("overflow-x-hidden");
     console.log("Bar close");
 }
+//mobile navigation end
 
+//HowItWorks feature
 function HowItWorks(step) {
     document.getElementById("HowItWorks1").classList.remove("desktop:block");
     document.getElementById("HowItWorks1").classList.remove("mobile:hidden");
@@ -73,4 +82,16 @@ function HowItWorks(step) {
     document.getElementById(id2).classList.add("selected");
     document.getElementById(id2).classList.remove("unselected");
     document.getElementById(id2).classList.remove("desktop:hover:bg-purpleScale10");
+}
+//HowItWorks feature end
+
+//navbar control
+window.onscroll = function () {
+    const header = document.querySelector('nav');
+    if (window.pageYOffset >= 40) {
+        header.classList.remove("desktop:pt-10");
+    }
+    else{
+        header.classList.add("desktop:pt-10");
+    }
 }

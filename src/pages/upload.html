@@ -12,28 +12,30 @@
     <link rel="stylesheet" href="../style/menuAnimation.css">
 </head>
 <body class="flex flex-col items-center">
-    <nav class="mt-10 desktop:max-w-[1200px] mobile:w-full mobile:px-5">
-        <div class="flex justify-between items-center">
-            <a class="flex items-center text-textTitleColor" href="../index.html">
-                <img src="../../assets/Logo.png">
-            </a>
-            <div class="mobile:hidden navbarMobile:flex items-center">
-                <ul class="flex items-center text-purpleScale50 font-header font-semibold text-Large/SemiBold">
-                    <li class="pr-8"><a href="../index.html">Home</a></li>
-                    <li class="pr-8"><a href="../index.html#HowItWorks">Cara Kerja</a></li>
-                    <li class="pr-8"><a href="upload parafrase.html">Parafrase</a></li>
-                    <li class="pr-8"><a href="cek pesanan.html">Cari Pembelian</a></li>
-                    <li><a href="../index.html#question">Pertanyaan</a></li>
-                </ul>
-            </div>
-            <div class="size-7 mobile:flex flex-col justify-around navbarMobile:hidden" onclick="openBar()">
-                <div class="h-[2px] bg-purpleScale50 rounded-[1px]"></div>
-                <div class="h-[2px] bg-purpleScale50 rounded-[1px]"></div>
-                <div class="h-[2px] bg-purpleScale50 rounded-[1px]"></div>
+    <nav class="backdrop-blur-sm desktop:pt-10 mobile:pt-2 w-full fixed duration-300 bg-white z-50 flex justify-center bg-opacity-80">
+        <div class="desktop:max-w-[1200px] mobile:w-full mobile:px-5">
+            <div class="flex justify-between items-center">
+                <a class="flex items-center text-textTitleColor" href="../index.html">
+                    <img src="../../assets/Logo.png">
+                </a>
+                <div class="mobile:hidden navbarMobile:flex items-center">
+                    <ul class="flex items-center text-purpleScale50 font-header font-semibold text-Large/SemiBold">
+                        <li class="pr-8"><a href="../index.html">Home</a></li>
+                        <li class="pr-8"><a href="../index.html#HowItWorks">Cara Kerja</a></li>
+                        <li class="pr-8"><a href="upload parafrase.html">Parafrase</a></li>
+                        <li class="pr-8"><a href="cek pesanan.html">Cari Pembelian</a></li>
+                        <li><a href="../index.html#question">Pertanyaan</a></li>
+                    </ul>
+                </div>
+                <div class="size-7 mobile:flex flex-col justify-around navbarMobile:hidden" onclick="openBar()">
+                    <div class="h-[2px] bg-purpleScale50 rounded-[1px]"></div>
+                    <div class="h-[2px] bg-purpleScale50 rounded-[1px]"></div>
+                    <div class="h-[2px] bg-purpleScale50 rounded-[1px]"></div>
+                </div>
             </div>
         </div>
     </nav>
-    <div id="menuBar" class="menuClosed w-screen h-screen mr-[100px] bg-purpleScale10 absolute z-10 opacity-0 px-2 flex flex-col justify-between">
+    <div id="menuBar" class="menuClosed w-screen h-screen mr-[100px] bg-purpleScale10 fixed z-[60] opacity-0 px-2 flex flex-col justify-between">
         <div>
             <div class="py-2 flex justify-between items-center">
                 <div class="flex items-center">
@@ -57,7 +59,7 @@
             </a>
         </div>
     </div>
-    <section id="content" class="w-full max-w-[1320px] navbarMobile:px-[120px] mobile:px-[20px] desktop:py-120px mobile:pt-60px mobile:pb-10">
+    <section id="content" class="w-full max-w-[1320px] navbarMobile:px-[120px] mobile:px-[20px] desktop:py-120px mobile:pt-60px mobile:pb-10 desktop:mt-DesktopNavHeight mobile:mt-MobileNavHeight">
         <center>
             <div class="flex justify-center flex-col w-full max-w-[756px]">
                 <img src="../../assets/Image cek pesanan.png" class="rounded-[20px] w-full h-[119px]">
