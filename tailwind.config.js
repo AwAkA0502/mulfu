@@ -28,6 +28,7 @@ module.exports = {
         'ButtonRed': '#AC5D5D',
       },
       fontSize: {
+        'Medium(14)': ['14px', '16.9px'],
         'header1/Desktop': ['48px', '72px'],
         'header1/Mobile': ['40px', '60px'],
         'header2/Desktop': ['40px', '60px'],

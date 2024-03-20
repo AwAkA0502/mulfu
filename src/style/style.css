@@ -1087,10 +1087,6 @@ video {
   border-radius: 0.75rem;
 }
 
-.rounded-\[15px\] {
-  border-radius: 15px;
-}
-
 .rounded-b-\[20px\] {
   border-bottom-right-radius: 20px;
   border-bottom-left-radius: 20px;
@@ -1397,6 +1393,11 @@ video {
   line-height: 24.2px;
 }
 
+.text-Medium\(14\) {
+  font-size: 14px;
+  line-height: 16.9px;
+}
+
 .text-Small\/Bold {
   font-size: 12px;
   line-height: 14.6px;
@@ -1541,6 +1542,10 @@ video {
 
   .mobile\:ml-0 {
     margin-left: 0px;
+  }
+
+  .mobile\:mr-0 {
+    margin-right: 0px;
   }
 
   .mobile\:mt-10 {
@@ -1785,6 +1790,10 @@ video {
   .desktop\:my-8 {
     margin-top: 2rem;
     margin-bottom: 2rem;
+  }
+
+  .desktop\:mb-0 {
+    margin-bottom: 0px;
   }
 
   .desktop\:mb-\[60px\] {
