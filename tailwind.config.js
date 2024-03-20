@@ -12,6 +12,7 @@ module.exports = {
       },
       colors: {
         'textTitleColor': '#703D80',
+        'BlogTitleHover': '#A070CF',
         'purpleScale10': '#E6DFEC',
         'purpleScale50': '#7E57A3',
         'purpleScale60': '#5A3E74',

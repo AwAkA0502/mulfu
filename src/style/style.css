@@ -1510,6 +1510,16 @@ video {
   background-color: rgb(230 223 236 / var(--tw-bg-opacity));
 }
 
+.hover\:text-purpleScale50:hover {
+  --tw-text-opacity: 1;
+  color: rgb(126 87 163 / var(--tw-text-opacity));
+}
+
+.hover\:text-BlogTitleHover:hover {
+  --tw-text-opacity: 1;
+  color: rgb(160 112 207 / var(--tw-text-opacity));
+}
+
 @media (min-width: 10px) {
   .mobile\:pointer-events-none {
     pointer-events: none;
