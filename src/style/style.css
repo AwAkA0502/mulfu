@@ -748,9 +748,18 @@ video {
   margin-top: 5420px;
 }
 
-.mt-\[4300px\] {
-  margin-top: 4300px;
+.mt-\[4200px\] {
+  margin-top: 4200px;
 }
+
+.ml-\[105vw\] {
+  margin-left: 105vw;
+}
+
+.mr-\[105vw\] {
+  margin-right: 105vw;
+}
+
 .flex {
   display: flex;
 }
@@ -880,40 +889,8 @@ video {
   height: 100vh;
 }
 
-.h-\[100px\] {
-  height: 100px;
-}
-
-.h-\[10px\] {
-  height: 10px;
-}
-
 .max-h-\[424px\] {
   max-height: 424px;
-}
-
-.max-h-\[10px\] {
-  max-height: 10px;
-}
-
-.max-h-\[116px\] {
-  max-height: 116px;
-}
-
-.max-h-\[100px\] {
-  max-height: 100px;
-}
-
-.max-h-\[140px\] {
-  max-height: 140px;
-}
-
-.max-h-\[110px\] {
-  max-height: 110px;
-}
-
-.max-h-\[120px\] {
-  max-height: 120px;
 }
 
 .w-120px {
@@ -988,10 +965,6 @@ video {
   max-width: 934px;
 }
 
-.max-w-\[225px\] {
-  max-width: 225px;
-}
-
 .flex-grow {
   flex-grow: 1;
 }
@@ -1026,12 +999,12 @@ video {
   grid-template-rows: repeat(5, minmax(0, 1fr));
 }
 
-.flex-col {
-  flex-direction: column;
+.flex-row {
+  flex-direction: row;
 }
 
-.flex-wrap {
-  flex-wrap: wrap;
+.flex-col {
+  flex-direction: column;
 }
 
 .items-center {
@@ -1076,14 +1049,6 @@ video {
 
 .gap-0 {
   gap: 0px;
-}
-
-.gap-1 {
-  gap: 0.25rem;
-}
-
-.gap-5 {
-  gap: 1.25rem;
 }
 
 .gap-x-2 {
@@ -1181,6 +1146,10 @@ video {
 }
 
 .border-2 {
+  border-width: 2px;
+}
+
+.border-\[2px\] {
   border-width: 2px;
 }
 
@@ -1317,22 +1286,6 @@ video {
   padding: 16px;
 }
 
-.p-\[26px\] {
-  padding: 26px;
-}
-
-.p-\[40px\] {
-  padding: 40px;
-}
-
-.p-\[4px\] {
-  padding: 4px;
-}
-
-.p-\[0px\] {
-  padding: 0px;
-}
-
 .px-10 {
   padding-left: 2.5rem;
   padding-right: 2.5rem;
@@ -1440,6 +1393,10 @@ video {
 
 .text-center {
   text-align: center;
+}
+
+.align-middle {
+  vertical-align: middle;
 }
 
 .font-poppins {
@@ -1616,6 +1573,11 @@ video {
 .hover\:text-BlogTitleHover:hover {
   --tw-text-opacity: 1;
   color: rgb(160 112 207 / var(--tw-text-opacity));
+}
+
+.focus\:outline-none:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
 }
 
 @media (min-width: 10px) {
