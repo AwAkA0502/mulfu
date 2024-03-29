@@ -20,6 +20,7 @@ module.exports = {
         'purpleScale90': '#120C17',
         'purpleScale0': '#FFFFFF',
         'grey/60': '#8E8E8E',
+        'red/60': '#AC5D5D',
         'borderColor': '#24192E',
         'hoverColor': '#5A3E74',
         'StatusSuccess': '#56C63A',
