@@ -64,6 +64,8 @@ function closeBar() {
 function HowItWorks(step) {
     document.getElementById("HowItWorks1").classList.remove("desktop:block");
     document.getElementById("HowItWorks1").classList.remove("mobile:hidden");
+    document.getElementById("HowItWorks1").classList.remove("mobile:bg-purpleScale0");
+    document.getElementById("HowItWorks1").classList.remove("mobile:dark:bg-purpleScale80");
     document.getElementById("HIW1").children[0].classList.remove("desktop:invert");
     const userTheme = localStorage.getItem("theme");
     const systemTheme = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
@@ -113,6 +115,7 @@ function SetElementsDark(isDark) {
     let icon2 = document.getElementsByClassName("icon2");
     if (isDark) {
         let classes = document.getElementsByClassName("unselected");
+        let icon = document.getElementsByClassName("iconMobile");
         for (let i = classes.length-1; i >= 0; i--) {
             console.log("dark" + i);
             classes[i].classList.add("unselected-dark");
@@ -127,9 +130,12 @@ function SetElementsDark(isDark) {
         for (let i = 0; i < icon2.length; i++) {
             icon2[i].classList.add("iconColor2");
         }
+        icon[0].classList.add("iconMobileDark");
+        icon[0].classList.remove("iconMobile");
     }
     else if(!isDark) {
         let classesDark = document.getElementsByClassName("unselected-dark");
+        let icon = document.getElementsByClassName("iconMobileDark");
         for (let i = classesDark.length-1; i >= 0; i--) {
             console.log("light" + i);
             classesDark[i].classList.add("unselected");
@@ -144,6 +150,8 @@ function SetElementsDark(isDark) {
         for (let i = 0; i < icon2.length; i++) {
             icon2[i].classList.remove("iconColor2");
         }
+        icon[0].classList.add("iconMobile");
+        icon[0].classList.remove("iconMobileDark");
     }
 }
 
