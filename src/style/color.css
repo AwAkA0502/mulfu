@@ -11,13 +11,13 @@
 }
 
 .iconMobile{
-    @media (max-width: 900px) {
+    @media only screen and (max-width: 900px) {
         filter: invert(33%) sepia(73%) saturate(372%) hue-rotate(228deg) brightness(101%) contrast(93%);
     }
 }
 
 .iconMobileDark{
-    @media (max-width: 900px) {
+    @media only screen and (max-width: 900px) {
         filter: invert(100%);
     }
 }

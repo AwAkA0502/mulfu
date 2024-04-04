@@ -1,10 +1,12 @@
 .selected{
-    background-color: #7E57A3;
-    .iconSelect{ 
-        filter: invert(100%); 
-    }
-    p{
-        color: #FFFFFF;
+    @media only screen and (min-width: 900px){
+        background-color: #7E57A3;
+        .iconSelect{ 
+            filter: invert(100%); 
+        }
+        p{
+            color: #FFFFFF;
+        }
     }
 }
 

@@ -82,6 +82,7 @@ function HowItWorks(step) {
             document.getElementById(id2).classList.add("unselected");
         }
         document.getElementById(id2).classList.remove("selected");
+        document.getElementById(id2).classList.remove("desktop:dark:bg-purpleScale50");
         document.getElementById(id2).classList.add("desktop:hover:bg-purpleScale10");
         document.getElementById(id2).classList.add("desktop:dark:hover:bg-purpleScale70");
     }
@@ -90,6 +91,7 @@ function HowItWorks(step) {
     document.getElementById(id).classList.add("block");
     document.getElementById(id).classList.remove("hidden");
     document.getElementById(id2).classList.add("selected");
+    document.getElementById(id2).classList.add("desktop:dark:bg-purpleScale50");
     document.getElementById(id2).classList.remove("unselected");
     document.getElementById(id2).classList.remove("unselected-dark");
     document.getElementById(id2).classList.remove("desktop:hover:bg-purpleScale10");
