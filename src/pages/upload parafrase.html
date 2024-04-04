@@ -10,13 +10,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../style/style.css">
     <link rel="stylesheet" href="../style/menuAnimation.css">
+    <link rel="stylesheet" href="../style/color.css">
 </head>
-<body class="flex flex-col items-center">
-    <nav class="backdrop-blur-sm desktop:pt-10 mobile:pt-2 w-full fixed duration-300 bg-white z-50 flex justify-center bg-opacity-80">
+<body class="flex flex-col items-center dark:bg-purpleScale90">
+    <nav class="backdrop-blur-sm desktop:pt-10 mobile:pt-2 w-full fixed duration-300 bg-white dark:bg-purpleScale90 z-50 flex justify-center bg-opacity-80">
         <div class="desktop:max-w-[1200px] mobile:w-full mobile:px-5">
             <div class="flex justify-between items-center">
                 <a class="flex items-center text-textTitleColor" href="../index.html">
-                    <img src="../../assets/Logo.png">
+                    <img src="/assets/Logo.png">
                 </a>
                 <div class="mobile:hidden navbarMobile:flex items-center">
                     <ul class="flex items-center text-purpleScale50 font-header font-semibold text-Large/SemiBold">
@@ -27,10 +28,14 @@
                         <li><a href="../index.html#question">Pertanyaan</a></li>
                     </ul>
                 </div>
-                <div class="size-7 mobile:flex flex-col justify-around navbarMobile:hidden" onclick="openBar()">
-                    <div class="h-[2px] bg-purpleScale50 rounded-[1px]"></div>
-                    <div class="h-[2px] bg-purpleScale50 rounded-[1px]"></div>
-                    <div class="h-[2px] bg-purpleScale50 rounded-[1px]"></div>
+                <div class="flex gap-4">
+                    <img id="sun" class="cursor-pointer hidden dark:stroke-white" src="../../assets/sun.svg" alt="">
+                    <img id="moon" class="cursor-pointer hidden dark:stroke-white" src="../../assets/moon.svg" alt="">
+                    <div class="size-7 mobile:flex flex-col justify-around navbarMobile:hidden" onclick="openBar()">
+                        <div class="h-[2px] bg-purpleScale50 rounded-[1px]"></div>
+                        <div class="h-[2px] bg-purpleScale50 rounded-[1px]"></div>
+                        <div class="h-[2px] bg-purpleScale50 rounded-[1px]"></div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -62,23 +67,23 @@
     <section id="content" class="w-full max-w-[1320px] navbarMobile:px-[120px] mobile:px-[20px] desktop:py-[80px] mobile:py-10 desktop:mt-DesktopNavHeight mobile:mt-MobileNavHeight">
         <div class="flex justify-center items-center">
             <img src="../../assets/Frame 36364.png" class="rounded-[20px] mobile:hidden desktop:block">
-            <div class="desktop:mx-[54px] rounded-[12px] p-[20px] desktop:w-[545px] mobile:w-full border border-solid border-borderColor shadow-[0_0_4px_4px_rgba(90,62,116,0.25)]">
+            <div class="desktop:mx-[54px] dark:bg-purpleScale80 dark:border-purpleScale50 rounded-[12px] p-[20px] desktop:w-[545px] mobile:w-full border border-solid border-borderColor shadow-[0_0_4px_4px_rgba(90,62,116,0.25)]">
                 <div>
-                    <p class="text-Medium(14) font-poppins text-purpleScale90">File Original</p>
+                    <p class="text-Medium(14) font-poppins text-purpleScale90 dark:text-purpleScale0">File Original</p>
                     <div class="flex mt-1 desktop:flex-row mobile:flex-col items-center">
                         <div class="w-full">
-                            <img src="../../assets/file-upload-input.svg" class="absolute mt-3 ml-2 size-[17px]">
-                            <input type="text" name="original" placeholder="Parafrase.docx" class="border border-solid border-borderColor rounded-xl h-[41px] pl-[32px] flex-grow w-full">
+                            <img src="../../assets/file-upload-input.svg" class="absolute mt-3 ml-2 size-[17px] icon2 iconColor2">
+                            <input type="text" name="original" placeholder="Parafrase.docx" class="border border-solid dark:bg-purpleScale80 dark:placeholder:text-purpleScale50 dark:text-purpleScale0 border-borderColor dark:border-purpleScale60 rounded-xl h-[41px] pl-[32px] flex-grow w-full">
                         </div>
                         <input type="button" value="Pilih File" class="desktop:max-w-[118px] h-[39px] rounded-[12px] bg-purpleScale50 text-purpleScale0 desktop:ml-4 mobile:mt-4 desktop:mt-0 mobile:ml-0 font-poppins font-semibold mobile:w-full">
                     </div>
                 </div>
                 <div class="mt-3">
-                    <p class="text-Medium(14) font-poppins text-purpleScale90">Hasil Turnitin</p>
+                    <p class="text-Medium(14) font-poppins text-purpleScale90 dark:text-purpleScale0">Hasil Turnitin</p>
                     <div class="flex mt-1 desktop:flex-row mobile:flex-col items-center">
                         <div class="w-full">
-                            <img src="../../assets/file-upload-input.svg" class="absolute mt-3 ml-2 size-[17px]">
-                            <input type="text" name="original" placeholder="Parafrase.pdf" class="border border-solid border-borderColor rounded-xl h-[41px] pl-[32px] flex-grow mobile:w-full">
+                            <img src="../../assets/file-upload-input.svg" class="absolute mt-3 ml-2 size-[17px] icon2 iconColor2">
+                            <input type="text" name="original" placeholder="Parafrase.pdf" class="border border-solid dark:bg-purpleScale80 dark:placeholder:text-purpleScale50 dark:text-purpleScale0 border-borderColor dark:border-purpleScale60 rounded-xl h-[41px] pl-[32px] flex-grow mobile:w-full">
                         </div>
                         <input type="button" value="Pilih File" class="desktop:max-w-[118px] h-[39px] rounded-[12px] bg-purpleScale50 text-purpleScale0 desktop:ml-4 mobile:mt-4 desktop:mt-0 mobile:ml-0 font-poppins font-semibold mobile:w-full">
                     </div>
@@ -86,31 +91,31 @@
                 <form action="" class="mt-3">
                     <div class="grid desktop:grid-cols-2 desktop:grid-rows-1 mobile:grid-cols-1 mobile:grid-rows-2 gap-4">
                         <div>
-                            <p class="text-Medium(14) font-poppins text-purpleScale90">Deadline</p>
-                            <input type="text" class="mt-1 text-Small/Small text-purpleScale90 font-poppins px-3 rounded-xl border border-solid border-borderColor h-[41px] w-full" placeholder="DD/MM/YY">
+                            <p class="text-Medium(14) font-poppins text-purpleScale90 dark:text-purpleScale0">Deadline</p>
+                            <input type="text" class="mt-1 text-Small/Small text-purpleScale90 dark:text-purpleScale0 dark:bg-purpleScale80 font-poppins px-3 rounded-xl border border-solid dark:placeholder:text-purpleScale50 border-borderColor dark:border-purpleScale60 h-[41px] w-full" placeholder="DD/MM/YY">
                         </div>
                         <div>
-                            <p class="text-Medium(14) font-poppins text-purpleScale90">Target Presentase</p>
-                            <div class="flex items-center mt-1 text-Small/Small text-purpleScale90 font-poppins px-3 rounded-xl border border-solid border-borderColor h-[41px] w-full">
-                                <input type="text" class="w-full focus:outline-none">
-                                <p>&nbsp;%</p>
+                            <p class="text-Medium(14) font-poppins text-purpleScale90 dark:text-purpleScale0">Target Presentase</p>
+                            <div class="flex items-center mt-1 text-Small/Small text-purpleScale90 font-poppins px-3 rounded-xl border border-solid border-borderColor dark:border-purpleScale60 h-[41px] w-full">
+                                <input type="text" class="w-full focus:outline-none dark:text-purpleScale0 dark:bg-purpleScale80">
+                                <p class="dark:text-purpleScale10">&nbsp;%</p>
                             </div>
                         </div>
                     </div>
                     <div class="mt-4">
-                        <p class="text-Medium(14) font-poppins text-purpleScale90">No Telp</p>
-                        <div class="flex items-center mt-1 text-Small/Small text-purpleScale90 font-poppins px-3 rounded-xl border border-solid border-borderColor h-[41px] w-full">
-                            <p>+62&nbsp;&nbsp;</p>
-                            <input type="text" class="w-full focus:outline-none">
+                        <p class="text-Medium(14) font-poppins text-purpleScale90 dark:text-purpleScale0">No Telp</p>
+                        <div class="flex items-center mt-1 text-Small/Small text-purpleScale90 font-poppins px-3 rounded-xl border border-solid border-borderColor dark:border-purpleScale60 h-[41px] w-full">
+                            <p class="dark:text-purpleScale50">+62&nbsp;&nbsp;</p>
+                            <input type="text" class="w-full focus:outline-none dark:text-purpleScale0 dark:bg-purpleScale80">
                         </div>
                     </div>
                     <div class="mt-4">
-                        <p class="text-Medium(14) font-poppins text-purpleScale90">Note</p>
-                        <textarea name="note" cols="30" rows="10" class="p-3 w-full h-[117px] rounded-xl border border-solid border-borderColor px-3 mt-1" placeholder="Note"></textarea>
+                        <p class="text-Medium(14) font-poppins text-purpleScale90 dark:text-purpleScale0">Note</p>
+                        <textarea name="note" cols="30" rows="10" class="p-3 w-full h-[117px] rounded-xl dark:text-purpleScale0 border dark:bg-purpleScale80 border-solid border-borderColor dark:border-purpleScale60 dark:placeholder:text-purpleScale50 px-3 mt-1" placeholder="Note"></textarea>
                     </div>
                 </form>
                 <div class="mt-3 flex justify-between items-center">
-                    <p class="text-Base/Regular text-purpleScale90 font-poppins">Total Bayar :</p>
+                    <p class="text-Base/Regular text-purpleScale90 font-poppins dark:text-purpleScale0">Total Bayar :</p>
                     <p class="text-header4/Bold text-purpleScale50 font-poppins font-bold">Rp2.000</p>
                 </div>
                 <button class="mt-3 text-Base/Bold font-poppins text-purpleScale0 bg-purpleScale50 rounded-[20px] py-4 px-10 font-bold w-full">Bayar</button>

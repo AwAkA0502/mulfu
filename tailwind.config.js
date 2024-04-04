@@ -6,7 +6,7 @@ module.exports = {
     extend: {
       screens: {
         // 'mobile': '360px',
-        'mobile': '10px',
+        'mobile': '360px',
         'navbarMobile': '900px',
         'desktop': '1220px',
       },
@@ -16,6 +16,7 @@ module.exports = {
         'purpleScale10': '#E6DFEC',
         'purpleScale50': '#7E57A3',
         'purpleScale60': '#5A3E74',
+        'purpleScale70': '#3F2C51',
         'purpleScale80': '#24192E',
         'purpleScale90': '#120C17',
         'purpleScale0': '#FFFFFF',
@@ -70,5 +71,6 @@ module.exports = {
     },
   },
   plugins: [],
+  darkMode: 'class',
 }
 

@@ -9,14 +9,12 @@
     width: 20px;
     height: 2px;
     position: absolute;
-    background-color: #000;
 }
 
 #vertical{
     width: 20px;
     height: 2px;
     position: absolute;
-    background-color: #000;
     rotate: 90deg;
 }
 

@@ -65,15 +65,23 @@ function HowItWorks(step) {
     document.getElementById("HowItWorks1").classList.remove("desktop:block");
     document.getElementById("HowItWorks1").classList.remove("mobile:hidden");
     document.getElementById("HIW1").children[0].classList.remove("desktop:invert");
+    const userTheme = localStorage.getItem("theme");
+    const systemTheme = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
     for (let i = 1; i <= 4; i++) {
         if (i == step) continue;
         let id = "HowItWorks"+i;
         let id2 = "HIW"+i;
         document.getElementById(id).classList.add("hidden");
         document.getElementById(id).classList.remove("block");
-        document.getElementById(id2).classList.add("unselected");
+        if (userTheme === "dark" || (!userTheme && systemTheme)) {
+            document.getElementById(id2).classList.add("unselected-dark");
+        }
+        else {
+            document.getElementById(id2).classList.add("unselected");
+        }
         document.getElementById(id2).classList.remove("selected");
         document.getElementById(id2).classList.add("desktop:hover:bg-purpleScale10");
+        document.getElementById(id2).classList.add("desktop:dark:hover:bg-purpleScale70");
     }
     let id = "HowItWorks"+step;
     let id2 = "HIW"+step;
@@ -81,7 +89,9 @@ function HowItWorks(step) {
     document.getElementById(id).classList.remove("hidden");
     document.getElementById(id2).classList.add("selected");
     document.getElementById(id2).classList.remove("unselected");
+    document.getElementById(id2).classList.remove("unselected-dark");
     document.getElementById(id2).classList.remove("desktop:hover:bg-purpleScale10");
+    document.getElementById(id2).classList.remove("desktop:dark:hover:bg-purpleScale70");
 }
 //HowItWorks feature end
 
@@ -95,3 +105,92 @@ window.onscroll = function () {
         header.classList.add("desktop:pt-10");
     }
 }
+
+//darkMode control
+function SetElementsDark(isDark) {
+    let gradients = document.getElementsByClassName("gradien");
+    let icon = document.getElementsByClassName("icon");
+    let icon2 = document.getElementsByClassName("icon2");
+    if (isDark) {
+        let classes = document.getElementsByClassName("unselected");
+        for (let i = classes.length-1; i >= 0; i--) {
+            console.log("dark" + i);
+            classes[i].classList.add("unselected-dark");
+            classes[i].classList.remove("unselected");
+        }
+        for (let i = 0; i < gradients.length; i++) {
+            gradients[i].src = "../assets/Ellipse 13.svg";
+        }
+        for (let i = 0; i < icon.length; i++) {
+            icon[i].classList.add("iconColor");
+        }
+        for (let i = 0; i < icon2.length; i++) {
+            icon2[i].classList.add("iconColor2");
+        }
+    }
+    else if(!isDark) {
+        let classesDark = document.getElementsByClassName("unselected-dark");
+        for (let i = classesDark.length-1; i >= 0; i--) {
+            console.log("light" + i);
+            classesDark[i].classList.add("unselected");
+            classesDark[i].classList.remove("unselected-dark");
+        }
+        for (let i = 0; i < gradients.length; i++) {
+            gradients[i].src = "../assets/Ellipse 12.png";
+        }
+        for (let i = 0; i < icon.length; i++) {
+            icon[i].classList.remove("iconColor");
+        }
+        for (let i = 0; i < icon2.length; i++) {
+            icon2[i].classList.remove("iconColor2");
+        }
+    }
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+    const sunIcon = document.querySelector('#sun');
+    const moonIcon = document.querySelector('#moon');
+
+    const userTheme = localStorage.getItem("theme");
+    const systemTheme = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+
+    const iconToggle = () => {
+        moonIcon.classList.toggle("hidden");
+        sunIcon.classList.toggle("hidden");
+    };
+
+    const themeCheck = () => {
+        if (userTheme === "dark" || (!userTheme && systemTheme)) {
+            document.documentElement.classList.add("dark");
+            moonIcon.classList.remove("hidden");
+            SetElementsDark(true);
+            return;
+        }
+        sunIcon.classList.remove("hidden");
+        SetElementsDark(false);
+    }
+
+    const themeSwitch = () => {
+        if (document.documentElement.classList.contains("dark")) {
+            document.documentElement.classList.remove("dark");
+            localStorage.setItem("theme","light");
+            iconToggle();
+            SetElementsDark(false);
+            return;
+        }
+        document.documentElement.classList.add("dark");
+        localStorage.setItem("theme","dark");
+        iconToggle();
+        SetElementsDark(true);
+    };
+
+    sunIcon.addEventListener('click', () => {
+        themeSwitch();
+    });
+
+    moonIcon.addEventListener('click', () => {
+        themeSwitch();
+    });
+
+    themeCheck();
+});
