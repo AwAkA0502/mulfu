@@ -18,8 +18,12 @@
     }
 }
 
-@media only screen and (max-width: 900px){
-    .iconMobile{
-        filter: invert(24%) sepia(16%) saturate(1831%) hue-rotate(228deg) brightness(100%) contrast(85%);
+.unselected-dark{
+    background-color: #24192E;
+    .iconSelect{ 
+        filter: invert(100%); 
+    }
+    p{
+        color: #FFFFFF;
     }
 }

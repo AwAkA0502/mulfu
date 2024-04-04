@@ -11,8 +11,8 @@
     <link rel="stylesheet" href="../style/style.css">
     <link rel="stylesheet" href="../style/menuAnimation.css">
 </head>
-<body class="flex flex-col items-center">
-    <nav class="backdrop-blur-sm desktop:pt-10 mobile:pt-2 w-full fixed duration-300 bg-white z-50 flex justify-center bg-opacity-80">
+<body class="flex flex-col items-center dark:bg-purpleScale90">
+    <nav class="backdrop-blur-sm desktop:pt-10 mobile:pt-2 w-full fixed duration-300 bg-white dark:bg-purpleScale90 z-50 flex justify-center bg-opacity-80">
         <div class="desktop:max-w-[1200px] mobile:w-full mobile:px-5">
             <div class="flex justify-between items-center">
                 <a class="flex items-center text-textTitleColor" href="../index.html">
@@ -27,10 +27,14 @@
                         <li><a href="../index.html#question">Pertanyaan</a></li>
                     </ul>
                 </div>
-                <div class="size-7 mobile:flex flex-col justify-around navbarMobile:hidden" onclick="openBar()">
-                    <div class="h-[2px] bg-purpleScale50 rounded-[1px]"></div>
-                    <div class="h-[2px] bg-purpleScale50 rounded-[1px]"></div>
-                    <div class="h-[2px] bg-purpleScale50 rounded-[1px]"></div>
+                <div class="flex gap-4">
+                    <img id="sun" class="cursor-pointer hidden dark:stroke-white" src="/assets/sun.svg" alt="">
+                    <img id="moon" class="cursor-pointer hidden dark:stroke-white" src="/assets/moon.svg" alt="">
+                    <div class="size-7 mobile:flex flex-col justify-around navbarMobile:hidden" onclick="openBar()">
+                        <div class="h-[2px] bg-purpleScale50 rounded-[1px]"></div>
+                        <div class="h-[2px] bg-purpleScale50 rounded-[1px]"></div>
+                        <div class="h-[2px] bg-purpleScale50 rounded-[1px]"></div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -63,15 +67,15 @@
         <img src="../../assets/Image cek pesanan.png" class="rounded-[20px] desktop:mb-[60px] mobile:mb-6">
         <div class="flex flex-col items-center mobile:w-full">
             <h1 class="mb-4 text-purpleScale50 desktop:text-header1/Desktop mobile:text-CekPesananMobileHeader font-bold font-poppins">Cari Orderan kamu disini</h1>
-            <div class="p-[20px] border border-solid border-borderColor shadow-[0_0_4px_4px_rgba(90,62,116,0.25)] rounded-xl desktop:w-[894px] mobile:w-full">
+            <div class="p-[20px] border border-solid dark:bg-purpleScale80 border-borderColor dark:border-purpleScale60 shadow-[0_0_4px_4px_rgba(90,62,116,0.25)] rounded-xl desktop:w-[894px] mobile:w-full">
                 <div class="mb-4 flex mobile:pt-5 desktop:flex-row mobile:flex-col">
                     <div class="desktop:mr-4 mobile:mb-4 desktop:mb-0 mobile:mr-0 flex-grow">
-                        <p class="text-Medium(14) font-poppins mb-1">Whatsapp</p>
-                        <input type="text" name="original" placeholder="Masukkan Nomor Whatsapp" class="border border-solid border-borderColor rounded-xl h-[41px] pl-3 w-full">
+                        <p class="text-Medium(14) font-poppins mb-1 dark:text-purpleScale0">Whatsapp</p>
+                        <input type="text" name="original" placeholder="Masukkan Nomor Whatsapp" class="border border-solid dark:text-purpleScale0 dark:border-purpleScale60 dark:placeholder:text-purpleScale50 dark:bg-purpleScale80 border-borderColor rounded-xl h-[41px] pl-3 w-full">
                     </div>
                     <div class="flex-grow">
-                        <p class="text-Medium(14) font-poppins mb-1">Password</p>
-                        <input type="text" name="original" placeholder="Masukkan Password" class="border border-solid border-borderColor rounded-xl h-[41px] pl-3 w-full">
+                        <p class="text-Medium(14) font-poppins mb-1 dark:text-purpleScale0">Password</p>
+                        <input type="text" name="original" placeholder="Masukkan Password" class="border border-solid dark:border-purpleScale60 dark:text-purpleScale0 dark:placeholder:text-purpleScale50 dark:bg-purpleScale80 border-borderColor rounded-xl h-[41px] pl-3 w-full">
                     </div>
                 </div>
                 <button class="text-Base/Bold font-poppins text-purpleScale0 bg-purpleScale50 rounded-[20px] py-4 px-10 font-bold w-full">Masuk</button>

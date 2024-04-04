@@ -12,8 +12,8 @@
     <link rel="stylesheet" href="../style/menuAnimation.css">
     <link rel="stylesheet" href="../style/tooltip.css">
 </head>
-<body class="flex flex-col items-center overflow-x-hidden">
-    <nav class="backdrop-blur-sm desktop:pt-10 mobile:pt-2 w-full fixed duration-300 bg-white z-50 flex justify-center bg-opacity-80">
+<body class="flex flex-col items-center overflow-x-hidden dark:bg-purpleScale90">
+    <nav class="backdrop-blur-sm desktop:pt-10 mobile:pt-2 w-full fixed duration-300 bg-white z-50 dark:bg-purpleScale90 flex justify-center bg-opacity-80">
         <div class="desktop:max-w-[1200px] mobile:w-full mobile:px-5">
             <div class="flex justify-between items-center">
                 <a class="flex items-center text-textTitleColor" href="../index.html">
@@ -28,10 +28,14 @@
                         <li><a href="../index.html#question">Pertanyaan</a></li>
                     </ul>
                 </div>
-                <div class="size-7 mobile:flex flex-col justify-around navbarMobile:hidden" onclick="openBar()">
-                    <div class="h-[2px] bg-purpleScale50 rounded-[1px]"></div>
-                    <div class="h-[2px] bg-purpleScale50 rounded-[1px]"></div>
-                    <div class="h-[2px] bg-purpleScale50 rounded-[1px]"></div>
+                <div class="flex gap-4">
+                    <img id="sun" class="cursor-pointer hidden dark:stroke-white" src="/assets/sun.svg" alt="">
+                    <img id="moon" class="cursor-pointer hidden dark:stroke-white" src="/assets/moon.svg" alt="">
+                    <div class="size-7 mobile:flex flex-col justify-around navbarMobile:hidden" onclick="openBar()">
+                        <div class="h-[2px] bg-purpleScale50 rounded-[1px]"></div>
+                        <div class="h-[2px] bg-purpleScale50 rounded-[1px]"></div>
+                        <div class="h-[2px] bg-purpleScale50 rounded-[1px]"></div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -65,155 +69,155 @@
             <h2 class="font-poppins text-header2/Desktop font-bold text-purpleScale50 self-center text-center">Daftar Transaksi</h2>
             <div class="desktop:mt-8 mobile:mt-6 flex justify-between mobile:flex-col desktop:flex-row">
                 <div class="flex w-[411px] justify-between mobile:flex-col desktop:flex-row">
-                    <p class="text-Large/Reguler text-purpleScale90 font-poppins">Saldo: <span class="text-Large/Reguler text-purpleScale50 font-semibold">Rp1.000</span></p>
-                    <p class="text-Large/Reguler text-purpleScale90 font-poppins mobile:mt-2 desktop:mt-0">Total Mengundang : <span class="text-Large/Reguler text-purpleScale50 font-semibold">4</span></p>
+                    <p class="text-Large/Reguler text-purpleScale90 font-poppins dark:text-purpleScale0">Saldo: <span class="text-Large/Reguler text-purpleScale50 font-semibold">Rp1.000</span></p>
+                    <p class="text-Large/Reguler text-purpleScale90 font-poppins mobile:mt-2 desktop:mt-0 dark:text-purpleScale0">Total Mengundang : <span class="text-Large/Reguler text-purpleScale50 font-semibold">4</span></p>
                 </div>
                 <div>
-                    <p class="text-Large/Reguler text-purpleScale90 font-poppins mobile:mt-2 desktop:mt-0">Link Undangan : <span class="text-Large/Reguler text-purpleScale50 font-semibold">U2Y3278</span></p>
+                    <p class="text-Large/Reguler text-purpleScale90 font-poppins mobile:mt-2 desktop:mt-0 dark:text-purpleScale0">Link Undangan : <span class="text-Large/Reguler text-purpleScale50 font-semibold">U2Y3278</span></p>
                 </div>
             </div>
             <div class="mt-8">
                 <div class="flex mobile:flex-col desktop:flex-row">
                     <div class="desktop:mr-4 mobile:mb-6 flex-grow">
-                        <p class="text-Medium(14) font-poppins mb-1">Pencarian</p>
-                        <input type="text" name="original" placeholder="Cari Sesuatu" class="border border-solid border-borderColor rounded-xl h-[41px] pl-3 py-3 w-full">
+                        <p class="text-Medium(14) font-poppins mb-1 dark:text-purpleScale0">Pencarian</p>
+                        <input type="text" name="original" placeholder="Cari Sesuatu" class="border border-solid dark:bg-purpleScale80 dark:placeholder:text-purpleScale60 border-borderColor dark:border-purpleScale60 rounded-xl h-[41px] pl-3 py-3 w-full">
                     </div>
                     <div class="flex-grow">
-                        <p class="text-Medium(14) font-poppins mb-1">Tanggal</p>
-                        <input type="text" name="original" placeholder="Pencarian Dengan Tanggal" class="border border-solid border-borderColor rounded-xl h-[41px] pl-3 py-3 w-full">
+                        <p class="text-Medium(14) font-poppins mb-1 dark:text-purpleScale0">Tanggal</p>
+                        <input type="text" name="original" placeholder="Pencarian Dengan Tanggal" class="border border-solid dark:placeholder:text-purpleScale60 dark:bg-purpleScale80 border-borderColor dark:border-purpleScale60 rounded-xl h-[41px] pl-3 py-3 w-full">
                     </div>
                 </div>
             </div>
             <div class="grid desktop:grid-cols-2 desktop:grid-rows-3 mobile:grid-cols-1 mobile:grid-rows-6 gap-4 mt-6 ">
-                <div class="p-6 border border-solid border-purpleScale50 rounded-[16px] border-[2px] shadow-[0_0_4px_4px_rgba(90,62,116,0.25)]">
+                <div class="p-6 border border-solid border-purpleScale50 rounded-[16px] dark:bg-purpleScale80 shadow-[0_0_4px_4px_rgba(90,62,116,0.25)]">
                     <div class="flex justify-between items-center">
                         <div class="flex">
-                            <p class="font-poppins text-purpleScale90 text-CashoutCardStatus">Status: <span class="font-semibold text-StatusSuccess">Success</span></p>
+                            <p class="font-poppins text-purpleScale90 text-CashoutCardStatus dark:text-purpleScale0">Status: <span class="font-semibold text-StatusSuccess">Success</span></p>
                             <img src="../../assets/failed.png" class="ml-2 hidden">
                         </div>
-                        <p class="font-poppins text-purpleScale90 text-CashoutCard">15 Jan · 21:44</p>
+                        <p class="font-poppins text-purpleScale90 text-CashoutCard dark:text-purpleScale0">15 Jan · 21:44</p>
                     </div>
                     <div class="mt-4 flex justify-between items-center">
-                        <p class="font-poppins text-purpleScale90 text-CashoutCard">Total Bayar :</p>
-                        <p class="font-poppins font-bold text-purpleScale50 text-CashoutCardPrice">Rp2.000</p>
+                        <p class="font-poppins text-purpleScale90 text-CashoutCard dark:text-purpleScale0">Total Bayar :</p>
+                        <p class="font-poppins font-bold text-purpleScale50 text-CashoutCardPrice dark:text-purpleScale0">Rp2.000</p>
                     </div>
-                    <div class="mt-4 p-4 border border-solid border-purpleScale90 rounded-lg">
-                        <p class="font-poppins text-CashoutCardInfo text-purpleScale90">Nama File : <span class="text-purpleScale50">Turnitin</span></p>
-                        <p class="font-poppins text-CashoutCardInfo text-purpleScale90 mt-4">File ID : <span>REGM-YZPM-Q7VE-1SIP</span></p>
-                        <p class="font-poppins text-CashoutCardInfo text-purpleScale90 mt-4">Order ID : <span>TURNMULFU-7CN2X3NV</span></p>
+                    <div class="mt-4 p-4 border border-solid border-purpleScale90 dark:border-purpleScale60 rounded-lg">
+                        <p class="font-poppins text-CashoutCardInfo text-purpleScale90 dark:text-purpleScale0">Nama File : <span class="dark:text-purpleScale50">Turnitin</span></p>
+                        <p class="font-poppins text-CashoutCardInfo text-purpleScale90 mt-4 dark:text-purpleScale0">File ID : <span class="dark:text-purpleScale50">REGM-YZPM-Q7VE-1SIP</span></p>
+                        <p class="font-poppins text-CashoutCardInfo text-purpleScale90 mt-4 dark:text-purpleScale0">Order ID : <span class="dark:text-purpleScale50">TURNMULFU-7CN2X3NV</span></p>
                     </div>
                     <div class="mt-4 flex">
                         <button class="h-[39px] rounded-[20px] font-poppins font-bold text-CashoutCardInfo flex-grow text-purpleScale0 bg-ButtonPurple mr-4">Download</button>
                         <button class="h-[39px] rounded-[20px] font-poppins font-bold text-CashoutCardInfo flex-grow text-purpleScale0 bg-ButtonRed">Delete</button>
                     </div>
                 </div>
-                <div class="p-6 border border-solid border-purpleScale50 rounded-[16px] border-[2px] shadow-[0_0_4px_4px_rgba(90,62,116,0.25)]">
+                <div class="p-6 border border-solid border-purpleScale50 dark:bg-purpleScale80 rounded-[16px] shadow-[0_0_4px_4px_rgba(90,62,116,0.25)]">
                     <div class="flex justify-between items-center">
                         <div class="flex">
-                            <p class="font-poppins text-purpleScale90 text-CashoutCardStatus">Status: <span class="font-semibold text-StatusFailed">Failed</span></p>
+                            <p class="font-poppins text-purpleScale90 text-CashoutCardStatus dark:text-purpleScale0">Status: <span class="font-semibold text-StatusFailed">Failed</span></p>
                             <img id="failed-icon" src="../../assets/failed.png" class="ml-2">
                             <div id="tooltip-failed" class="w-[153px] h-[23px] bg-purpleScale50 absolute rounded-[8px] border border-black hidden justify-center items-center ml-[168px] -translate-y-[20px] shadow-[0_2px_5px_2px_rgba(90,62,116,0.25)]">
-                                <p class="font-poppins text-Small/Bold font-bold text-purpleScale0">File Tidak ditemukan</p>
+                                <p class="font-poppins text-Small/Bold font-bold text-purpleScale0 dark:text-purpleScale0">File Tidak ditemukan</p>
                             </div>
                         </div>
-                        <p class="font-poppins text-purpleScale90 text-CashoutCard">15 Jan · 21:44</p>
+                        <p class="font-poppins text-purpleScale90 text-CashoutCard dark:text-purpleScale0">15 Jan · 21:44</p>
                     </div>
                     <div class="mt-4 flex justify-between items-center">
-                        <p class="font-poppins text-purpleScale90 text-CashoutCard">Total Bayar :</p>
-                        <p class="font-poppins font-bold text-purpleScale50 text-CashoutCardPrice">Rp2.000</p>
+                        <p class="font-poppins text-purpleScale90 text-CashoutCard dark:text-purpleScale0">Total Bayar :</p>
+                        <p class="font-poppins font-bold text-purpleScale50 text-CashoutCardPrice dark:text-purpleScale0">Rp2.000</p>
                     </div>
-                    <div class="mt-4 p-4 border border-solid border-purpleScale90 rounded-lg">
-                        <p class="font-poppins text-CashoutCardInfo text-purpleScale90">Nama File : <span class="text-purpleScale50">Turnitin</span></p>
-                        <p class="font-poppins text-CashoutCardInfo text-purpleScale90 mt-4">File ID : <span>REGM-YZPM-Q7VE-1SIP</span></p>
-                        <p class="font-poppins text-CashoutCardInfo text-purpleScale90 mt-4">Order ID : <span>TURNMULFU-7CN2X3NV</span></p>
+                    <div class="mt-4 p-4 border border-solid border-purpleScale90 dark:border-purpleScale60 rounded-lg">
+                        <p class="font-poppins text-CashoutCardInfo text-purpleScale90 dark:text-purpleScale0">Nama File : <span class="dark:text-purpleScale50">Turnitin</span></p>
+                        <p class="font-poppins text-CashoutCardInfo text-purpleScale90 dark:text-purpleScale0 mt-4">File ID : <span class="dark:text-purpleScale50">REGM-YZPM-Q7VE-1SIP</span></p>
+                        <p class="font-poppins text-CashoutCardInfo text-purpleScale90 dark:text-purpleScale0 mt-4">Order ID : <span class="dark:text-purpleScale50">TURNMULFU-7CN2X3NV</span></p>
                     </div>
                     <div class="mt-4 flex">
                         <button class="h-[39px] rounded-[20px] font-poppins font-bold text-CashoutCardInfo flex-grow text-purpleScale0 bg-grey/60 mr-4">Download</button>
                         <button class="h-[39px] rounded-[20px] font-poppins font-bold text-CashoutCardInfo flex-grow text-purpleScale0 bg-grey/60">Delete</button>
                     </div>
                 </div>
-                <div class="p-6 border border-solid border-purpleScale50 rounded-[16px] border-[2px] shadow-[0_0_4px_4px_rgba(90,62,116,0.25)]">
+                <div class="p-6 border border-solid border-purpleScale50 dark:bg-purpleScale80 rounded-[16px] shadow-[0_0_4px_4px_rgba(90,62,116,0.25)]">
                     <div class="flex justify-between items-center">
                         <div class="flex">
-                            <p class="font-poppins text-purpleScale90 text-CashoutCardStatus">Status: <span class="font-semibold text-StatusProcess">Process</span></p>
+                            <p class="font-poppins text-purpleScale90 text-CashoutCardStatus dark:text-purpleScale0">Status: <span class="font-semibold text-StatusProcess">Process</span></p>
                             <img src="../../assets/failed.png" class="ml-2 hidden">
                         </div>
-                        <p class="font-poppins text-purpleScale90 text-CashoutCard">15 Jan · 21:44</p>
+                        <p class="font-poppins text-purpleScale90 text-CashoutCard dark:text-purpleScale0">15 Jan · 21:44</p>
                     </div>
                     <div class="mt-4 flex justify-between items-center">
-                        <p class="font-poppins text-purpleScale90 text-CashoutCard">Total Bayar :</p>
-                        <p class="font-poppins font-bold text-purpleScale50 text-CashoutCardPrice">Rp2.000</p>
+                        <p class="font-poppins text-purpleScale90 text-CashoutCard dark:text-purpleScale0">Total Bayar :</p>
+                        <p class="font-poppins font-bold text-purpleScale50 text-CashoutCardPrice dark:text-purpleScale0">Rp2.000</p>
                     </div>
-                    <div class="mt-4 p-4 border border-solid border-purpleScale90 rounded-lg">
-                        <p class="font-poppins text-CashoutCardInfo text-purpleScale90">Nama File : <span class="text-purpleScale50">Turnitin</span></p>
-                        <p class="font-poppins text-CashoutCardInfo text-purpleScale90 mt-4">File ID : <span>REGM-YZPM-Q7VE-1SIP</span></p>
-                        <p class="font-poppins text-CashoutCardInfo text-purpleScale90 mt-4">Order ID : <span>TURNMULFU-7CN2X3NV</span></p>
+                    <div class="mt-4 p-4 border border-solid border-purpleScale90 dark:border-purpleScale60 rounded-lg">
+                        <p class="font-poppins text-CashoutCardInfo text-purpleScale90 dark:text-purpleScale0">Nama File : <span class="dark:text-purpleScale50">Turnitin</span></p>
+                        <p class="font-poppins text-CashoutCardInfo text-purpleScale90 mt-4 dark:text-purpleScale0">File ID : <span class="dark:text-purpleScale50">REGM-YZPM-Q7VE-1SIP</span></p>
+                        <p class="font-poppins text-CashoutCardInfo text-purpleScale90 mt-4 dark:text-purpleScale0">Order ID : <span class="dark:text-purpleScale50">TURNMULFU-7CN2X3NV</span></p>
                     </div>
                     <div class="mt-4 flex">
                         <button class="h-[39px] rounded-[20px] font-poppins font-bold text-CashoutCardInfo flex-grow text-purpleScale0 bg-ButtonPurple mr-4">Download</button>
                         <button class="h-[39px] rounded-[20px] font-poppins font-bold text-CashoutCardInfo flex-grow text-purpleScale0 bg-ButtonRed">Delete</button>
                     </div>
                 </div>
-                <div class="p-6 border border-solid border-purpleScale50 rounded-[16px] border-[2px] shadow-[0_0_4px_4px_rgba(90,62,116,0.25)]">
+                <div class="p-6 border border-solid border-purpleScale50 dark:bg-purpleScale80 rounded-[16px] shadow-[0_0_4px_4px_rgba(90,62,116,0.25)]">
                     <div class="flex justify-between items-center">
                         <div class="flex">
-                            <p class="font-poppins text-purpleScale90 text-CashoutCardStatus">Status: <span class="font-semibold text-StatusSuccess">Success</span></p>
+                            <p class="font-poppins text-purpleScale90 dark:text-purpleScale0 text-CashoutCardStatus">Status: <span class="font-semibold text-StatusSuccess">Success</span></p>
                             <img src="../../assets/failed.png" class="ml-2 hidden">
                         </div>
-                        <p class="font-poppins text-purpleScale90 text-CashoutCard">15 Jan · 21:44</p>
+                        <p class="font-poppins text-purpleScale90 text-CashoutCard dark:text-purpleScale0">15 Jan · 21:44</p>
                     </div>
                     <div class="mt-4 flex justify-between items-center">
-                        <p class="font-poppins text-purpleScale90 text-CashoutCard">Total Bayar :</p>
-                        <p class="font-poppins font-bold text-purpleScale50 text-CashoutCardPrice">Rp2.000</p>
+                        <p class="font-poppins text-purpleScale90 text-CashoutCard dark:text-purpleScale0">Total Bayar :</p>
+                        <p class="font-poppins font-bold text-purpleScale50 text-CashoutCardPrice dark:text-purpleScale0">Rp2.000</p>
                     </div>
-                    <div class="mt-4 p-4 border border-solid border-purpleScale90 rounded-lg">
-                        <p class="font-poppins text-CashoutCardInfo text-purpleScale90">Nama File : <span class="text-purpleScale50">Turnitin</span></p>
-                        <p class="font-poppins text-CashoutCardInfo text-purpleScale90 mt-4">File ID : <span>REGM-YZPM-Q7VE-1SIP</span></p>
-                        <p class="font-poppins text-CashoutCardInfo text-purpleScale90 mt-4">Order ID : <span>TURNMULFU-7CN2X3NV</span></p>
+                    <div class="mt-4 p-4 border border-solid border-purpleScale90 dark:border-purpleScale60 rounded-lg">
+                        <p class="font-poppins text-CashoutCardInfo text-purpleScale90 dark:text-purpleScale0">Nama File : <span class="dark:text-purpleScale50">Turnitin</span></p>
+                        <p class="font-poppins text-CashoutCardInfo text-purpleScale90 mt-4 dark:text-purpleScale0">File ID : <span class="dark:text-purpleScale50">REGM-YZPM-Q7VE-1SIP</span></p>
+                        <p class="font-poppins text-CashoutCardInfo text-purpleScale90 mt-4 dark:text-purpleScale0">Order ID : <span class="dark:text-purpleScale50">TURNMULFU-7CN2X3NV</span></p>
                     </div>
                     <div class="mt-4 flex">
                         <button class="h-[39px] rounded-[20px] font-poppins font-bold text-CashoutCardInfo flex-grow text-purpleScale0 bg-ButtonPurple mr-4">Download</button>
                         <button class="h-[39px] rounded-[20px] font-poppins font-bold text-CashoutCardInfo flex-grow text-purpleScale0 bg-ButtonRed">Delete</button>
                     </div>
                 </div>
-                <div class="p-6 border border-solid border-purpleScale50 rounded-[16px] border-[2px] shadow-[0_0_4px_4px_rgba(90,62,116,0.25)]">
+                <div class="p-6 border border-solid border-purpleScale50 rounded-[16px] dark:bg-purpleScale80 shadow-[0_0_4px_4px_rgba(90,62,116,0.25)]">
                     <div class="flex justify-between items-center">
                         <div class="flex">
-                            <p class="font-poppins text-purpleScale90 text-CashoutCardStatus">Status: <span class="font-semibold text-StatusSuccess">Success</span></p>
+                            <p class="font-poppins text-purpleScale90 text-CashoutCardStatus dark:text-purpleScale0">Status: <span class="font-semibold text-StatusSuccess">Success</span></p>
                             <img src="../../assets/failed.png" class="ml-2 hidden">
                         </div>
-                        <p class="font-poppins text-purpleScale90 text-CashoutCard">15 Jan · 21:44</p>
+                        <p class="font-poppins text-purpleScale90 text-CashoutCard dark:text-purpleScale0">15 Jan · 21:44</p>
                     </div>
                     <div class="mt-4 flex justify-between items-center">
-                        <p class="font-poppins text-purpleScale90 text-CashoutCard">Total Bayar :</p>
-                        <p class="font-poppins font-bold text-purpleScale50 text-CashoutCardPrice">Rp2.000</p>
+                        <p class="font-poppins text-purpleScale90 text-CashoutCard dark:text-purpleScale0">Total Bayar :</p>
+                        <p class="font-poppins font-bold text-purpleScale50 text-CashoutCardPrice dark:text-purpleScale0">Rp2.000</p>
                     </div>
-                    <div class="mt-4 p-4 border border-solid border-purpleScale90 rounded-lg">
-                        <p class="font-poppins text-CashoutCardInfo text-purpleScale90">Nama File : <span class="text-purpleScale50">Turnitin</span></p>
-                        <p class="font-poppins text-CashoutCardInfo text-purpleScale90 mt-4">File ID : <span>REGM-YZPM-Q7VE-1SIP</span></p>
-                        <p class="font-poppins text-CashoutCardInfo text-purpleScale90 mt-4">Order ID : <span>TURNMULFU-7CN2X3NV</span></p>
+                    <div class="mt-4 p-4 border border-solid border-purpleScale90 rounded-lg dark:border-purpleScale60">
+                        <p class="font-poppins text-CashoutCardInfo text-purpleScale90 dark:text-purpleScale0">Nama File : <span class="dark:text-purpleScale50">Turnitin</span></p>
+                        <p class="font-poppins text-CashoutCardInfo text-purpleScale90 mt-4 dark:text-purpleScale0">File ID : <span class="dark:text-purpleScale50">REGM-YZPM-Q7VE-1SIP</span></p>
+                        <p class="font-poppins text-CashoutCardInfo text-purpleScale90 mt-4 dark:text-purpleScale0">Order ID : <span class="dark:text-purpleScale50">TURNMULFU-7CN2X3NV</span></p>
                     </div>
                     <div class="mt-4 flex">
                         <button class="h-[39px] rounded-[20px] font-poppins font-bold text-CashoutCardInfo flex-grow text-purpleScale0 bg-ButtonPurple mr-4">Download</button>
                         <button class="h-[39px] rounded-[20px] font-poppins font-bold text-CashoutCardInfo flex-grow text-purpleScale0 bg-ButtonRed">Delete</button>
                     </div>
                 </div>
-                <div class="p-6 border border-solid border-purpleScale50 rounded-[16px] border-[2px] shadow-[0_0_4px_4px_rgba(90,62,116,0.25)]">
+                <div class="p-6 border border-solid border-purpleScale50 rounded-[16px] dark:bg-purpleScale80 shadow-[0_0_4px_4px_rgba(90,62,116,0.25)]">
                     <div class="flex justify-between items-center">
                         <div class="flex">
-                            <p class="font-poppins text-purpleScale90 text-CashoutCardStatus">Status: <span class="font-semibold text-StatusSuccess">Success</span></p>
+                            <p class="font-poppins text-purpleScale90 text-CashoutCardStatus dark:text-purpleScale0">Status: <span class="font-semibold text-StatusSuccess">Success</span></p>
                             <img src="../../assets/failed.png" class="ml-2 hidden">
                         </div>
-                        <p class="font-poppins text-purpleScale90 text-CashoutCard">15 Jan · 21:44</p>
+                        <p class="font-poppins text-purpleScale90 text-CashoutCard dark:text-purpleScale0">15 Jan · 21:44</p>
                     </div>
                     <div class="mt-4 flex justify-between items-center">
-                        <p class="font-poppins text-purpleScale90 text-CashoutCard">Total Bayar :</p>
-                        <p class="font-poppins font-bold text-purpleScale50 text-CashoutCardPrice">Rp2.000</p>
+                        <p class="font-poppins text-purpleScale90 text-CashoutCard dark:text-purpleScale0">Total Bayar :</p>
+                        <p class="font-poppins font-bold text-purpleScale50 text-CashoutCardPrice dark:text-purpleScale0">Rp2.000</p>
                     </div>
-                    <div class="mt-4 p-4 border border-solid border-purpleScale90 rounded-lg">
-                        <p class="font-poppins text-CashoutCardInfo text-purpleScale90">Nama File : <span class="text-purpleScale50">Turnitin</span></p>
-                        <p class="font-poppins text-CashoutCardInfo text-purpleScale90 mt-4">File ID : <span>REGM-YZPM-Q7VE-1SIP</span></p>
-                        <p class="font-poppins text-CashoutCardInfo text-purpleScale90 mt-4">Order ID : <span>TURNMULFU-7CN2X3NV</span></p>
+                    <div class="mt-4 p-4 border border-solid border-purpleScale90 dark:border-purpleScale60 rounded-lg">
+                        <p class="font-poppins text-CashoutCardInfo text-purpleScale90 dark:text-purpleScale0">Nama File : <span class="dark:text-purpleScale50">Turnitin</span></p>
+                        <p class="font-poppins text-CashoutCardInfo text-purpleScale90 mt-4 dark:text-purpleScale0">File ID : <span class="dark:text-purpleScale50">REGM-YZPM-Q7VE-1SIP</span></p>
+                        <p class="font-poppins text-CashoutCardInfo text-purpleScale90 mt-4 dark:text-purpleScale0">Order ID : <span class="dark:text-purpleScale50">TURNMULFU-7CN2X3NV</span></p>
                     </div>
                     <div class="mt-4 hidden">
                         <button class="h-[39px] rounded-[20px] font-poppins font-bold text-CashoutCardInfo flex-grow text-purpleScale0 bg-ButtonPurple mr-4">Download</button>
@@ -222,16 +226,16 @@
                 </div>
             </div>
             <div class="mt-8 py-3 flex justify-center items-center">
-                <img src="../../assets/tabler-icon-chevron-left.png" class="size-5">
+                <img src="../../assets/tabler-icon-chevron-left.svg" class="size-5 iconColor -scale-x-100">
                 <div class="px-2 flex gap-2">
                     <div class="border border-solid border-purpleScale60 rounded-[10px] text-purpleScale0 bg-purpleScale60 text-Large/Reguler font-poppins min-w-[34px] px-3 py-1">1</div>
-                    <div class="border border-solid border-purpleScale90 rounded-[10px] text-purpleScale90 px-3 py-1 hover:bg-purpleScale10">2</div>
-                    <div class="border border-solid border-purpleScale90 rounded-[10px] text-purpleScale90 px-3 py-1 hover:bg-purpleScale10">3</div>
-                    <div class="border border-solid border-purpleScale90 rounded-[10px] text-purpleScale90 px-3 py-1 hover:bg-purpleScale10">4</div>
-                    <div class="border border-solid border-purpleScale90 rounded-[10px] text-purpleScale90 px-3 py-1 hover:bg-purpleScale10">5</div>
-                    <div class="border border-solid border-purpleScale90 rounded-[10px] text-purpleScale90 px-3 py-1 hover:bg-purpleScale10">6</div>
+                    <div class="border border-solid border-purpleScale90 dark:border-purpleScale60 rounded-[10px] text-purpleScale90 dark:text-purpleScale0 px-3 py-1 hover:bg-purpleScale10">2</div>
+                    <div class="border border-solid border-purpleScale90 dark:border-purpleScale60 rounded-[10px] text-purpleScale90 dark:text-purpleScale0 px-3 py-1 hover:bg-purpleScale10">3</div>
+                    <div class="border border-solid border-purpleScale90 dark:border-purpleScale60 rounded-[10px] text-purpleScale90 dark:text-purpleScale0 px-3 py-1 hover:bg-purpleScale10">4</div>
+                    <div class="border border-solid border-purpleScale90 dark:border-purpleScale60 rounded-[10px] text-purpleScale90 dark:text-purpleScale0 px-3 py-1 hover:bg-purpleScale10">5</div>
+                    <div class="border border-solid border-purpleScale90 dark:border-purpleScale60 rounded-[10px] text-purpleScale90 dark:text-purpleScale0 px-3 py-1 hover:bg-purpleScale10">6</div>
                 </div>
-                <img src="../../assets/tabler-icon-chevron-left.png" class="size-5 -scale-x-100">
+                <img src="../../assets/tabler-icon-chevron-left.svg" class="size-5">
             </div>
         </div>
     </section>
