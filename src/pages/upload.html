@@ -24,7 +24,6 @@
                         <li class="pr-8"><a href="../index.html">Home</a></li>
                         <li class="pr-8"><a href="../index.html#HowItWorks">Cara Kerja</a></li>
                         <li class="pr-8"><a href="upload parafrase.html">Parafrase</a></li>
-                        <li class="pr-8"><a href="cek pesanan.html">Cari Pembelian</a></li>
                         <li><a href="../index.html#question">Pertanyaan</a></li>
                     </ul>
                 </div>
@@ -36,11 +35,12 @@
                         <div class="h-[2px] bg-purpleScale50 rounded-[1px]"></div>
                         <div class="h-[2px] bg-purpleScale50 rounded-[1px]"></div>
                     </div>
+                    <a href="cek pesanan.html" class="px-7 rounded-[12px] text-purpleScale0 bg-purpleScale50 py-3 desktop:block mobile:hidden">Cari Pembelian</a>
                 </div>
             </div>
         </div>
     </nav>
-    <div id="menuBar" class="menuClosed w-screen h-screen mr-[100px] bg-purpleScale10 fixed z-[60] opacity-0 px-2 flex flex-col justify-between">
+    <div id="menuBar" class="menuClosed w-screen h-screen mr-[100px] bg-purpleScale10 dark:bg-purpleScale80 fixed z-[60] opacity-0 px-2 flex flex-col justify-between">
         <div>
             <div class="py-2 flex justify-between items-center">
                 <div class="flex items-center">
@@ -58,7 +58,7 @@
                 </div>
             </div>
         </div>
-        <div class="p-2 border border-solid border-t-[#7e57a318] border-t-2 mb-[15%]">
+        <div class="p-2 dark:border-purpleScale70 border-purpleScale50  border-t-2 mb-[15%]">
             <a href="upload.html">
                 <button class="bg-[#7E57A3] rounded-[20px] w-full py-3 text-white font-bold font-poppins">Coba Turnitin</button>
             </a>
@@ -66,66 +66,82 @@
     </div>
     <section id="content" class="w-full  max-w-[1320px] navbarMobile:px-[120px] mobile:px-[20px] desktop:py-[80px] mobile:pt-60px mobile:pb-10 desktop:mt-DesktopNavHeight mobile:mt-MobileNavHeight">
         <center>
-            <div class="flex justify-center flex-col w-full max-w-[756px]                                   ">
+            <div class="flex justify-center flex-col w-full max-w-[756px]">
                 <img src="../../assets/Image cek pesanan.png" class="rounded-[20px] w-full h-[119px]">
                 <div class="my-[54px] bg-purpleScale0 dark:bg-purpleScale80 rounded-[12px] p-[20px] w-full border border-solid border-borderColor dark:border-purpleScale60 shadow-[0_0_4px_4px_rgba(90,62,116,0.25)]">
                     <div id="upload-area" class="h-[228px] w-full rounded-[20px] border border-solid border-borderColor dark:border-purpleScale60 flex flex-col justify-center items-center">
                         <img src="../../assets/file-upload.svg" class="size-10 icon iconColor">
                         <p class="mt-4 dark:text-purpleScale10">Klik atau Seret File ke sini</p>
                     </div>
-                    <div id="uploaded-file" class="mt-2 flex mobile:overflow-x-scroll desktop:overflow-x-auto pb-1">
-                        <div id="file-2" class="mr-[10px] w-[62px] h-[73px]">
-                            <div id="file-img" class="grid grid-cols-1 grid-rows-3 items-center h-[54px] rounded-lg border border-solid border-borderColor dark:border-purpleScale60">
-                                <button class="bg-red/60 size-[14px] rounded ml-[75%]"><svg xmlns="http://www.w3.org/2000/svg" width="14"  height="14" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-x"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 6l-12 12" /><path d="M6 6l12 12" /></svg></button>
-                                <img src="../../assets/file-description.svg" class="mx-auto iconColor2 icon2">
+                    <div id="uploaded-file" class="mt-2 flex mobile:overflow-x-scroll desktop:overflow-x-auto pb-1 gap-2 no-scrollbar">
+                        <div id="Card-Upload" class="w-auto flex flex-row pl-4 pr-2 py-1 border border-purpleScale60 rounded-[12px] gap-3 bg-purpleScale10 justify-center items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-file-description iconColor2 "><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M14 3v4a1 1 0 0 0 1 1h4" /><path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z" /><path d="M9 17h6" /><path d="M9 13h6" /></svg>
+                            <div class="flex flex-col items-start justify-start w-auto">
+                                <div class="flex gap-4 w-auto">
+                                    <p class="text-Base/Regular w-max">Nama File.pdf</p>
+                                    <svg xmlns="http://www.w3.org/2000/svg"  width="18"  height="18"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1.5"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-x cursor-pointer rounded-sm hover:bg-red-500"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 6l-12 12" /><path d="M6 6l12 12" /></svg>
+                                </div>
+                                <p class="text-Small/Small text-grey/60">1Mb / 2Mb</p>
                             </div>
-                            <p class="overflow-hidden truncate text-Small/Regular font-poppins text-purpleScale90 mt-1 dark:text-purpleScale10">Nama File ea ea ea ea ea :v</p>
                         </div>
-                        <div id="file-3" class="mr-[10px] w-[62px] h-[73px]">
-                            <div id="file-img" class="grid grid-cols-1 grid-rows-3 items-center h-[54px] rounded-lg border border-solid border-borderColor dark:border-purpleScale60">
-                                <button class="bg-red/60 size-[14px] rounded ml-[75%]"><svg xmlns="http://www.w3.org/2000/svg" width="14"  height="14" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-x"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 6l-12 12" /><path d="M6 6l12 12" /></svg></button>
-                                <img src="../../assets/file-description.svg" class="mx-auto iconColor2 icon2">
+                        <div id="Card-Upload" class="w-auto flex flex-row pl-4 pr-2 py-1 border border-purpleScale60 rounded-[12px] gap-3 bg-purpleScale10 justify-center items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-file-description iconColor2 "><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M14 3v4a1 1 0 0 0 1 1h4" /><path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z" /><path d="M9 17h6" /><path d="M9 13h6" /></svg>
+                            <div class="flex flex-col items-start justify-start w-auto">
+                                <div class="flex gap-4 w-auto">
+                                    <p class="text-Base/Regular w-max">Nama File.pdf</p>
+                                    <svg xmlns="http://www.w3.org/2000/svg"  width="18"  height="18"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1.5"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-x cursor-pointer rounded-sm hover:bg-red-500"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 6l-12 12" /><path d="M6 6l12 12" /></svg>
+                                </div>
+                                <p class="text-Small/Small text-grey/60">1Mb / 2Mb</p>
                             </div>
-                            <p class="overflow-hidden truncate text-Small/Regular font-poppins text-purpleScale90 mt-1 dark:text-purpleScale10">Nama File ea ea ea ea ea :v</p>
                         </div>
-                        <div id="file-4" class="mr-[10px] w-[62px] h-[73px]">
-                            <div id="file-img" class="grid grid-cols-1 grid-rows-3 items-center h-[54px] rounded-lg border border-solid border-borderColor dark:border-purpleScale60">
-                                <button class="bg-red/60 size-[14px] rounded ml-[75%]"><svg xmlns="http://www.w3.org/2000/svg" width="14"  height="14" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-x"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 6l-12 12" /><path d="M6 6l12 12" /></svg></button>
-                                <img src="../../assets/file-description.svg" class="mx-auto iconColor2 icon2">
+                        <div id="Card-Upload" class="w-auto flex flex-row pl-4 pr-2 py-1 border border-purpleScale60 rounded-[12px] gap-3 bg-purpleScale10 justify-center items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-file-description iconColor2 "><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M14 3v4a1 1 0 0 0 1 1h4" /><path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z" /><path d="M9 17h6" /><path d="M9 13h6" /></svg>
+                            <div class="flex flex-col items-start justify-start w-auto">
+                                <div class="flex gap-4 w-auto">
+                                    <p class="text-Base/Regular w-max">Nama File.pdf</p>
+                                    <svg xmlns="http://www.w3.org/2000/svg"  width="18"  height="18"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1.5"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-x cursor-pointer rounded-sm hover:bg-red-500"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 6l-12 12" /><path d="M6 6l12 12" /></svg>
+                                </div>
+                                <p class="text-Small/Small text-grey/60">1Mb / 2Mb</p>
                             </div>
-                            <p class="overflow-hidden truncate text-Small/Regular font-poppins text-purpleScale90 mt-1 dark:text-purpleScale10">Nama File ea ea ea ea ea :v</p>
                         </div>
-                        <div id="file-5" class="mr-[10px] w-[62px] h-[73px]">
-                            <div id="file-img" class="grid grid-cols-1 grid-rows-3 items-center h-[54px] rounded-lg border border-solid border-borderColor dark:border-purpleScale60">
-                                <button class="bg-red/60 size-[14px] rounded ml-[75%]"><svg xmlns="http://www.w3.org/2000/svg" width="14"  height="14" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-x"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 6l-12 12" /><path d="M6 6l12 12" /></svg></button>
-                                <img src="../../assets/file-description.svg" class="mx-auto iconColor2 icon2">
+                        <div id="Card-Upload" class="w-auto flex flex-row pl-4 pr-2 py-1 border border-purpleScale60 rounded-[12px] gap-3 bg-purpleScale10 justify-center items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-file-description iconColor2 "><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M14 3v4a1 1 0 0 0 1 1h4" /><path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z" /><path d="M9 17h6" /><path d="M9 13h6" /></svg>
+                            <div class="flex flex-col items-start justify-start w-auto">
+                                <div class="flex gap-4 w-auto">
+                                    <p class="text-Base/Regular w-max">Nama File.pdf</p>
+                                    <svg xmlns="http://www.w3.org/2000/svg"  width="18"  height="18"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1.5"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-x cursor-pointer rounded-sm hover:bg-red-500"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 6l-12 12" /><path d="M6 6l12 12" /></svg>
+                                </div>
+                                <p class="text-Small/Small text-grey/60">1Mb / 2Mb</p>
                             </div>
-                            <p class="overflow-hidden truncate text-Small/Regular font-poppins text-purpleScale90 mt-1 dark:text-purpleScale10">Nama File ea ea ea ea ea :v</p>
-                        </div>
-                        <div id="file-6" class="mr-[10px] w-[62px] h-[73px]">
-                            <div id="file-img" class="grid grid-cols-1 grid-rows-3 items-center h-[54px] rounded-lg border border-solid border-borderColor dark:border-purpleScale60">
-                                <button class="bg-red/60 size-[14px] rounded ml-[75%]"><svg xmlns="http://www.w3.org/2000/svg" width="14"  height="14" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-x"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 6l-12 12" /><path d="M6 6l12 12" /></svg></button>
-                                <img src="../../assets/file-description.svg" class="mx-auto iconColor2 icon2">
-                            </div>
-                            <p class="overflow-hidden truncate text-Small/Regular font-poppins text-purpleScale90 mt-1 dark:text-purpleScale10">Nama File ea ea ea ea ea :v</p>
-                        </div>
-                        <div id="file-7" class="mr-[10px] w-[62px] h-[73px]">
-                            <div id="file-img" class="grid grid-cols-1 grid-rows-3 items-center h-[54px] rounded-lg border border-solid border-borderColor dark:border-purpleScale60">
-                                <button class="bg-red/60 size-[14px] rounded ml-[75%]"><svg xmlns="http://www.w3.org/2000/svg" width="14"  height="14" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-x"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 6l-12 12" /><path d="M6 6l12 12" /></svg></button>
-                                <img src="../../assets/file-description.svg" class="mx-auto iconColor2 icon2">
-                            </div>
-                            <p class="overflow-hidden truncate text-Small/Regular font-poppins text-purpleScale90 mt-1 dark:text-purpleScale10">Nama File ea ea ea ea ea :v</p>
                         </div>
                     </div>
                     <form action="">
-                        <input type="text" placeholder="Nama File" class="border border-solid border-borderColor dark:border-purpleScale60 dark:bg-purpleScale80 dark:text-purpleScale0 dark:placeholder:text-purpleScale10 rounded-xl h-[41px] w-full mt-3 px-2">
+                        <input type="text" placeholder="Nama File" class="border border-solid border-borderColor dark:border-purpleScale60 dark:bg-purpleScale80 placeholder:text-purpleScale90 dark:text-purpleScale0 dark:placeholder:text-purpleScale10 rounded-xl h-[41px] w-full mt-3 px-2">
                         <div class="mt-3 flex w-full desktop:flex-row navbarMobile:flex-col mobile:flex-col">
-                            <input type="tel" placeholder="Nomor Whatsapp" class="border border-solid border-borderColor dark:border-purpleScale60 dark:bg-purpleScale80 dark:placeholder:text-purpleScale10 dark:text-purpleScale0 rounded-xl h-[41px] px-2 flex-grow">
+                            <input type="tel" placeholder="Nomor Whatsapp" class="border border-solid border-borderColor dark:border-purpleScale60 dark:bg-purpleScale80 placeholder:text-purpleScale90 dark:placeholder:text-purpleScale10 dark:text-purpleScale0 rounded-xl h-[41px] px-2 flex-grow">
                             <input type="button" value="Check" class="desktop:mt-0 desktop:w-[104px] h-[39px] rounded-[12px] bg-purpleScale50 text-purpleScale0 desktop:ml-4 navbarMobile:ml-0 navbarMobile:w-full mobile:mt-4 text-Small/Bold font-bold">
                         </div>
                         <div class="mt-3 flex w-full desktop:flex-row navbarMobile:flex-col mobile:flex-col">
-                            <input type="password" placeholder="Password" class="border border-solid border-borderColor dark:border-purpleScale60 dark:bg-purpleScale80 dark:placeholder:text-purpleScale10 dark:text-purpleScale0 rounded-xl h-[41px] px-2 flex-grow">
+                            <input type="password" placeholder="Password" class="border border-solid border-borderColor dark:border-purpleScale60 dark:bg-purpleScale80 placeholder:text-purpleScale90 dark:placeholder:text-purpleScale10 dark:text-purpleScale0 rounded-xl h-[41px] px-2 flex-grow">
                             <input type="button" value="Check" class="desktop:mt-0 desktop:w-[104px] h-[39px] rounded-[12px] bg-purpleScale50 text-purpleScale0 desktop:ml-4 navbarMobile:ml-0 navbarMobile:w-full mobile:mt-4 text-Small/Bold font-bold">
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <div class="mt-3 flex items-center">
+                                <input type="checkbox" name="bibliography" id="bibliography" class="size-6 accent-purpleScale50">
+                                <label for="bibliography" class="text-Small/Regular font-poppins text-purpleScale90 dark:text-purpleScale50 ml-3">Exclude Match</label>
+                            </div>
+                            <div class="flex flex-grow gap-2 flex-col pl-7">
+                                <div class="flex gap-3 desktop:w-[240px] mobile:w-[240px] justify-center items-center">
+                                    <input type="radio">
+                                    <input type="text" class="w-full border rounded-xl px-3 h-[41px] border-purpleScale90 border-solid dark:border-purpleScale60 dark:text-purpleScale0 dark:bg-purpleScale80">
+                                    <p class="dark:text-purpleScale10 text-Large/SemiBold mr-8">%</p>
+                                </div>
+                                <div class="flex gap-3 desktop:w-[240px] mobile:w-[240px] justify-center items-center">
+                                    <input type="radio">
+                                    <input type="text" class="w-full border rounded-xl px-3 h-[41px] border-purpleScale90 border-solid dark:border-purpleScale60 dark:text-purpleScale0 dark:bg-purpleScale80">
+                                    <p class="dark:text-purpleScale10 text-Large/SemiBold">Word</p>
+                                </div>
+                            </div>
                         </div>
                         <div class="mt-3 flex items-center">
                             <input type="checkbox" name="bibliography" id="bibliography" class="size-6 accent-purpleScale50">
@@ -149,17 +165,17 @@
     <footer class="desktop:px-20 mobile:px-5 py-10 bg-purpleScale80 w-full">
         <div class="flex desktop:flex-row mobile:flex-col justify-between">
             <div>
-                <img src="../../assets/Logo.svg">
+                <img src="../../assets/Logo.png">
                 <p class="mt-4 font-poppins text-Base/Medium text-purpleScale0">Subsidiaries of Mulfubot, company registered in Indonesia.</p>
             </div>
-            <div class="desktop:px-10 flex desktop:flex-row mobile:flex-col">
-                <div class="flex flex-col justify-end mr-[60px] desktop:w-[255px] mobile:mt-6">
+            <div class="desktop:px-10 flex desktop:flex-row mobile:flex-col gap-4 py-4">
+                <div class="flex flex-col">
                     <p class="mb-3 font-poppins text-purpleScale0 text-Large/Reguler">ADDRESS</p>
-                    <p class="font-poppins text-purpleScale0 text-Base/Regular">Jl. Akses UI No.94, Kel. Tugu, Kec. Cimanggis Kota Depok, Jawa Barat, 16451</p>
+                    <p class="font-poppins text-purpleScale0 text-Base/Regular max-w-[400px]">Jl. Akses UI No.94, Kel. Tugu, Kec. Cimanggis Kota Depok, Jawa Barat, 16451</p>
                 </div>
-                <div class="flex flex-col justify-end mobile:mt-6">
-                    <p class="mb-3 font-poppins text-purpleScale0 text-Large/Reguler">Contact</p>
-                    <p class="mb-3 font-poppins text-purpleScale0 text-Base/Regular">Email: mulfubot@gmail.com</p>
+                <div class="flex flex-col gap-2">
+                    <p class="font-poppins text-purpleScale0 text-Large/Reguler">Contact</p>
+                    <p class="font-poppins text-purpleScale0 text-Base/Regular">Email: mulfubot@gmail.com</p>
                     <p class="font-poppins text-purpleScale0 text-Base/Regular">Phone: +62 1234 5678 90</p>
                 </div>
             </div>

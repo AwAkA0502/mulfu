@@ -2,3 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 @tailwind variants;
+
+@media screen and (max-width: 800px) {
+    #uploaded-file::-webkit-scrollbar {
+        display: none;
+    }
+}

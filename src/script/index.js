@@ -50,6 +50,7 @@ function openBar(){
     console.log("Bar open");
 }
 
+
 function closeBar() {
     elementBar.classList.remove(`top-[${offsetY}]`);
     elementBar.classList.remove("menuOpened");
@@ -204,3 +205,14 @@ document.addEventListener("DOMContentLoaded", function() {
 
     themeCheck();
 });
+
+const closeBtn = document.getElementById('closeBtn');
+    const container = document.getElementById('container');
+    
+    // Tambahkan event listener untuk SVG x
+    closeBtn.addEventListener('click', function() {
+        // Hapus kontainer
+        container.remove();
+    });
+
+

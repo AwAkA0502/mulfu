@@ -6,7 +6,7 @@ module.exports = {
     extend: {
       screens: {
         // 'mobile': '360px',
-        'mobile': '360px',
+        'mobile': '320px',
         'navbarMobile': '900px',
         'desktop': '1220px',
       },
