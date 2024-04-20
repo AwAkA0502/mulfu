@@ -114,7 +114,6 @@ window.onscroll = function () {
 //darkMode control
 function SetElementsDark(isDark) {
     let gradients = document.getElementsByClassName("gradien");
-    let icon = document.getElementsByClassName("icon");
     let icon2 = document.getElementsByClassName("icon2");
     if (isDark) {
         let classes = document.getElementsByClassName("unselected");
@@ -128,13 +127,11 @@ function SetElementsDark(isDark) {
             gradients[i].src = "../assets/Ellipse 13.svg";
         }
         for (let i = 0; i < icon.length; i++) {
-            icon[i].classList.add("iconColor");
+            icon[i].classList.add("iconMobileDark");
         }
         for (let i = 0; i < icon2.length; i++) {
             icon2[i].classList.add("iconColor2");
         }
-        icon[0].classList.add("iconMobileDark");
-        icon[0].classList.remove("iconMobile");
     }
     else if(!isDark) {
         let classesDark = document.getElementsByClassName("unselected-dark");
