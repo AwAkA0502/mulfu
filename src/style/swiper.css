@@ -1,6 +1,6 @@
 .swiper{
     width: 100%;
-    height: 350px;
+    height: 370px;
     display: block !important;
 }
 
@@ -10,6 +10,8 @@
     }
 }
 
-.swiper-pagination-bullet-active{
+.swiper-pagination-bullet{
      background-color: #7E57A3 !important;
 }
+
+
