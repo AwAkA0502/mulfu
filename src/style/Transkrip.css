@@ -1,0 +1,7 @@
+.transkrip-field::-webkit-scrollbar {
+    width: 7px;
+  }
+.transkrip-field::-webkit-scrollbar-thumb{
+      border-radius: 3px;
+      background: #5f437b;
+  }
