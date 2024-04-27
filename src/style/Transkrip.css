@@ -5,3 +5,46 @@
       border-radius: 3px;
       background: #5f437b;
   }
+  
+  .audio-control input[type="range"]{
+    min-width: 87px;
+    flex-grow: 1;
+    height: 8px;
+    appearance: none;
+    background-color: #3F2C51;
+    border-radius: 999px;
+}
+
+.audio-control input[type="range"]::-webkit-slider-thumb {
+  position: relative;
+  -webkit-appearance: none;
+  box-sizing: content-box;
+  border: 1px solid #7E57A3;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background-color: #fff;
+  cursor: pointer;
+  margin: 0;
+  transform: scale(0);
+}
+
+.audio-control input[type="range"]:active::-webkit-slider-thumb {
+  transform: scale(1.2);
+  background: #7E57A3;
+}
+
+.audio-volume:hover #audio-volume-seeker{
+  display: block;
+}
+
+#audio-volume-seeker{
+  display: none;
+  appearance: none;
+  appearance: slider-vertical;
+  width: 8px;
+  height: 80px;
+  position: absolute;
+  bottom: -5px;
+  right: -45px;
+}

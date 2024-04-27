@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="../style/Transkrip.css">
 </head>
 <body class="flex flex-col items-center dark:bg-purpleScale90">
+    <audio src="../../assets/audio/01 - Fuwa Fuwa Time.mp3" id="audioPlay"></audio>
     <nav class="backdrop-blur-sm desktop:pt-10 mobile:pt-2 w-full fixed duration-300 bg-white dark:bg-purpleScale90 z-50 flex justify-center bg-opacity-80">
         <div class="desktop:max-w-[1200px] mobile:w-full mobile:px-5">
             <div class="flex justify-between items-center">
@@ -99,7 +100,7 @@
                     </div>
                 </div>
             </div>
-            <div class="transkrip-field h-[436px] overflow-y-auto sm:p-8 py-3">
+            <div id="transkrip-field" class="transkrip-field overflow-y-auto sm:p-8 py-3 h-TranscriptLong">
                 <div class="flex flex-col gap-3 overflow-auto">
                     <div class="flex justify-between items-start gap-10">
                         <p>00:00:00</p>
@@ -145,14 +146,16 @@
                     </div>
                 </div>
             </div>
-            <div class="audio-control h-[64px] hidden flex justify-center items-center p-5 bg-purpleScale50 rounded-xl gap-3">
-                <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24" onclick="playAudio()" id="play-pause"  viewBox="0 0 24 24"  fill="#ffffff"  class="icon icon-tabler icons-tabler-filled icon-tabler-player-play"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 4v16a1 1 0 0 0 1.524 .852l13 -8a1 1 0 0 0 0 -1.704l-13 -8a1 1 0 0 0 -1.524 .852z" /></svg>
+            <div class="audio-control h-[64px] hidden justify-center items-center p-5 bg-purpleScale60 rounded-xl gap-3">
+                <img src="../../assets/play.svg" onclick="playAudio()" id="play-pause" class="size-6">
+                <!-- <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24" onclick="playAudio()" id="play-pause"  viewBox="0 0 24 24"  fill="#ffffff"  class="icon icon-tabler icons-tabler-filled icon-tabler-player-play"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 4v16a1 1 0 0 0 1.524 .852l13 -8a1 1 0 0 0 0 -1.704l-13 -8a1 1 0 0 0 -1.524 .852z" /></svg> -->
                 <p id="audio-current-time" class="text-white">0:00</p>
                 <input type="range" name="time-seeker" id="audio-time-seeker" max="100" min="0" value="0" class="w-full">
-                <p id="audio-duration" class="w-[40px]">-:--</p>
+                <p id="audio-duration" class="w-[40px] text-white">-:--</p>
                 <div class="audio-volume justify-center items-center sm:flex hidden">
-                    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24" onclick="muteAudio()" id="audio-mute-button"  viewBox="0 0 24 24"  fill="none"  stroke="#ffffff"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-volume"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M15 8a5 5 0 0 1 0 8" /><path d="M17.7 5a9 9 0 0 1 0 14" /><path d="M6 15h-2a1 1 0 0 1 -1 -1v-4a1 1 0 0 1 1 -1h2l3.5 -4.5a.8 .8 0 0 1 1.5 .5v14a.8 .8 0 0 1 -1.5 .5l-3.5 -4.5" /></svg>
-                    <div class="absolute mb-8 hidden">
+                    <img src="../../assets/speaker.svg" onclick="muteAudio()" id="audio-mute-button" class="size-6 desktop:block mobile:hidden">
+                    <!-- <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24" onclick="muteAudio()" id="audio-mute-button"  viewBox="0 0 24 24"  fill="none"  stroke="#ffffff"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-volume"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M15 8a5 5 0 0 1 0 8" /><path d="M17.7 5a9 9 0 0 1 0 14" /><path d="M6 15h-2a1 1 0 0 1 -1 -1v-4a1 1 0 0 1 1 -1h2l3.5 -4.5a.8 .8 0 0 1 1.5 .5v14a.8 .8 0 0 1 -1.5 .5l-3.5 -4.5" /></svg> -->
+                    <div class="absolute mb-8">
                         <input type="range" id="audio-volume-seeker" orient="vertical" max="100" min="0" value="100">
                     </div>
                 </div>

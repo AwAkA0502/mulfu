@@ -868,6 +868,14 @@ video {
   height: 1.25rem;
 }
 
+.h-TranscriptLong {
+  height: 436px;
+}
+
+.h-TranscriptShort {
+  height: 360px;
+}
+
 .h-\[110px\] {
   height: 110px;
 }
@@ -896,12 +904,12 @@ video {
   height: 2px;
 }
 
-.h-\[30px\] {
-  height: 30px;
-}
-
 .h-\[320px\] {
   height: 320px;
+}
+
+.h-\[360px\] {
+  height: 360px;
 }
 
 .h-\[39px\] {
@@ -912,8 +920,16 @@ video {
   height: 400px;
 }
 
+.h-\[410px\] {
+  height: 410px;
+}
+
 .h-\[41px\] {
   height: 41px;
+}
+
+.h-\[436px\] {
+  height: 436px;
 }
 
 .h-\[504px\] {
@@ -946,42 +962,6 @@ video {
 
 .h-screen {
   height: 100vh;
-}
-
-.h-\[410px\] {
-  height: 410px;
-}
-
-.h-\[10px\] {
-  height: 10px;
-}
-
-.h-\[100px\] {
-  height: 100px;
-}
-
-.h-\[200px\] {
-  height: 200px;
-}
-
-.h-\[300px\] {
-  height: 300px;
-}
-
-.h-\[360px\] {
-  height: 360px;
-}
-
-.h-\[406px\] {
-  height: 406px;
-}
-
-.h-\[424px\] {
-  height: 424px;
-}
-
-.h-\[436px\] {
-  height: 436px;
 }
 
 .max-h-\[424px\] {
@@ -1211,6 +1191,10 @@ video {
 
 .overflow-auto {
   overflow: auto;
+}
+
+.overflow-hidden {
+  overflow: hidden;
 }
 
 .overflow-y-auto {

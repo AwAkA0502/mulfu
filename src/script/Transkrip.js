@@ -7,6 +7,7 @@ const E_mute_button = document.getElementById("audio-mute-button");
 const volume = document.getElementById("audio-volume-seeker");
 let isAudioPlaying = false;
 let isAudioMuted = false;
+let audioShow = false;
 let audioDuration;
 
 function getMinute(value) {
@@ -59,7 +60,7 @@ function displayBufferedAmount() {
 audio.addEventListener('ended', audioEnded);
 function audioEnded() {
     isAudioPlaying = false;
-    E_play_button.src = "assets/img/audio player/play.svg";
+    E_play_button.src = "../../assets/play.svg";
 }
 
 audio.addEventListener('timeupdate', audioSeekerUpdate);
@@ -99,11 +100,11 @@ function playAudio() {
     isAudioPlaying = !isAudioPlaying;
     if (isAudioPlaying) {
         audio.play();
-        E_play_button.src = "assets/img/audio player/player-pause.svg";
+        E_play_button.src = "../../assets/player-pause.svg";
     }
     else{
         audio.pause();
-        E_play_button.src = "assets/img/audio player/play.svg";
+        E_play_button.src = "../../assets/play.svg";
     }
 }
 
@@ -111,10 +112,10 @@ function muteAudio() {
     isAudioMuted = !isAudioMuted;
     audio.muted = isAudioMuted;
     if(isAudioMuted) {
-        E_mute_button.src = "assets/img/audio player/volume-off.svg";
+        E_mute_button.src = "../../assets/volume-off.svg";
     }
     else{
-        E_mute_button.src = "assets/img/audio player/speaker.svg";
+        E_mute_button.src = "../../assets/speaker.svg";
     }
 }
 
@@ -132,29 +133,24 @@ function toggleAudioControl() {
     // Memeriksa apakah audio control saat ini tersembunyi atau tidak
     const isHidden = audioControl.classList.contains('hidden');
 
-    var transkripField = document.querySelector('.transkrip-field');
+    let transkripField = document.getElementById('transkrip-field');
 
-    const isExpanded = transkripField.classList.contains('h-[436px]');
+    // const isExpanded = transkripField.classList.contains('h-[436px]');
 
-
-
-    // Jika tersembunyi, maka hilangkan kelas 'hidden'
-    // Jika tidak, tambahkan kelas 'hidden'
-    if (isHidden) {
-        audioControl.classList.remove('hidden');
-
-    
-    } else {
-        audioControl.classList.add('hidden');       
+    if (audioShow) {
+        console.log('audio hilang');
+        audioControl.classList.add('hidden');
+        audioControl.classList.remove('flex');
+        transkripField.classList.add('h-TranscriptLong');
+        transkripField.classList.remove('h-TranscriptShort');
+    } else if (!audioShow) {
+        console.log('audio muncul');
+        audioControl.classList.remove('hidden'); 
+        audioControl.classList.add('flex');    
+        //436-64-12
+        transkripField.classList.add('h-TranscriptShort');
+        transkripField.classList.remove('h-TranscriptLong');  
     }
-    if (transkripField.classList.contains('h-[436px]')) {
-        // Jika ada, ganti menjadi 'h-[360px]'
-        transkripField.classList.remove('h-[436px]');
-        transkripField.classList.add('h-[360px]');
-    } else {
-        // Jika tidak, tambahkan kelas 'h-[410px]'
-        transkripField.classList.remove('h-[360px]');
-        transkripField.classList.add('h-[436px]');
-    }
+    audioShow = !audioShow;
 }
 
