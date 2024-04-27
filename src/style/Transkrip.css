@@ -41,9 +41,9 @@
 #audio-volume-seeker{
   display: none;
   appearance: none;
-  appearance: slider-vertical;
-  width: 8px;
-  height: 80px;
+  background: #7E57A3;
+  width: 80px;
+  height: 8px;
   position: absolute;
   bottom: -5px;
   right: -45px;

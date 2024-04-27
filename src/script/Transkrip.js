@@ -93,6 +93,10 @@ volume.addEventListener("input", volumeHandler);
 volume.addEventListener("change", volumeHandler);;
 function volumeHandler() {
     audio.volume = volume.value/100;
+    volume.style = 'background: linear-gradient(to right, #7E57A3 0%,'
+    +'#7E57A3 '+ volume.value +'%,'
+    +'#3F2C51 '+ volume.value +'%,'
+    +'#3F2C51 100%);';
 }
 
 // play/pause audio
